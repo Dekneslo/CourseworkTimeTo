@@ -9,6 +9,25 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
+    public class CourseRepository : RepositoryBase<Course>, ICourseRepository
+    {
+        public CourseRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+
+        public async Task<Course> GetCourseDetailsAsync(int courseId)
+        {
+            return await RepositoryContext.Courses
+                .Include(c => c.Materials)
+                .FirstOrDefaultAsync(c => c.Id == courseId);
+        }
+
+        public async Task<IEnumerable<Course>> GetCoursesByCategoryAsync(string category)
+        {
+            return await RepositoryContext.Courses
+                .Where(c => c.Category == category)
+                .ToListAsync();
+        }
+    }
+
     //public class CourseRepository : RepositoryBase<Course>, ICourseRepository
     //{
     //    public CourseRepository(CharityDBContext repositoryContext) : base(repositoryContext)

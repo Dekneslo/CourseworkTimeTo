@@ -10,6 +10,47 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Wrapper
 {
+    public class RepositoryWrapper : IRepositoryWrapper
+    {
+        private CharityDBContext _repoContext;
+        private IUserRepository _user;
+        private ICourseRepository _course;
+
+        public RepositoryWrapper(CharityDBContext repositoryContext)
+        {
+            _repoContext = repositoryContext;
+        }
+
+        public IUserRepository User
+        {
+            get
+            {
+                if (_user == null)
+                {
+                    _user = new UserRepository(_repoContext);
+                }
+                return _user;
+            }
+        }
+
+        public ICourseRepository Course
+        {
+            get
+            {
+                if (_course == null)
+                {
+                    _course = new CourseRepository(_repoContext);
+                }
+                return _course;
+            }
+        }
+
+        public void Save()
+        {
+            _repoContext.SaveChanges();
+        }
+    }
+
     //public class RepositoryWrapper : IRepositoryWrapper
     //{
     //    private CharityDBContext _repoContext;

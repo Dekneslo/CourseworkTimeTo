@@ -11,6 +11,9 @@ namespace DataAccess.Wrapper
     public interface IRepositoryWrapper
     {
         IUserRepository User { get; }
+        ICourseRepository Course { get; }
         void Save();
+        //IUserRepository User { get; }
+        //void Save();
     }
 }
