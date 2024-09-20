@@ -1,4 +1,6 @@
 ﻿using BusinessLogic.Interfaces;
+using BusinessLogic.Results;
+using DataAccess.DTO;
 using DataAccess.Models;
 using DataAccess.Wrapper;
 using Microsoft.EntityFrameworkCore;
@@ -7,47 +9,80 @@ namespace BusinessLogic.Services
 {
     public class UserService : IUserService
     {
-        private IRepositoryWrapper _repositoryWrapper;
+        private readonly IRepositoryWrapper _repositoryWrapper;
 
         public UserService(IRepositoryWrapper repositoryWrapper)
         {
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<User>> GetAll()
+        public async Task<List<UserDTO>> GetAllUsersAsync()
         {
-            return _repositoryWrapper.User.FindAll().ToListAsync();
+            var users = await _repositoryWrapper.User.GetAllAsync();
+            return users.Select(u => new UserDTO
+            {
+                IdUser = u.IdUser,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                Email = u.Email,
+                Role = u.RoleNavigation.NameRole
+            }).ToList();
         }
 
-        public Task<User> GetById(int id)
+        public async Task<UserDTO> GetUserByIdAsync(int id)
         {
-            var user = _repositoryWrapper.User
-                .FindByCondition(x => x.IdUser == id).First();
-            return Task.FromResult(user);
+            var user = await _repositoryWrapper.User.GetByIdAsync(id);
+            if (user == null) return null;
+
+            return new UserDTO
+            {
+                IdUser = user.IdUser,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Role = user.RoleNavigation.NameRole
+            };
         }
 
-        public Task Create(User model)
+        public async Task<List<UserDTO>> GetUsersByRoleAsync(string role)
         {
-            _repositoryWrapper.User.Create(model);
-            _repositoryWrapper.Save();
-            return Task.CompletedTask;
+            var users = await _repositoryWrapper.User.GetUsersByRoleAsync(role);
+            return users.Select(u => new UserDTO
+            {
+                IdUser = u.IdUser,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                Email = u.Email,
+                Role = u.RoleNavigation.NameRole
+            }).ToList();
         }
 
-        public Task Update(User model)
+        public async Task<ServiceResult> RegisterUserAsync(RegisterUserDTO userDto)
         {
-            _repositoryWrapper.User.Update(model);
-            _repositoryWrapper.Save();
-            return Task.CompletedTask;
+            var user = new User
+            {
+                FirstName = userDto.FirstName,
+                LastName = userDto.LastName,
+                Email = userDto.Email,
+                Password = userDto.Password 
+            };
+
+            await _repositoryWrapper.User.CreateAsync(user);
+            await _repositoryWrapper.SaveAsync();
+            return ServiceResult.SuccessResult("User registered successfully", user);
         }
 
-        public Task Delete(int id)
+        public async Task<ServiceResult> DeleteUserAsync(int id)
         {
-            var user = _repositoryWrapper.User
-                .FindByCondition(x => x.IdUser == id).First();
+            var user = await _repositoryWrapper.User.GetByIdAsync(id);
+            if (user == null)
+            {
+                return ServiceResult.ErrorResult("User not found");
+            }
 
             _repositoryWrapper.User.Delete(user);
-            _repositoryWrapper.Save();
-            return Task.CompletedTask;
+            await _repositoryWrapper.SaveAsync();
+            return ServiceResult.SuccessResult("User deleted successfully");
         }
     }
 }

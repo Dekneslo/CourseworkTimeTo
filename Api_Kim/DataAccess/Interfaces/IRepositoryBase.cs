@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Interfaces
 {
-    public interface IRepositoryBase<T>
+    public interface IRepositoryBase<T> where T : class
     {
-        IQueryable<T> FindAll();
-        IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);
-        void Create(T entity);
-        void Update(T entity);
-        void Delete(T entity);
+        //Task<IEnumerable<T>> FindAll(); // Получить все записи
+        //Task<IEnumerable<T>> FindByCondition(Expression<Func<T, bool>> expression); // Найти записи по условию
+        //void Create(T entity); // Создать запись
+        //void Update(T entity); // Обновить запись
+        //void Delete(T entity); // Удалить запись
+        //Task SaveAsync(); // Сохранить изменения
     }
 }

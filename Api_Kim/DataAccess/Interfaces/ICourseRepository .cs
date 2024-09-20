@@ -9,14 +9,10 @@ namespace DataAccess.Interfaces
 {
     public interface ICourseRepository : IRepositoryBase<Course>
     {
-        Task<Course> GetCourseDetailsAsync(int courseId); // Получение деталей курса
-        Task<IEnumerable<Course>> GetCoursesByCategoryAsync(string category); // Получение курсов по категории
-
-
-        //Task<IEnumerable<Course>> GetCoursesByCategoryAsync(string category); // Получение курсов по категории
-        //Task<IEnumerable<Course>> GetPopularCoursesAsync(); // Получение популярных курсов
-        //Task<IEnumerable<Course>> GetCoursesByUserAsync(int userId); // Получение курсов, доступных пользователю
-        ////Task AttachFileToCourseAsync(int courseId, File file); // Присоединение файла к курсу
+        Task<IEnumerable<Course>> GetCoursesByCategoryAsync(int categoryId);
+        Task<IEnumerable<Course>> GetAllAsync(); // Получить все курсы
+        Task<Course> GetByIdAsync(int id); // Получить курс по ID
+        Task CreateAsync(Course course); // Создать курс
+        void Delete(Course course); // Удалить курс
     }
-
 }

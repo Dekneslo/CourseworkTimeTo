@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BusinessLogic.Interfaces;
+using BusinessLogic.Results;
 using DataAccess.Models;
+using DataAccess.DTO;
 
 namespace project.Controllers
 {
@@ -16,93 +18,42 @@ namespace project.Controllers
             _userService = userService;
         }
 
-        // Получить всех пользователей
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
-            var users = await _userService.GetAllUsers();
+            var users = await _userService.GetAllUsersAsync();
             return Ok(users);
         }
 
-        // Получить пользователя по ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(int id)
         {
-            var user = await _userService.GetUserById(id);
+            var user = await _userService.GetUserByIdAsync(id);
             if (user == null) return NotFound();
             return Ok(user);
         }
 
-        // Зарегистрировать нового пользователя (клиент или сотрудник)
-        [HttpPost("register")]
-        public async Task<IActionResult> RegisterUser([FromBody] User user)
+        [HttpPost]
+        public async Task<IActionResult> RegisterUser([FromBody] RegisterUserDTO registerDto)
         {
-            if (user == null) return BadRequest();
-            await _userService.RegisterUser(user);
-            return Ok();
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var result = await _userService.RegisterUserAsync(registerDto);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.User);
         }
 
-        // Обновить информацию о пользователе
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
-        {
-            if (user == null || id != user.Id) return BadRequest();
-            await _userService.UpdateUser(user);
-            return Ok();
-        }
-
-        // Удалить пользователя
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            await _userService.DeleteUser(id);
-            return Ok();
+            var result = await _userService.DeleteUserAsync(id);
+            if (!result.Success) return BadRequest(result.Errors);
+            return NoContent();
         }
-
-        // Изменить уровень доступа клиента (например, до VIP)
-        [HttpPut("access-level/{id}")]
-        public async Task<IActionResult> ChangeUserAccessLevel(int id, [FromBody] AccessLevel newAccessLevel)
+        [HttpGet("byRole/{role}")]
+        public async Task<IActionResult> GetUsersByRole(string role)
         {
-            await _userService.ChangeAccessLevel(id, newAccessLevel);
-            return Ok();
+            var users = await _userService.GetUsersByRoleAsync(role);
+            return Ok(users);
         }
-        //private IUserService _userService;
-        //public UserController(IUserService userService)
-        //{
-        //    _userService = userService;
-        //}
-
-        //[HttpGet]
-        //public async Task<IActionResult> GetAll()
-        //{
-        //    return Ok(await _userService.GetAll());
-        //}
-
-        //[HttpGet("{id}")]
-        //public async Task<IActionResult> GetById(int id)
-        //{
-        //    return Ok(await _userService.GetById(id));
-        //}
-
-        //[HttpPost]
-        //public async Task<IActionResult> Add(User user)
-        //{
-        //    await _userService.Create(user);
-        //    return Ok();
-        //}
-
-        //[HttpPut]
-        //public async Task<IActionResult> Update(User user)
-        //{
-        //    await _userService.Update(user);
-        //    return Ok();
-        //}
-
-        //[HttpDelete]
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    await _userService.Delete(id);
-        //    return Ok();
-        //}
     }
 }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kKDKMJLh+TE=",
+  "dgSpecHash": "qee1f/XODU1Ohx0/jS3TyTLacVxO5mSemLmRfvR0JKKkPfOWtgh97cdtsDi0e3DPusu09JrUXZhxcF0ONteKKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dasha\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Dasha\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Dasha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }

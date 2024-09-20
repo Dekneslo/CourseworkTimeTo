@@ -15,11 +15,9 @@ namespace DataAccess.Wrapper
         private CharityDBContext _repoContext;
         private IUserRepository _user;
         private ICourseRepository _course;
-
-        public RepositoryWrapper(CharityDBContext repositoryContext)
-        {
-            _repoContext = repositoryContext;
-        }
+        private IPostRepository _post;
+        private IMessageRepository _message;
+        private IFileRepository _file;
 
         public IUserRepository User
         {
@@ -45,52 +43,50 @@ namespace DataAccess.Wrapper
             }
         }
 
-        public void Save()
+        public IPostRepository Post
         {
-            _repoContext.SaveChanges();
+            get
+            {
+                if (_post == null)
+                {
+                    _post = new PostRepository(_repoContext);
+                }
+                return _post;
+            }
+        }
+
+        public IMessageRepository Message
+        {
+            get
+            {
+                if (_message == null)
+                {
+                    _message = new MessageRepository(_repoContext);
+                }
+                return _message;
+            }
+        }
+
+        public IFileRepository File
+        {
+            get
+            {
+                if (_file == null)
+                {
+                    _file = new FileRepository(_repoContext);
+                }
+                return _file;
+            }
+        }
+
+        public RepositoryWrapper(CharityDBContext repositoryContext)
+        {
+            _repoContext = repositoryContext;
+        }
+
+        public async Task SaveAsync()
+        {
+            await _repoContext.SaveChangesAsync();
         }
     }
-
-    //public class RepositoryWrapper : IRepositoryWrapper
-    //{
-    //    private CharityDBContext _repoContext;
-    //    private IUserRepository _user;
-    //    private ICourseRepository _courseRepository;
-    //    public IUserRepository User
-    //    {
-    //        get
-    //        {
-    //            if (_user == null)
-    //            {
-    //                _user = new UserRepository(_repoContext);
-    //            }
-    //            return _user;
-    //        }
-    //    }
-
-    //    public ICourseRepository CourseRepository
-    //    {
-    //        get
-    //        {
-    //            if (_courseRepository == null)
-    //            {
-    //                _courseRepository = new CourseRepository(_context);
-    //            }
-    //            return _courseRepository;
-    //        }
-    //    }
-
-    //    public RepositoryWrapper(CharityDBContext repositoryContext)
-    //    {
-    //        _repoContext = repositoryContext;
-    //    }
-    //    //public void Save()
-    //    //{
-    //    //    _repoContext.SaveChanges();
-    //    //}
-    //    public async Task SaveAsync()
-    //    {
-    //        await RepositoryContext.SaveChangesAsync();
-    //    }
-    //}
 }
