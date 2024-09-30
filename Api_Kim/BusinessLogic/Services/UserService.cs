@@ -1,9 +1,9 @@
-﻿using BusinessLogic.Interfaces;
-using BusinessLogic.Results;
-using DataAccess.DTO;
-using DataAccess.Models;
-using DataAccess.Wrapper;
-using Microsoft.EntityFrameworkCore;
+﻿using Domain.Interfaces;
+using Domain.Results;
+//using Domain.DTO;
+using Domain.Contracts.UserContracts;
+using Domain.Models;
+using Domain.Wrapper;
 
 namespace BusinessLogic.Services
 {
@@ -16,10 +16,10 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public async Task<List<UserDTO>> GetAllUsersAsync()
+        public async Task<List<GetUserResponse>> GetAllUsersAsync()
         {
             var users = await _repositoryWrapper.User.GetAllAsync();
-            return users.Select(u => new UserDTO
+            return users.Select(u => new GetUserResponse
             {
                 IdUser = u.IdUser,
                 FirstName = u.FirstName,
@@ -29,12 +29,12 @@ namespace BusinessLogic.Services
             }).ToList();
         }
 
-        public async Task<UserDTO> GetUserByIdAsync(int id)
+        public async Task<GetUserResponse> GetUserByIdAsync(int id)
         {
             var user = await _repositoryWrapper.User.GetByIdAsync(id);
             if (user == null) return null;
 
-            return new UserDTO
+            return new GetUserResponse
             {
                 IdUser = user.IdUser,
                 FirstName = user.FirstName,
@@ -44,10 +44,10 @@ namespace BusinessLogic.Services
             };
         }
 
-        public async Task<List<UserDTO>> GetUsersByRoleAsync(string role)
+        public async Task<List<GetUserResponse>> GetUsersByRoleAsync(string role)
         {
             var users = await _repositoryWrapper.User.GetUsersByRoleAsync(role);
-            return users.Select(u => new UserDTO
+            return users.Select(u => new GetUserResponse
             {
                 IdUser = u.IdUser,
                 FirstName = u.FirstName,
@@ -57,32 +57,86 @@ namespace BusinessLogic.Services
             }).ToList();
         }
 
-        public async Task<ServiceResult> RegisterUserAsync(RegisterUserDTO userDto)
+        //public async Task<ServiceResult> RegisterUserAsync(RegisterUserDTO userDto)
+        //{
+        //    var user = new User
+        //    {
+        //        FirstName = userDto.FirstName,
+        //        LastName = userDto.LastName,
+        //        Email = userDto.Email,
+        //        Password = userDto.Password 
+        //    };
+
+        //    await _repositoryWrapper.User.CreateAsync(user);
+        //    await _repositoryWrapper.SaveAsync();
+        //    return ServiceResult.SuccessResult("Пользователь успешно зарегистрирован", user);
+        //}
+        public async Task<ServiceResult> RegisterUserAsync(CreateUserRequest request)
         {
+            if (await _repositoryWrapper.User.GetUserByEmailAsync(request.Email) != null)
+            {
+                return ServiceResult.ErrorResult("Пользователь с таким email уже существует");
+            }
             var user = new User
             {
-                FirstName = userDto.FirstName,
-                LastName = userDto.LastName,
-                Email = userDto.Email,
-                Password = userDto.Password 
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Email = request.Email,
+                Password = request.Password 
             };
 
             await _repositoryWrapper.User.CreateAsync(user);
             await _repositoryWrapper.SaveAsync();
-            return ServiceResult.SuccessResult("User registered successfully", user);
+            return ServiceResult.SuccessResult("Пользователь успешно зарегистрирован", user);
         }
+
+        public async Task<ServiceResult> CreateUserAsync(CreateUserRequest request)
+        {
+            var user = new User
+            {
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Email = request.Email
+            };
+
+            await _repositoryWrapper.User.CreateAsync(user);
+            await _repositoryWrapper.SaveAsync();
+
+            return ServiceResult.SuccessResult("Пользователь успешно создан", user);
+        }
+
+
+        public async Task<ServiceResult> UpdateUserAsync(int id, UpdateUserRequest request)
+        {
+            var user = await _repositoryWrapper.User.GetByIdAsync(id);
+            if (user == null)
+            {
+                return ServiceResult.ErrorResult("Пользователь не найден");
+            }
+
+            user.FirstName = request.FirstName;
+            user.LastName = request.LastName;
+            user.Email = request.Email;
+
+            await _repositoryWrapper.User.UpdateAsync(user);
+            await _repositoryWrapper.SaveAsync();
+
+            return ServiceResult.SuccessResult("Пользователь успешно обновлен", user);
+        }
+
+
 
         public async Task<ServiceResult> DeleteUserAsync(int id)
         {
             var user = await _repositoryWrapper.User.GetByIdAsync(id);
             if (user == null)
             {
-                return ServiceResult.ErrorResult("User not found");
+                return ServiceResult.ErrorResult("Пользователь не найден");
             }
 
-            _repositoryWrapper.User.Delete(user);
+            await _repositoryWrapper.User.DeleteAsync(user);
             await _repositoryWrapper.SaveAsync();
-            return ServiceResult.SuccessResult("User deleted successfully");
+            return ServiceResult.SuccessResult("Пользователь успешно удален");
         }
     }
 }

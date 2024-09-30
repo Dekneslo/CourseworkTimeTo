@@ -1,11 +1,13 @@
 using System.Reflection;
-using BusinessLogic.Interfaces;
+using Domain.Interfaces;
 using BusinessLogic.Services;
-using DataAccess.Models;
+using Domain.Models;
+using Domain.Wrapper;
 using DataAccess.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Hosting.Server;
 
 namespace project
 {
@@ -14,8 +16,8 @@ namespace project
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server=DESKTOP-6BAU0HF;Database=CharityDB;User Id=sa;Password=12345;"));
+            builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server = DEKNESLO; Database = CharityDB; Trusted_Connection = True;", b => b.MigrationsAssembly("DataAccess")));
+            //builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server=DESKTOP-6BAU0HF;Database=CharityDB;User Id=sa;Password=12345;"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
@@ -23,7 +25,24 @@ namespace project
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "API для благотворительной платформы",
+                    Description = "Описание API для управления курсами, пользователями и постами",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Контактная информация",
+                        Url = new Uri("https://example.com/contact")
+                    }
+                });
+
+                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            });
+
 
             var app = builder.Build();
 

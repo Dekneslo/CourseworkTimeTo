@@ -20,13 +20,3 @@ C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\Busin
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfo.cs
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CoreCompileInputs.cache
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.sourcelink.json
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.dll
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\refint\BusinessLogic.dll
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.pdb
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\bin\Debug\net6.0\BusinessLogic.deps.json
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\bin\Debug\net6.0\BusinessLogic.dll
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\bin\Debug\net6.0\BusinessLogic.pdb
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\bin\Debug\net6.0\DataAccess.dll
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\bin\Debug\net6.0\DataAccess.pdb
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CopyComplete
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\ref\BusinessLogic.dll

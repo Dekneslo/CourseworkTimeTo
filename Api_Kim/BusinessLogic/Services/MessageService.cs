@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BusinessLogic.Interfaces;
-using BusinessLogic.Results;
-using DataAccess.DTO;
-using DataAccess.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+using Domain.Results;
+using Domain.DTO;
+using Domain.Interfaces;
+using Domain.Models;
+using Domain.Wrapper;
 
 namespace BusinessLogic.Services
 {
-    public class MessageService : IMessageService
+    public class MessageService : Domain.Interfaces.IMessageService
     {
         private readonly IRepositoryWrapper _repository;
 

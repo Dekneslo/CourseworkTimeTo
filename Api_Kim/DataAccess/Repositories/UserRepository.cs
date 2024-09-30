@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Interfaces;
-using DataAccess.Models;
-using DataAccess.DTO;
+using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Repositories
@@ -14,30 +13,43 @@ namespace DataAccess.Repositories
     {
         public UserRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
-        public async Task<IEnumerable<User>> GetAllAsync()
+        public async Task<List<User>> GetAllAsync()
         {
-            return await FindAll().ToListAsync();
+            return await FindAllAsync();
         }
 
         public async Task<User> GetByIdAsync(int id)
         {
-            return await FindByCondition(user => user.IdUser == id).FirstOrDefaultAsync();
+            var users = await FindByConditionAsync(user => user.IdUser == id);
+            return users.FirstOrDefault();
         }
 
         public async Task CreateAsync(User user)
         {
-            Create(user);
+            CreateAsync(user);
+            await SaveAsync();
+        }
+
+        public async Task UpdateAsync(User user)
+        {
+            UpdateAsync(user); 
+            await SaveAsync();  
+        }
+
+        public async Task DeleteAsync(User user)
+        {
+            DeleteAsync(user);  
             await SaveAsync();
         }
 
         public Task<User> GetUserByEmailAsync(string email)
         {
-            return FindByCondition(user => user.Email == email).FirstOrDefaultAsync();
+            return FindByConditionAsync(user => user.Email == email).ContinueWith(task => task.Result.FirstOrDefault());
         }
 
-        public async Task<IEnumerable<User>> GetUsersByRoleAsync(string role)
+        public async Task<List<User>> GetUsersByRoleAsync(string role)
         {
-            return await FindByCondition(user => user.RoleNavigation.NameRole == role).ToListAsync();
+            return await FindByConditionAsync(user => user.RoleNavigation.NameRole == role);
         }
     }
 }

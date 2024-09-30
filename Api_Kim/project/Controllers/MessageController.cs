@@ -1,7 +1,7 @@
 using BusinessLogic.Services;
 using Microsoft.AspNetCore.Mvc;
-using BusinessLogic.Interfaces;  
-using DataAccess.DTO;           
+using Domain.Interfaces;  
+using Domain.DTO;           
 
 
 namespace project.Controllers
@@ -17,6 +17,17 @@ namespace project.Controllers
             _messageService = messageService;
         }
 
+        /// <summary>
+        /// Получение сообщений пользователя
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     GET /api/Message/1
+        ///
+        /// </remarks>
+        /// <param name="userId">ID пользователя</param>
+        /// <returns>Список сообщений пользователя</returns>
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetMessagesByUser(int userId)
         {
@@ -24,6 +35,22 @@ namespace project.Controllers
             return Ok(messages);
         }
 
+        /// <summary>
+        /// Отправка нового сообщения
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Message
+        ///     {
+        ///        "IdSender": 1,
+        ///        "IdRecipient": 2,
+        ///        "MessageText": "Привет, как дела?"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="messageDto">Модель сообщения</param>
+        /// <returns>Результат операции</returns>
         [HttpPost]
         public async Task<IActionResult> SendMessage([FromBody] MessageDTO messageDto)
         {

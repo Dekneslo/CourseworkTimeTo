@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Models;
-using DataAccess.Interfaces;
+using Domain.Models;
+using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Repositories
@@ -13,9 +13,10 @@ namespace DataAccess.Repositories
     {
         public MessageRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
-        public async Task<IEnumerable<Message>> GetMessagesByUserAsync(int userId)
+        public async Task<List<Message>> GetMessagesByUserAsync(int userId)
         {
-            return await FindByCondition(message => message.IdRecipient == userId || message.IdSender == userId)
+            return await RepositoryContext.Messages
+                         .Where(message => message.IdRecipient == userId || message.IdSender == userId)
                          .Include(m => m.IdSenderNavigation)
                          .Include(m => m.IdRecipientNavigation)
                          .ToListAsync();
@@ -23,7 +24,7 @@ namespace DataAccess.Repositories
 
         public async Task SendMessageAsync(Message message)
         {
-            Create(message);
+            await CreateAsync(message);
             await SaveAsync();
         }
     }

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Models;
-using DataAccess.Interfaces;
+using Domain.Models;
+using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using FileModel = DataAccess.Models.File;
+using FileModel = Domain.Models.File;
 
 namespace DataAccess.Repositories
 {
@@ -14,15 +14,16 @@ namespace DataAccess.Repositories
     {
         public FileRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
-        public async Task<IEnumerable<FileModel>> GetFilesByUserAsync(int userId)
+        public async Task<List<FileModel>> GetFilesByUserAsync(int userId)
         {
-            return await FindByCondition(file => file.IdUser == userId).ToListAsync();
+            return await FindByConditionAsync(file => file.IdUser == userId);
         }
 
         public async Task AddFileAsync(FileModel file)
         {
-            Create(file);
+            await CreateAsync(file);
             await SaveAsync();
         }
+        ///добавит ьапдейт делет
     }
 }

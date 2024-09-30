@@ -1,5 +1,5 @@
-﻿using DataAccess.Interfaces;
-using DataAccess.Models;
+﻿using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,30 +13,38 @@ namespace DataAccess.Repositories
     {
         public CourseRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
-        public async Task<IEnumerable<Course>> GetCoursesByCategoryAsync(int categoryId)
+        public async Task<List<Course>> GetCoursesByCategoryAsync(int categoryId)
         {
-            return await FindByCondition(course => course.IdCategory == categoryId).ToListAsync();
+            return await FindByConditionAsync(course => course.IdCategory == categoryId);
         }
 
-        public async Task<IEnumerable<Course>> GetAllAsync()
+        public async Task<List<Course>> GetAllAsync()
         {
-            return await FindAll().ToListAsync();
+            return await FindAllAsync();
         }
 
         public async Task<Course> GetByIdAsync(int id)
         {
-            return await FindByCondition(course => course.IdCourse == id).FirstOrDefaultAsync();
+            var courses = await FindByConditionAsync(course => course.IdCourse == id);
+            return courses.FirstOrDefault();
         }
 
         public async Task CreateAsync(Course course)
         {
-            Create(course);
+            await CreateAsync(course);
             await SaveAsync();
         }
 
-        public void Delete(Course course)
+        public async Task UpdateAsync(Course course)
         {
-            Delete(course);
+            await UpdateAsync(course);
+            await SaveAsync(); 
+        }
+
+        public async Task DeleteAsync(Course course)
+        {
+            await DeleteAsync(course);
+            await SaveAsync();
         }
     }
 }

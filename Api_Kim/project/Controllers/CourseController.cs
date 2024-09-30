@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using BusinessLogic.Interfaces;
-using DataAccess.DTO;
+using Domain.Interfaces;
+using Domain.DTO;
 
 namespace project.Controllers
 {
@@ -17,6 +17,16 @@ namespace project.Controllers
             _courseService = courseService;
         }
 
+        /// <summary>
+        /// Получение всех курсов
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     GET /api/Course
+        ///
+        /// </remarks>
+        /// <returns>Список всех курсов</returns>
         [HttpGet]
         public async Task<IActionResult> GetAllCourses()
         {
@@ -24,6 +34,17 @@ namespace project.Controllers
             return Ok(courses);
         }
 
+        /// <summary>
+        /// Получение информации о курсе по ID
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     GET /api/Course/1
+        /// 
+        /// </remarks>
+        /// <param name="id">ID курса</param>
+        /// <returns>Информация о курсе</returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCourseById(int id)
         {
@@ -32,6 +53,22 @@ namespace project.Controllers
             return Ok(course);
         }
 
+        /// <summary>
+        /// Создание нового курса
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     POST /api/Course
+        ///     {
+        ///        "NameCourse" : "Программирование на C#",
+        ///        "Description" : "Курс по основам программирования на C#",
+        ///        "IdCategory" : 1
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="courseDto">Модель курса</param>
+        /// <returns>Созданный курс</returns>
         [HttpPost]
         public async Task<IActionResult> CreateCourse([FromBody] CourseDTO courseDto)
         {
@@ -40,6 +77,22 @@ namespace project.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Обновление курса
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     PUT /api/Course/1
+        ///     {
+        ///        "NameCourse" : "Программирование на C# - Обновленный",
+        ///        "Description" : "Обновленная информация по курсу"
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="id">ID курса</param>
+        /// <param name="courseDto">Модель для обновления курса</param>
+        /// <returns>Обновленный курс</returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCourse(int id, [FromBody] CourseDTO courseDto)
         {
@@ -47,6 +100,17 @@ namespace project.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Удаление курса
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     DELETE /api/Course/1
+        /// 
+        /// </remarks>
+        /// <param name="id">ID курса</param>
+        /// <returns>Результат операции</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCourse(int id)
         {

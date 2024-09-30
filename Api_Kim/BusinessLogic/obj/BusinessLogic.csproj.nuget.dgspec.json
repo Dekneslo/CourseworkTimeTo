@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj"
               }
             }
           }
@@ -43,6 +43,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,6 +111,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.33, )"

@@ -1,11 +1,12 @@
-﻿using DataAccess.Interfaces;
+﻿using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataAccess.Models;
+using Domain.Models;
 using DataAccess.Repositories;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Wrapper

@@ -874,7 +874,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.33"
         },
         "compile": {
           "bin/placeholder/BusinessLogic.dll": {}
@@ -887,6 +888,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.33",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33"
         },
         "compile": {
@@ -894,6 +897,20 @@
         },
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -2464,11 +2481,18 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BusinessLogic >= 1.0.0",
+      "DataAccess >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 6.0.33",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.33",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2503,6 +2527,9 @@
           "projectReferences": {
             "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\BusinessLogic.csproj": {
               "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\BusinessLogic.csproj"
+            },
+            "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -2517,6 +2544,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.33, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.0.33, )"
