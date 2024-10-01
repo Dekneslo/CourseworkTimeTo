@@ -20,8 +20,12 @@ namespace DataAccess.Repositories
             RepositoryContext = repositoryContext;
         }
         public async Task<List<T>> FindAllAsync() => await RepositoryContext.Set<T>().AsNoTracking().ToListAsync();
+        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
+        {
+            return RepositoryContext.Set<T>().Where(expression).AsNoTracking();
+        }
 
-        public async Task<List<T>> FindByConditionAsync(Expression<Func<T, bool>> expression) => await RepositoryContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
+        //public async Task<List<T>> FindByConditionAsync(Expression<Func<T, bool>> expression) => await RepositoryContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
 
         public async Task CreateAsync(T entity) => await RepositoryContext.Set<T>().AddAsync(entity);
 

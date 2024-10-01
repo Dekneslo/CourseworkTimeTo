@@ -40,7 +40,7 @@ namespace BusinessLogic.Services
             {
                 PostTitle = postRequest.PostTitle,
                 PostContent = postRequest.PostContent,
-                DatePosted = postRequest.DatePosted ??DateTime.Now,
+                DatePosted = postRequest.DatePosted ?? DateTime.Now, // Присваиваем текущую дату, если DatePosted == null
                 IdUser = postRequest.IdUser
             };
 
@@ -49,6 +49,7 @@ namespace BusinessLogic.Services
 
             return ServiceResult.SuccessResult("Пост успешно создан", post);
         }
+
 
         // Обновление поста
         public async Task<ServiceResult> UpdatePostAsync(UpdatePostRequest request)

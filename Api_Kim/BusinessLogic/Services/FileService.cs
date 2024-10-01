@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Contracts.FileContracts;
+using Domain.DTO;
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Results;
@@ -21,32 +22,49 @@ namespace BusinessLogic.Services
             _repository = repository;
         }
 
+        public async Task<ServiceResult> AddFileAsync(UploadFileRequest fileRequest)
+        {
+            var file = new FileModel
+            {
+                NameFile = fileRequest.FileName,
+                FileType = fileRequest.FileType,
+                FilePath = fileRequest.FilePath,  // Если данные хранятся как путь или файл
+                IdUser = fileRequest.IdUser
+            };
+            await _repository.File.CreateAsync(file);
+            await _repository.SaveAsync();
+            return ServiceResult.SuccessResult("Файл успешно загружен", file);
+        }
+
         public async Task<IEnumerable<GetFileResponse>> GetFilesByUserAsync(int userId)
         {
             var files = await _repository.File.GetFilesByUserAsync(userId);
             return files.Select(f => new GetFileResponse
             {
                 IdFile = f.IdFile,
-                FileName = f.NameFile,
+                NameFile = f.NameFile,
                 FileType = f.FileType,
                 FilePath = f.FilePath
             });
         }
 
         // Добавление файла
-        public async Task<ServiceResult> AddFileAsync(CreateFileRequest fileRequest)
+        public async Task<ServiceResult> UploadFileAsync(UploadFileRequest request)
         {
             var file = new FileModel
             {
-                NameFile = fileRequest.FileName,
-                FileType = fileRequest.FileType,
-                FilePath = fileRequest.FilePath,
-                IdUser = fileRequest.IdUser
+                NameFile = request.FileName,
+                FileType = request.FileType,
+                FilePath = request.FilePath, 
+                IdUser = request.IdUser
             };
+
             await _repository.File.CreateAsync(file);
             await _repository.SaveAsync();
-            return ServiceResult.SuccessResult("Файл успешно добавлен", file);
+
+            return ServiceResult.SuccessResult("Файл успешно загружен", file);
         }
+
 
         // Обновление файла
         public async Task<ServiceResult> UpdateFileAsync(UpdateFileRequest request)

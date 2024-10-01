@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Domain.Contracts.PostContracts;
+using Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +28,7 @@ namespace Domain.Results
 
         public static ServiceResult SuccessResultWithData<T>(T data, string message = null)
         {
-            return new ServiceResult { Success = true, Data = data, Message = message ?? "Operation successful." };
+            return new ServiceResult { Success = true, Data = data, Message = message ?? "Операция успешна" };
         }
     }
 

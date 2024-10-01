@@ -20,3 +20,9 @@ C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\Busin
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfo.cs
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CoreCompileInputs.cache
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.sourcelink.json
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfo.cs
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\BusinessLogic\obj\Debug\net6.0\BusinessLogic.sourcelink.json

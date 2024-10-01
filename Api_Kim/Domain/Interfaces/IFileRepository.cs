@@ -12,5 +12,6 @@ namespace Domain.Interfaces
     {
         Task<List<FileModel>> GetFilesByUserAsync(int userId); // Получить файлы по пользователю
         Task AddFileAsync(FileModel file); // Добавить новый файл
+        Task<FileModel> GetByIdAsync(int id);
     }
 }

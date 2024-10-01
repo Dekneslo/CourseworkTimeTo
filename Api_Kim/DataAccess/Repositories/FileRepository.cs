@@ -24,6 +24,21 @@ namespace DataAccess.Repositories
             await CreateAsync(file);
             await SaveAsync();
         }
-        ///добавит ьапдейт делет
+        public async Task<FileModel> GetByIdAsync(int id)
+        {
+            return await FindByConditionAsync(file => file.IdFile == id).FirstOrDefaultAsync();
+        }
+
+        public async Task UpdateFileAsync(FileModel file)
+        {
+            UpdateAsync(file);
+            await SaveAsync();
+        }
+
+        public async Task DeleteFileAsync(FileModel file)
+        {
+            DeleteAsync(file);
+            await SaveAsync();
+        }
     }
 }

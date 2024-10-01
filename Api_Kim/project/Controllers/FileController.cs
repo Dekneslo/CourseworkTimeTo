@@ -1,5 +1,6 @@
 ﻿using Domain.Contracts.FileContracts;
 using Domain.Interfaces;
+using BusinessLogic.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,7 +12,7 @@ namespace project.Controllers
     {
         private readonly IFileService _fileService;
 
-        public FileController(IFileService fileService)
+        public FileController (IFileService fileService)
         {
             _fileService = fileService;
         }
@@ -43,7 +44,7 @@ namespace project.Controllers
         ///     POST /api/File/upload
         ///     {
         ///        "FileName" : "example.jpg",
-        ///        "FileData" : "base64encodeddata",
+        ///        "FilePath" : "base64encodeddata",
         ///        "FileType" : "image/jpeg",
         ///        "IdUser" : 1
         ///     }
@@ -52,11 +53,17 @@ namespace project.Controllers
         /// <param name="request">Запрос на загрузку файла</param>
         /// <returns>Информация о загруженном файле</returns>
         [HttpPost("upload")]
+        //public async Task<IActionResult> UploadFile([FromBody] UploadFileRequest request)
+        //{
+        //    var result = await _fileService.UploadFileAsync(request);
+        //    if (!result.Success) return BadRequest(result.Errors);
+        //    return Ok(result.Data); // Вернуть информацию о загруженном файле, если нужно
+        //}
         public async Task<IActionResult> UploadFile([FromBody] UploadFileRequest request)
         {
             var result = await _fileService.UploadFileAsync(request);
             if (!result.Success) return BadRequest(result.Errors);
-            return Ok(result.Data); // Вернуть информацию о загруженном файле, если нужно
+            return Ok(result.Data); 
         }
 
 
@@ -81,7 +88,7 @@ namespace project.Controllers
         {
             var result = await _fileService.UpdateFileAsync(request);
             if (!result.Success) return BadRequest(result.Errors);
-            return Ok(result.File);
+            return Ok(result.Data);
         }
 
         /// <summary>

@@ -16,3 +16,9 @@ C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\Domai
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.sourcelink.json
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\Domain\obj\Debug\net6.0\Domain.sourcelink.json

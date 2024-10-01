@@ -76,3 +76,10 @@ C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\proje
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.csproj.CoreCompileInputs.cache
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.sourcelink.json
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.csproj.AssemblyReference.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.AssemblyInfoInputs.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.AssemblyInfo.cs
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.csproj.CoreCompileInputs.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.sourcelink.json

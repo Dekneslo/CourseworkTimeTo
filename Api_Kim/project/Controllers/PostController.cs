@@ -54,7 +54,7 @@ namespace project.Controllers
         {
             var result = await _postService.CreatePostAsync(request);
             if (!result.Success) return BadRequest(result.Errors);
-            return Ok(result.Post);
+            return Ok(result.Data);
         }
 
         ///// <summary>
@@ -119,7 +119,7 @@ namespace project.Controllers
         {
             var result = await _postService.UpdatePostAsync(request);
             if (!result.Success) return BadRequest(result.Errors);
-            return Ok(result.Post);
+            return Ok(result.Data);
         }
 
         /// <summary>

@@ -11,8 +11,9 @@ namespace Domain.Interfaces
     public interface IFileService
     {
         Task<IEnumerable<GetFileResponse>> GetFilesByUserAsync(int userId);
-        Task<ServiceResult> AddFileAsync(CreateFileRequest request);
+        Task<ServiceResult> AddFileAsync(UploadFileRequest request);
         Task<ServiceResult> UpdateFileAsync(UpdateFileRequest request);
+        Task<ServiceResult> UploadFileAsync(UploadFileRequest request);
         Task<ServiceResult> DeleteFileAsync(int id);
     }
 }

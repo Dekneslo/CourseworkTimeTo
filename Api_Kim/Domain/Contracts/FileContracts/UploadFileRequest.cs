@@ -9,7 +9,7 @@ namespace Domain.Contracts.FileContracts
     public class UploadFileRequest
     {
         public string FileName { get; set; }
-        public byte[] FileData { get; set; }
+        public string FilePath { get; set; }
         public string FileType { get; set; }
         public int IdUser { get; set; }
     }

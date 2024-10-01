@@ -78,7 +78,7 @@ namespace project.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var result = await _userService.RegisterUserAsync(request);
             if (!result.Success) return BadRequest(result.Errors);
-            return Ok(result.User);
+            return Ok(result.Data);
         }
 
         /// <summary>
