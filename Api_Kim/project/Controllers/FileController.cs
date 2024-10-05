@@ -53,12 +53,6 @@ namespace project.Controllers
         /// <param name="request">Запрос на загрузку файла</param>
         /// <returns>Информация о загруженном файле</returns>
         [HttpPost("upload")]
-        //public async Task<IActionResult> UploadFile([FromBody] UploadFileRequest request)
-        //{
-        //    var result = await _fileService.UploadFileAsync(request);
-        //    if (!result.Success) return BadRequest(result.Errors);
-        //    return Ok(result.Data); // Вернуть информацию о загруженном файле, если нужно
-        //}
         public async Task<IActionResult> UploadFile([FromBody] UploadFileRequest request)
         {
             var result = await _fileService.UploadFileAsync(request);

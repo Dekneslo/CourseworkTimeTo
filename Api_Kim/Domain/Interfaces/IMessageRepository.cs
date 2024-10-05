@@ -9,7 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IMessageRepository : IRepositoryBase<Message>
     {
-        Task<List<Message>> GetMessagesByUserAsync(int userId); // Получить сообщения по ID пользователя
-        Task SendMessageAsync(Message message); // Отправить сообщение
+        Task<List<Message>> GetMessagesByUserAsync(int userId); 
+        Task SendMessageAsync(Message message); 
     }
 }

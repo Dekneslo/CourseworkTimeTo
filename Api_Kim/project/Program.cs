@@ -17,6 +17,8 @@ namespace project
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server = DEKNESLO; Database = CharityDB; Trusted_Connection = True;", b => b.MigrationsAssembly("DataAccess")));
+
+
             //builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server=DESKTOP-6BAU0HF;Database=CharityDB;User Id=sa;Password=12345;"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -37,6 +39,12 @@ namespace project
                         Name = "Контактная информация",
                         Url = new Uri("https://example.com/contact")
                     }
+                    //,
+                    //License = new OpenApiLicense
+                    //{
+                    //    Name = "Пример лицензии",
+                    //    Url = new Uri("https://example.com/license")
+                    //},
                 });
 
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

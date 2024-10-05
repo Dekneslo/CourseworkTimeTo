@@ -8,6 +8,7 @@ using Domain.Models;
 using Domain.Results;
 using Domain.Wrapper;
 using Domain.Contracts.PostContracts;
+using Mapster;
 
 namespace BusinessLogic.Services
 {
@@ -24,25 +25,14 @@ namespace BusinessLogic.Services
         public async Task<IEnumerable<GetPostResponse>> GetAllPostsAsync()
         {
             var posts = await _repository.Post.GetAllAsync();
-            return posts.Select(p => new GetPostResponse
-            {
-                IdPost = p.IdPost,
-                PostTitle = p.PostTitle,
-                PostContent = p.PostContent,
-                DatePosted = p.DatePosted
-            });
+            return posts.Adapt<List<GetPostResponse>>();
         }
 
         // Создание поста
         public async Task<ServiceResult> CreatePostAsync(CreatePostRequest postRequest)
         {
-            var post = new Post
-            {
-                PostTitle = postRequest.PostTitle,
-                PostContent = postRequest.PostContent,
-                DatePosted = postRequest.DatePosted ?? DateTime.Now, // Присваиваем текущую дату, если DatePosted == null
-                IdUser = postRequest.IdUser
-            };
+            var post = postRequest.Adapt<Post>();
+            post.DatePosted = postRequest.DatePosted ?? DateTime.Now; // Присваиваем текущую дату, если DatePosted == null
 
             await _repository.Post.CreateAsync(post);
             await _repository.SaveAsync();
@@ -60,8 +50,7 @@ namespace BusinessLogic.Services
                 return ServiceResult.ErrorResult("Пост не найден");
             }
 
-            post.PostTitle = request.PostTitle;
-            post.PostContent = request.PostContent;
+            request.Adapt(post);
             await _repository.Post.UpdateAsync(post);
             await _repository.SaveAsync();
 

@@ -3,42 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\models\\charitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\wrapper\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\task_3\\dataaccess\\models\\charitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,17 +48,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "CharityDBContext.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Models\\CharityDBContext.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Models\\CharityDBContext.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Models\\CharityDBContext.cs",
               "RelativeToolTip": "..\\DataAccess\\Models\\CharityDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAP8AAAAAAAAAAAAAACMAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:31:50.601Z",
               "IsPinned": true,
@@ -66,16 +66,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\project\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\project\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:15:53.562Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -85,7 +86,7 @@
               "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\BusinessLogic\\Services\\UserService.cs",
               "RelativeToolTip": "..\\BusinessLogic\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:13:45.937Z",
               "IsPinned": true,
@@ -93,98 +94,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\BusinessLogic\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\BusinessLogic\\Interfaces\\IUserService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\BusinessLogic\\Interfaces\\IUserService.cs",
               "RelativeToolTip": "..\\BusinessLogic\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:08:36.99Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "..\\DataAccess\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:02:28.712Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Interfaces\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "..\\DataAccess\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:01:36.406Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "RepositoryWrapper.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "RelativeToolTip": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:25:57.74Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "IRepositoryWrapper.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
               "RelativeToolTip": "..\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:25:57.908Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\RepositoryBase.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Repositories\\RepositoryBase.cs",
               "RelativeToolTip": "..\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:25:57.91Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Interfaces\\IRepositoryBase.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IRepositoryBase.cs",
               "RelativeToolTip": "..\\DataAccess\\Interfaces\\IRepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:25:57.913Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\project\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -193,7 +201,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:43:13.313Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -201,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Models\\User.cs",

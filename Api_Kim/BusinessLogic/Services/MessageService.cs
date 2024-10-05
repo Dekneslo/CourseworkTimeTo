@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Results;
-using Domain.DTO;
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Wrapper;
+using Domain.Contracts.MessageContracts;
+using Mapster;
 
 namespace BusinessLogic.Services
 {
-    public class MessageService : Domain.Interfaces.IMessageService
+    public class MessageService : IMessageService
     {
         private readonly IRepositoryWrapper _repository;
 
@@ -28,43 +29,20 @@ namespace BusinessLogic.Services
                 return ServiceResult.ErrorResult("Сообщений для этого пользователя не найдено");
             }
 
-            var messageDtos = messages.Select(m => new MessageDTO
-            {
-                IdMessage = m.IdMessage,
-                IdSender = m.IdSender ?? 0,
-                IdRecipient = m.IdRecipient ?? 0,
-                MessageText = m.MessageText,
-                SendingDatetime = m.SendingDatetime ?? DateTime.Now
-            }).ToList();
+            var messageResponses = messages.Adapt<List<GetMessageResponse>>();
 
-            return ServiceResult.SuccessResult("Сообщения успешно получены", messageDtos);
+            return ServiceResult.SuccessResult("Сообщения успешно получены", messageResponses);
         }
 
-        public async Task<MessageDTO> CreateMessageDTOAsync(Message message)
-        {
-            return new MessageDTO
-            {
-                IdMessage = message.IdMessage,
-                IdSender = message.IdSender ?? 0, // Приведение int?
-                IdRecipient = message.IdRecipient ?? 0, // Приведение int?
-                MessageText = message.MessageText,
-                SendingDatetime = message.SendingDatetime ?? DateTime.Now // Приведение DateTime?
-            };
-        }
 
-        public async Task<ServiceResult> SendMessageAsync(MessageDTO messageDto)
+        public async Task<ServiceResult> SendMessageAsync(SendMessageRequest messageRequest)
         {
-            var message = new Message
-            {
-                IdSender = messageDto.IdSender,
-                IdRecipient = messageDto.IdRecipient,
-                MessageText = messageDto.MessageText,
-                SendingDatetime = DateTime.Now
-            };
+            var message = messageRequest.Adapt<Message>();
+            message.SendingDatetime = DateTime.Now;
 
             await _repository.Message.SendMessageAsync(message);
 
-            return ServiceResult.SuccessResult("Сообщения успешно отправлены", message);
+            return ServiceResult.SuccessResult("Сообщение успешно отправлено", message);
         }
     }
 }

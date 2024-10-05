@@ -10,7 +10,7 @@ namespace Domain.Contracts.PostContracts
     {
         public string PostTitle { get; set; }
         public string PostContent { get; set; }
-        public DateTime DatePosted { get; set; }
+        public DateTime? DatePosted { get; set; }
         public int IdUser { get; set; }//?
     }
 }

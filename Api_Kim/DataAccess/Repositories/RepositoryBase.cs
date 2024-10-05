@@ -25,7 +25,10 @@ namespace DataAccess.Repositories
             return RepositoryContext.Set<T>().Where(expression).AsNoTracking();
         }
 
-        //public async Task<List<T>> FindByConditionAsync(Expression<Func<T, bool>> expression) => await RepositoryContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
+        public async Task<List<T>> FindByConditionAsync(Expression<Func<T, bool>> expression)
+        {
+            return await RepositoryContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
+        }
 
         public async Task CreateAsync(T entity) => await RepositoryContext.Set<T>().AddAsync(entity);
 

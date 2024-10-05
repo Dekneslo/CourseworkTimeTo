@@ -8,7 +8,7 @@ namespace Domain.Contracts.FileContracts
 {
     public class UpdateFileRequest
     {
-        public int IdFile { get; set; } // Идентификатор файла
+        public int IdFile { get; set; }
         public string FileName { get; set; }
         public string FileType { get; set; }
         // Если требуется обновлять содержимое файла:

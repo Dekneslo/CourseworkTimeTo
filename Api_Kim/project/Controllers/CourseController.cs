@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
-using Domain.DTO;
+using Domain.Contracts.CourseContracts;
 
 namespace project.Controllers
 {
@@ -70,11 +70,12 @@ namespace project.Controllers
         /// <param name="courseDto">Модель курса</param>
         /// <returns>Созданный курс</returns>
         [HttpPost]
-        public async Task<IActionResult> CreateCourse([FromBody] CourseDTO courseDto)
+        public async Task<IActionResult> CreateCourse([FromBody] CreateCourseRequest courseRequest)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            await _courseService.CreateCourseAsync(courseDto);
-            return Ok();
+            var result = await _courseService.CreateCourseAsync(courseRequest);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
         }
 
         /// <summary>
@@ -94,10 +95,11 @@ namespace project.Controllers
         /// <param name="courseDto">Модель для обновления курса</param>
         /// <returns>Обновленный курс</returns>
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCourse(int id, [FromBody] CourseDTO courseDto)
+        public async Task<IActionResult> UpdateCourse(int id, [FromBody] CreateCourseRequest courseRequest)
         {
-            await _courseService.UpdateCourseAsync(id, courseDto);
-            return Ok();
+            var result = await _courseService.UpdateCourseAsync(id, courseRequest);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
         }
 
         /// <summary>

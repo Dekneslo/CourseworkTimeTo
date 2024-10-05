@@ -57,6 +57,18 @@ namespace BusinessLogic.Services
                 await _repositoryWrapper.SaveAsync();
             }
         }
+
+        public async Task ChangeRoleLevel(int idUser, int idRole)
+        {
+            var user = await _repositoryWrapper.User.FindByCondition(u => u.IdUser == idUser).FirstOrDefaultAsync();
+            if (user != null)
+            {
+                user.Role = idRole; // Присваиваем новую роль
+                _repositoryWrapper.User.Update(user);
+                await _repositoryWrapper.SaveAsync();
+            }
+        }
+
         //private IRepositoryWrapper _repositoryWrapper;
 
         //public UserService(IRepositoryWrapper repositoryWrapper)

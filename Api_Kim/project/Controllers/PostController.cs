@@ -57,47 +57,6 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
-        ///// <summary>
-        ///// Обновление поста
-        ///// </summary>
-        ///// <remarks>
-        ///// Пример запроса:
-        /////
-        /////     PUT /api/Post/1
-        /////     {
-        /////        "PostTitle" : "Обновленный заголовок",
-        /////        "PostContent" : "Обновленный контент поста"
-        /////     }
-        /////
-        ///// </remarks>
-        ///// <param name="id">ID поста</param>
-        ///// <param name="postDto">Модель поста для обновления</param>
-        ///// <returns>Результат операции</returns>
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> UpdatePost(int id, [FromBody] PostDTO postDto)
-        //{
-        //    await _postService.UpdatePostAsync(id, postDto);
-        //    return Ok();
-        //}
-
-        ///// <summary>
-        ///// Удаление поста
-        ///// </summary>
-        ///// <remarks>
-        ///// Пример запроса:
-        ///// 
-        /////     DELETE /api/Post/1
-        ///// 
-        ///// </remarks>
-        ///// <param name="id">ID поста</param>
-        ///// <returns>Результат операции</returns>
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeletePost(int id)
-        //{
-        //    await _postService.DeletePostAsync(id);
-        //    return NoContent();
-        //}
-
         /// <summary>
         /// Обновление поста
         /// </summary>

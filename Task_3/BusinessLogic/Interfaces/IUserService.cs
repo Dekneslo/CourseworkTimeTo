@@ -15,6 +15,7 @@ namespace BusinessLogic.Interfaces
         Task UpdateUser(User user);
         Task DeleteUser(int id);
         Task ChangeAccessLevel(int id, AccessLevel accessLevel);
+        Task ChangeRoleLevel(int id, Role role);
         //Task<List<User>> GetAll();
         //Task<User> GetById(int id);
         //Task Create(User model);

@@ -1,8 +1,7 @@
 using BusinessLogic.Services;
 using Microsoft.AspNetCore.Mvc;
-using Domain.Interfaces;  
-using Domain.DTO;           
-
+using Domain.Interfaces;
+using Domain.Contracts.MessageContracts;
 
 namespace project.Controllers
 {
@@ -52,9 +51,9 @@ namespace project.Controllers
         /// <param name="messageDto">Модель сообщения</param>
         /// <returns>Результат операции</returns>
         [HttpPost]
-        public async Task<IActionResult> SendMessage([FromBody] MessageDTO messageDto)
+        public async Task<IActionResult> SendMessage([FromBody] SendMessageRequest messageRequest)
         {
-            await _messageService.SendMessageAsync(messageDto);
+            await _messageService.SendMessageAsync(messageRequest);
             return Ok();
         }
     }

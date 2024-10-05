@@ -12,8 +12,8 @@ namespace Domain.Interfaces
         Task<List<Post>> GetRecentPostsAsync();
         Task<List<Post>> GetAllAsync(); // Получить все посты
         Task<Post> GetByIdAsync(int id); // Получить пост по ID
-        Task CreateAsync(Post post); // Создать пост
+        Task CreateAsync(Post post); 
         Task UpdateAsync(Post post);
-        Task DeleteAsync(Post post); // Удалить пост
+        Task DeleteAsync(Post post); 
     }
 }
