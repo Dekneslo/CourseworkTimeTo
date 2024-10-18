@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
-using Domain.Models;
+using Domain.Models1;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Repositories
 {
     public class UserRepository : RepositoryBase<User>, IUserRepository
     {
-        public UserRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+        public UserRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<User>> GetAllAsync()
         {

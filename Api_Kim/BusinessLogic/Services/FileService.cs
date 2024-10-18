@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Contracts.FileContracts;
 using Domain.Interfaces;
-using Domain.Models;
+using Domain.Models1;
 using Domain.Results;
 using Domain.Wrapper;
 using Mapster;
-using FileModel = Domain.Models.File;
+using FileModel = Domain.Models1.File;
 
 namespace BusinessLogic.Services
 {

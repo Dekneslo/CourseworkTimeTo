@@ -13,12 +13,6 @@ C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Task_3\DataAccess\obj\Debug\
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Task_3\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Task_3\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Task_3\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
-C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
@@ -37,3 +31,9 @@ C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json

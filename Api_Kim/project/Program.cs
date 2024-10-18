@@ -1,7 +1,7 @@
 using System.Reflection;
 using Domain.Interfaces;
 using BusinessLogic.Services;
-using Domain.Models;
+using Domain.Models1;
 using Domain.Wrapper;
 using DataAccess.Wrapper;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +16,7 @@ namespace project
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server = DEKNESLO; Database = CharityDB; Trusted_Connection = True;", b => b.MigrationsAssembly("DataAccess")));
+            builder.Services.AddDbContext<CharityDB1Context>(options => options.UseSqlServer("Server = DEKNESLO; Database = CharityDB1; Trusted_Connection = True;", b => b.MigrationsAssembly("DataAccess")));
 
 
             //builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server=DESKTOP-6BAU0HF;Database=CharityDB;User Id=sa;Password=12345;"));

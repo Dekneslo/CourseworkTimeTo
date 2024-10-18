@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Results;
-using Domain.Models;
+using Domain.Models1;
 using Domain.Contracts.UserContracts;
 
 namespace project.Controllers

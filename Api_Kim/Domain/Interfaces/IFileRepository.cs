@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Models;
-using FileModel = Domain.Models.File;
+using Domain.Models1;
+using FileModel = Domain.Models1.File;
 
 namespace Domain.Interfaces
 {
