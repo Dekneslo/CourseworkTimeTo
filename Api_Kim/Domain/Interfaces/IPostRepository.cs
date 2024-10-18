@@ -14,6 +14,7 @@ namespace Domain.Interfaces
         Task<Post> GetByIdAsync(int id); // Получить пост по ID
         Task CreateAsync(Post post); 
         Task UpdateAsync(Post post);
-        Task DeleteAsync(Post post); 
+        Task DeleteAsync(Post post);
+        Task LikePostAsync(int postId, int userId);
     }
 }

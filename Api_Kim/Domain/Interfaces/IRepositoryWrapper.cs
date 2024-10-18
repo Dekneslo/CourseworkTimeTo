@@ -15,6 +15,7 @@ namespace Domain.Wrapper
         IPostRepository Post { get; }
         IMessageRepository Message { get; }
         IFileRepository File { get; }
+        IFileAccessRepository FileAccess { get; }
         Task SaveAsync();
     }
 }

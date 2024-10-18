@@ -15,5 +15,7 @@ namespace Domain.Interfaces
         Task<ServiceResult> UpdateFileAsync(UpdateFileRequest request);
         Task<ServiceResult> UploadFileAsync(UploadFileRequest request);
         Task<ServiceResult> DeleteFileAsync(int id);
+        // Добавляем метод для управления доступом к файлам
+        Task<ServiceResult> SetFileAccessAsync(int fileId, int userId, string accessType);
     }
 }

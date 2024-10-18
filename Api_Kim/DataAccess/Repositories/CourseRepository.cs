@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class CourseRepository : RepositoryBase<Course>, ICourseRepository
     {
-        public CourseRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+        public CourseRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<Course>> GetCoursesByCategoryAsync(int categoryId)
         {
@@ -44,6 +44,27 @@ namespace DataAccess.Repositories
         public async Task DeleteAsync(Course course)
         {
             await DeleteAsync(course);
+            await SaveAsync();
+        }
+
+        // Реализация метода для лайков курса
+        public async Task LikeCourseAsync(int courseId, int userId)
+        {
+            var like = new LikesToCourse
+            {
+                IdCourse = courseId,
+                IdUser = userId
+            };
+
+            await RepositoryContext.LikesToCourses.AddAsync(like);
+            await SaveAsync();
+        }
+
+        // Реализация метода для добавления комментария к курсу
+        public async Task AddCommentAsync(int courseId, Comment comment)
+        {
+            comment.IdCourse = courseId;
+            await RepositoryContext.Comments.AddAsync(comment);
             await SaveAsync();
         }
     }

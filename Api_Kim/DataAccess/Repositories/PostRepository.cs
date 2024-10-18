@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class PostRepository : RepositoryBase<Post>, IPostRepository
     {
-        public PostRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+        public PostRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<Post>> GetRecentPostsAsync()
         {
@@ -50,5 +50,16 @@ namespace DataAccess.Repositories
             await SaveAsync();
         }
 
+        // Лайк поста
+        public async Task LikePostAsync(int postId, int userId)
+        {
+            var like = new LikesToPost
+            {
+                IdPost = postId,
+                IdUser = userId
+            };
+
+            await RepositoryContext.LikesToPosts.AddAsync(like);
+        }
     }
 }

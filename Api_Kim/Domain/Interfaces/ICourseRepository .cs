@@ -14,6 +14,8 @@ namespace Domain.Interfaces
         Task<Course> GetByIdAsync(int id); // Получить курс по ID
         Task CreateAsync(Course course); 
         Task UpdateAsync(Course course);
-        Task DeleteAsync(Course course); 
+        Task DeleteAsync(Course course);
+        Task LikeCourseAsync(int courseId, int userId);
+        Task AddCommentAsync(int courseId, Comment comment);
     }
 }

@@ -80,5 +80,29 @@ namespace BusinessLogic.Services
             var courses = await _repositoryWrapper.Course.GetCoursesByCategoryAsync(categoryId);
             return courses.Adapt<List<GetCourseResponse>>();  // Адаптируем List<Course> в List<GetCourseResponse>
         }
+
+        // Добавляем метод для лайка курса
+        public async Task<ServiceResult> LikeCourseAsync(int courseId, int userId)
+        {
+            await _repositoryWrapper.Course.LikeCourseAsync(courseId, userId);
+            await _repositoryWrapper.SaveAsync();
+            return ServiceResult.SuccessResult("Лайк успешно добавлен");
+        }
+
+        // Добавляем метод для добавления комментария к курсу
+        public async Task<ServiceResult> AddCommentAsync(int courseId, CommentRequest comment)
+        {
+            var courseComment = new Comment
+            {
+                IdUser = comment.UserId,
+                IdCourse = courseId,
+                CommentDescription = comment.CommentText,
+                DateCommented = DateTime.Now
+            };
+
+            await _repositoryWrapper.Course.AddCommentAsync(courseId, courseComment);
+            await _repositoryWrapper.SaveAsync();
+            return ServiceResult.SuccessResult("Комментарий успешно добавлен", courseComment);
+        }
     }
 }

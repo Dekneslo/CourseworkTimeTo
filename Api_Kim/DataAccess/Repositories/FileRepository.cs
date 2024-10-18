@@ -12,7 +12,7 @@ namespace DataAccess.Repositories
 {
     public class FileRepository : RepositoryBase<FileModel>, IFileRepository
     {
-        public FileRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+        public FileRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<FileModel>> GetFilesByUserAsync(int userId)
         {

@@ -103,5 +103,14 @@ namespace project.Controllers
             if (!result.Success) return BadRequest(result.Errors);
             return NoContent();
         }
+
+        [HttpPost("{fileId}/access")]
+        public async Task<IActionResult> ManageFileAccess(int fileId, [FromBody] AccessRequest request)
+        {
+            var result = await _fileService.SetFileAccessAsync(fileId, request.UserId, request.AccessType);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
     }
 }

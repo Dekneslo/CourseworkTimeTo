@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Contracts.PostContracts;
+using Domain.Contracts.LikeContracts;
+using Domain.Contracts.CourseContracts;
 
 namespace project.Controllers
 {
@@ -98,6 +100,14 @@ namespace project.Controllers
             var result = await _postService.DeletePostAsync(id);
             if (!result.Success) return BadRequest(result.Errors);
             return NoContent();
+        }
+
+        [HttpPost("{postId}/like")]
+        public async Task<IActionResult> LikePost(int postId, [FromBody] LikeRequest request)
+        {
+            var result = await _postService.LikePostAsync(postId, request.UserId);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
         }
     }
 }

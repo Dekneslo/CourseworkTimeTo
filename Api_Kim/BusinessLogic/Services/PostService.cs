@@ -71,5 +71,20 @@ namespace BusinessLogic.Services
 
             return ServiceResult.SuccessResult("Пост успешно удален");
         }
+
+        // Лайк поста
+        public async Task<ServiceResult> LikePostAsync(int postId, int userId)
+        {
+            var post = await _repository.Post.GetByIdAsync(postId);
+            if (post == null)
+            {
+                return ServiceResult.ErrorResult("Пост не найден");
+            }
+
+            await _repository.Post.LikePostAsync(postId, userId);
+            await _repository.SaveAsync();
+
+            return ServiceResult.SuccessResult("Пост успешно лайкнут");
+        }
     }
 }

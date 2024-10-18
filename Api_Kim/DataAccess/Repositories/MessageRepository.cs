@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class MessageRepository : RepositoryBase<Message>, IMessageRepository
     {
-        public MessageRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+        public MessageRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<Message>> GetMessagesByUserAsync(int userId)
         {

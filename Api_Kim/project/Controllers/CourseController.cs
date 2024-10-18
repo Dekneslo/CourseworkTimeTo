@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Contracts.CourseContracts;
+using Domain.Contracts.LikeContracts;
 
 namespace project.Controllers
 {
@@ -118,6 +119,27 @@ namespace project.Controllers
         {
             await _courseService.DeleteCourseAsync(id);
             return NoContent();
+        }
+
+        [HttpPost("{courseId}/like")]
+        public async Task<IActionResult> LikeCourse(int courseId, [FromBody] LikeRequest request)
+        {
+            if (request.EntityId != courseId)
+            {
+                return BadRequest("Некорректный ID курса.");
+            }
+
+            var result = await _courseService.LikeCourseAsync(courseId, request.UserId);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
+        [HttpPost("{courseId}/comment")]
+        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] CommentRequest comment)
+        {
+            var result = await _courseService.AddCommentAsync(courseId, comment);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
         }
     }
 }

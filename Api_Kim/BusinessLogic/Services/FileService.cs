@@ -73,5 +73,21 @@ namespace BusinessLogic.Services
 
             return ServiceResult.SuccessResult("Файл успешно удален");
         }
+
+        public async Task<ServiceResult> SetFileAccessAsync(int fileId, int userId, string accessType)
+        {
+            // Логика для назначения прав доступа
+            var fileAccess = new Domain.Models1.FileAccess
+            {
+                IdFile = fileId,
+                IdUser = userId,
+                AccessType = accessType
+            };
+
+            await _repository.FileAccess.CreateAsync(fileAccess);
+            await _repository.SaveAsync();
+
+            return ServiceResult.SuccessResult("Доступ успешно установлен", fileAccess);
+        }
     }
 }

@@ -13,12 +13,13 @@ namespace DataAccess.Wrapper
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private CharityDBContext _repoContext;
+        private CharityDB1Context _repoContext;
         private IUserRepository _user;
         private ICourseRepository _course;
         private IPostRepository _post;
         private IMessageRepository _message;
         private IFileRepository _file;
+        private IFileAccessRepository _fileAccess;
 
         public IUserRepository User
         {
@@ -80,7 +81,19 @@ namespace DataAccess.Wrapper
             }
         }
 
-        public RepositoryWrapper(CharityDBContext repositoryContext)
+        public IFileAccessRepository FileAccess // Реализация FileAccess
+        {
+            get
+            {
+                if (_fileAccess == null)
+                {
+                    _fileAccess = new FileAccessRepository(_repoContext);
+                }
+                return _fileAccess;
+            }
+        }
+
+        public RepositoryWrapper(CharityDB1Context repositoryContext)
         {
             _repoContext = repositoryContext;
         }

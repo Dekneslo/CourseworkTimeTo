@@ -14,5 +14,6 @@ namespace Domain.Interfaces
         Task<ServiceResult> CreatePostAsync(CreatePostRequest postRequest);
         Task<ServiceResult> UpdatePostAsync(UpdatePostRequest request);
         Task<ServiceResult> DeletePostAsync(int id);
+        Task<ServiceResult> LikePostAsync(int postId, int userId);
     }
 }

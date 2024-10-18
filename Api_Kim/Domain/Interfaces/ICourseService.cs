@@ -17,5 +17,7 @@ namespace Domain.Interfaces
         Task<ServiceResult> UpdateCourseAsync(int id, CreateCourseRequest courseRequest);
         Task<ServiceResult> DeleteCourseAsync(int id);
         Task<List<GetCourseResponse>> GetCoursesByCategoryAsync(int categoryId);
+        Task<ServiceResult> LikeCourseAsync(int courseId, int userId);
+        Task<ServiceResult> AddCommentAsync(int courseId, CommentRequest comment);
     }
 }

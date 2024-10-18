@@ -13,9 +13,9 @@ namespace DataAccess.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected CharityDBContext RepositoryContext { get; set; }
+        protected CharityDB1Context RepositoryContext { get; set; }
 
-        public RepositoryBase(CharityDBContext repositoryContext)
+        public RepositoryBase(CharityDB1Context repositoryContext)
         {
             RepositoryContext = repositoryContext;
         }
