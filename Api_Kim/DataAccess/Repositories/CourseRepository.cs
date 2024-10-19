@@ -1,5 +1,5 @@
 ﻿using Domain.Interfaces;
-using Domain.Models1;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class CourseRepository : RepositoryBase<Course>, ICourseRepository
     {
-        public CourseRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
+        public CourseRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<Course>> GetCoursesByCategoryAsync(int categoryId)
         {

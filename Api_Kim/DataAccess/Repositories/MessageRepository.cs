@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Models1;
+using Domain.Models;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class MessageRepository : RepositoryBase<Message>, IMessageRepository
     {
-        public MessageRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
+        public MessageRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<Message>> GetMessagesByUserAsync(int userId)
         {

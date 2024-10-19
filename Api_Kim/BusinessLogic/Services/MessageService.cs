@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Results;
 using Domain.Interfaces;
-using Domain.Models1;
+using Domain.Models;
 using Domain.Wrapper;
 using Domain.Contracts.MessageContracts;
 using Mapster;

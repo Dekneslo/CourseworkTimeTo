@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Contracts.FileContracts;
 using Domain.Interfaces;
-using Domain.Models1;
+using Domain.Models;
 using Domain.Results;
 using Domain.Wrapper;
 using Mapster;
-using FileModel = Domain.Models1.File;
+using FileModel = Domain.Models.File;
 
 namespace BusinessLogic.Services
 {
@@ -77,7 +77,7 @@ namespace BusinessLogic.Services
         public async Task<ServiceResult> SetFileAccessAsync(int fileId, int userId, string accessType)
         {
             // Логика для назначения прав доступа
-            var fileAccess = new Domain.Models1.FileAccess
+            var fileAccess = new Domain.Models.FileAccess
             {
                 IdFile = fileId,
                 IdUser = userId,

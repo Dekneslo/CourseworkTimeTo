@@ -1,7 +1,7 @@
 ﻿using Domain.Interfaces;
 using Domain.Results;
 using Domain.Contracts.UserContracts;
-using Domain.Models1;
+using Domain.Models;
 using Domain.Wrapper;
 using Mapster;
 

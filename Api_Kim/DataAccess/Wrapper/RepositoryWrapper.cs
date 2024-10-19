@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Models1;
+using Domain.Models;
 using DataAccess.Repositories;
 using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +13,7 @@ namespace DataAccess.Wrapper
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private CharityDB1Context _repoContext;
+        private CharityDBContext _repoContext;
         private IUserRepository _user;
         private ICourseRepository _course;
         private IPostRepository _post;
@@ -93,7 +93,7 @@ namespace DataAccess.Wrapper
             }
         }
 
-        public RepositoryWrapper(CharityDB1Context repositoryContext)
+        public RepositoryWrapper(CharityDBContext repositoryContext)
         {
             _repoContext = repositoryContext;
         }

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
-using Domain.Models1;
+using Domain.Models;
 
 namespace DataAccess.Repositories
 {
-    public class FileAccessRepository : RepositoryBase<Domain.Models1.FileAccess>, IFileAccessRepository
+    public class FileAccessRepository : RepositoryBase<Domain.Models.FileAccess>, IFileAccessRepository
     {
-        public FileAccessRepository(CharityDB1Context repositoryContext) : base(repositoryContext)
+        public FileAccessRepository(CharityDBContext repositoryContext) : base(repositoryContext)
         {
         }
     }

@@ -1,6 +1,6 @@
 ﻿using Domain.Contracts.CourseContracts;
 using Domain.Interfaces;
-using Domain.Models1;
+using Domain.Models;
 using Domain.Results;
 using Domain.Wrapper;
 using Mapster;

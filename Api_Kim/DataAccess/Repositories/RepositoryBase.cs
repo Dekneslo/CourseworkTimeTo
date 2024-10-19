@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Models1;
+using Domain.Models;
 using System.Linq.Expressions;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +13,9 @@ namespace DataAccess.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected CharityDB1Context RepositoryContext { get; set; }
+        protected CharityDBContext RepositoryContext { get; set; }
 
-        public RepositoryBase(CharityDB1Context repositoryContext)
+        public RepositoryBase(CharityDBContext repositoryContext)
         {
             RepositoryContext = repositoryContext;
         }

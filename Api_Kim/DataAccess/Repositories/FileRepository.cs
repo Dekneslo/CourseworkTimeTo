@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Models1;
+using Domain.Models;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using FileModel = Domain.Models1.File;
+using FileModel = Domain.Models.File;
 
 namespace DataAccess.Repositories
 {
     public class FileRepository : RepositoryBase<FileModel>, IFileRepository
     {
-        public FileRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
+        public FileRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<FileModel>> GetFilesByUserAsync(int userId)
         {

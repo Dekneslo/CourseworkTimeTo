@@ -1,5 +1,5 @@
 ﻿using Domain.Interfaces;
-using Domain.Models1;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class PostRepository : RepositoryBase<Post>, IPostRepository
     {
-        public PostRepository(CharityDB1Context repositoryContext) : base(repositoryContext) { }
+        public PostRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
 
         public async Task<List<Post>> GetRecentPostsAsync()
         {
