@@ -226,3 +226,4 @@ C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\proje
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.pdb
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\ref\project.dll
+C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.MvcApplicationPartsAssemblyInfo.cs

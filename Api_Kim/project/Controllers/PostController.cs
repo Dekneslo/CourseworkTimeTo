@@ -109,5 +109,15 @@ namespace project.Controllers
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }
+
+        [HttpPost("{postId}/media")]
+        public async Task<IActionResult> AddMediaToPost(int postId, [FromBody] AddMediaToPostRequest request)
+        {
+            if (request.PostId != postId) return BadRequest("Некорректный ID поста.");
+            var result = await _postService.AddMediaToPostAsync(request);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
     }
 }

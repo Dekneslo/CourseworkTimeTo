@@ -1,4 +1,5 @@
-﻿using Domain.Interfaces;
+﻿using Domain.Contracts.PostContracts;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -61,5 +62,17 @@ namespace DataAccess.Repositories
 
             await RepositoryContext.LikesToPosts.AddAsync(like);
         }
+
+        public async Task AddMediaToPostAsync(AddMediaToPostRequest request)
+        {
+            var postMedia = new PostMedium
+            {
+                IdPost = request.PostId,
+                IdFile = request.FileId
+            };
+            await RepositoryContext.PostMedia.AddAsync(postMedia);
+            await RepositoryContext.SaveChangesAsync();
+        }
+
     }
 }

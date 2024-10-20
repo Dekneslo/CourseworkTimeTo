@@ -1,4 +1,5 @@
-﻿using Domain.Interfaces;
+﻿using Domain.Contracts.CourseContracts;
+using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -67,5 +68,17 @@ namespace DataAccess.Repositories
             await RepositoryContext.Comments.AddAsync(comment);
             await SaveAsync();
         }
+
+        public async Task AddMediaToCourseAsync(AddMediaToCourseRequest request)
+        {
+            var courseMedia = new CourseMedium
+            {
+                IdCourse = request.CourseId,
+                IdFile = request.FileId
+            };
+            await RepositoryContext.CourseMedia.AddAsync(courseMedia);
+            await RepositoryContext.SaveChangesAsync();
+        }
+
     }
 }

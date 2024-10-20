@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Contracts.CommentContracts;
 using Domain.Contracts.CourseContracts;
 using Domain.Contracts.MessageContracts;
 using Domain.Results;
@@ -18,6 +19,8 @@ namespace Domain.Interfaces
         Task<ServiceResult> DeleteCourseAsync(int id);
         Task<List<GetCourseResponse>> GetCoursesByCategoryAsync(int categoryId);
         Task<ServiceResult> LikeCourseAsync(int courseId, int userId);
-        Task<ServiceResult> AddCommentAsync(int courseId, CommentRequest comment);
+        Task<ServiceResult> AddCommentAsync(int courseId, AddCommentRequest commentRequest);  
+        Task<ServiceResult> AddMediaToCourseAsync(AddMediaToCourseRequest request);  
+        Task<ServiceResult> EnrollUserInCourseAsync(int courseId, int userId);
     }
 }

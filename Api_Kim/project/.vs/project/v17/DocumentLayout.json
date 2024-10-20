@@ -3,10 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\fileaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\chatroomcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\chatroomcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\imessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\commentcontracts\\addcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\commentcontracts\\getcommentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\commentcontracts\\commentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\changeuserlanguagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\chatcontracts\\removeuserfromchatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\chatcontracts\\addusertochatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\chatcontracts\\createchatroomrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\postcontracts\\getpostmediaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\postcontracts\\addmediatopostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\getcoursemediaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\getcourseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\addmediatocourserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\addcommenttocourserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ifileaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -15,59 +113,67 @@
       "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\icourserepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\filecontracts\\accessrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\getuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\deleteuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\usercontracts\\changeuserpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\postcontracts\\updatepostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\postcontracts\\getpostresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\postcontracts\\deletepostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\postcontracts\\createpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\messagecontracts\\sendmessagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\messagecontracts\\getmessageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\likecontracts\\likerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\filecontracts\\uploadfilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\commentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\filecontracts\\updatefilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\filecontracts\\getfileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\filecontracts\\deletefilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\filecontracts\\accessrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\enrolluserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\contracts\\coursecontracts\\createcourserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -76,8 +182,65 @@
       "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\repositories\\fileaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450ACF42-021F-4B75-B596-60E96E952DBA}|..\\BusinessLogic\\BusinessLogic.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\businesslogic\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\mediacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\mediacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\commentcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\commentcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Migrations\\20241019113607_MigratonName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA48482-8AEA-44A8-830C-234B982EDDC0}|..\\Domain\\Domain.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\domain\\models\\charitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD94E92C-2C86-4892-AC75-0AC67FD2B40F}|project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB249CD-A6E5-4D0E-BFAE-F10E2D71542F}|..\\DataAccess\\DataAccess.csproj|c:\\users\\dekneslo\\documents\\github\\courseworktimeto\\api_kim\\dataaccess\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IRepositoryBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -111,17 +274,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 70,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAYwJ8AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T00:25:24.071Z",
               "IsPinned": true,
@@ -129,13 +292,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 78,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\BusinessLogic\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\BusinessLogic\\Interfaces\\IUserService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\BusinessLogic\\Interfaces\\IUserService.cs",
               "RelativeToolTip": "..\\..\\Task_3\\BusinessLogic\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAABBwBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:08:36.99Z",
               "IsPinned": true,
@@ -143,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 77,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\BusinessLogic\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\BusinessLogic\\Services\\UserService.cs",
@@ -157,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 76,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\DataAccess\\Interfaces\\IRepositoryBase.cs",
@@ -171,13 +334,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 57,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\RepositoryBase.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\RepositoryBase.cs",
               "RelativeToolTip": "..\\DataAccess\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T19:04:08.422Z",
               "IsPinned": true,
@@ -185,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 81,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\DataAccess\\Interfaces\\IUserRepository.cs",
@@ -194,17 +357,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:01:36.406Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 56,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "..\\DataAccess\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T19:04:25.53Z",
               "IsPinned": true,
@@ -212,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 79,
               "Title": "IRepositoryWrapper.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\DataAccess\\Wrapper\\IRepositoryWrapper.cs",
@@ -221,17 +385,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:25:57.908Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 75,
               "Title": "RepositoryWrapper.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
               "RelativeToolTip": "..\\DataAccess\\Wrapper\\RepositoryWrapper.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAGYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T19:14:50.689Z",
               "IsPinned": true,
@@ -239,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 83,
               "Title": "ICourseRepository .cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Interfaces\\ICourseRepository .cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Interfaces\\ICourseRepository .cs",
@@ -251,13 +416,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "CourseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\CourseRepository.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\CourseRepository.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\CourseRepository.cs",
               "RelativeToolTip": "..\\DataAccess\\Repositories\\CourseRepository.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowEQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T18:42:32.147Z",
               "IsPinned": true,
@@ -265,20 +430,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 82,
               "Title": "CharityDBContext.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Models\\CharityDBContext.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\DataAccess\\Models\\CharityDBContext.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Models\\CharityDBContext.cs",
               "RelativeToolTip": "..\\..\\Task_3\\DataAccess\\Models\\CharityDBContext.cs",
-              "ViewState": "AgIAAPQBAAAAAAAAAABRwAQCAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAPIBAAAAAAAAAIBZwAQCAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:31:50.601Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 80,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Task_3\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\Task_3\\DataAccess\\Repositories\\UserRepository.cs",
@@ -287,17 +453,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:02:28.712Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 74,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAwwBIAAADNAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABIAAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T17:43:13.313Z",
               "IsPinned": true,
@@ -305,13 +472,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 31,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileService.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IFileService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileService.cs",
               "RelativeToolTip": "..\\Domain\\Interfaces\\IFileService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABIAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T18:43:01.16Z",
               "IsPinned": true,
@@ -319,13 +486,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 29,
               "Title": "IPostRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IPostRepository.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IPostRepository.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IPostRepository.cs",
               "RelativeToolTip": "..\\Domain\\Interfaces\\IPostRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBEAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T18:52:24.544Z",
               "IsPinned": true,
@@ -333,13 +500,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ICourseService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\ICourseService.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\ICourseService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\ICourseService.cs",
               "RelativeToolTip": "..\\Domain\\Interfaces\\ICourseService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBYAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T14:39:46.858Z",
               "IsPinned": true,
@@ -347,13 +514,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 65,
               "Title": "CourseService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\CourseService.cs",
               "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\CourseService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\CourseService.cs",
               "RelativeToolTip": "..\\BusinessLogic\\Services\\CourseService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAkwGkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T21:05:02.144Z",
               "IsPinned": true,
@@ -361,189 +528,866 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "CharityDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Models\\CharityDBContext.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Models\\CharityDBContext.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Models\\CharityDBContext.cs",
+              "RelativeToolTip": "..\\Domain\\Models\\CharityDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T11:35:13.128Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FileAccessRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\FileAccessRepository.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\FileAccessRepository.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\FileAccessRepository.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\FileAccessRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Controllers\\ChatController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T21:21:38.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IFileAccessRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileAccessRepository.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IFileAccessRepository.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileAccessRepository.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IFileAccessRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAoAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T21:19:51.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRepositoryWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IRepositoryWrapper.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T21:18:28.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\FileService.cs",
-              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\FileService.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\FileService.cs",
-              "RelativeToolTip": "..\\BusinessLogic\\Services\\FileService.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAE8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T21:05:02.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccessRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
-              "RelativeToolTip": "..\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T19:28:53.038Z",
+              "WhenOpened": "2024-10-20T17:29:52.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ICourseRepository .cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\ICourseRepository .cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\ICourseRepository .cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\ICourseRepository .cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\ICourseRepository .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:49:02.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "Controllers\\PostController.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\PostController.cs",
               "RelativeToolTip": "Controllers\\PostController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAG4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAkwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T18:54:33.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IPostService.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IPostService.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IPostService.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IPostService.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IPostService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBAAAABCAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ChatRoomController .cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\ChatRoomController .cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatRoomController .cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\ChatRoomController .cs",
+              "RelativeToolTip": "Controllers\\ChatRoomController .cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:50:07.904Z",
+              "WhenOpened": "2024-10-19T12:06:37.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FileController.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\FileController.cs",
-              "RelativeToolTip": "Controllers\\FileController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAkwGsAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\UserProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserProfileController.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\UserProfileController.cs",
+              "RelativeToolTip": "Controllers\\UserProfileController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBYAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:55:18.926Z",
+              "WhenOpened": "2024-10-19T12:04:46.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "CourseController.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\CourseController.cs",
               "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\CourseController.cs",
               "RelativeToolTip": "Controllers\\CourseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAkwMMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T18:53:55.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\ChatRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\ChatRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\ChatRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T17:26:05.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IMessageRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IMessageRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IMessageRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IMessageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:24:33.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IChatService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IChatService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IChatService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T17:20:58.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:16:24.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddCommentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CommentContracts\\AddCommentRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CommentContracts\\AddCommentRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CommentContracts\\AddCommentRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CommentContracts\\AddCommentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:30:31.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:50:33.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CommentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CommentContracts\\CommentRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CommentContracts\\CommentRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CommentContracts\\CommentRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CommentContracts\\CommentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:35:36.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetCommentResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CommentContracts\\GetCommentResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CommentContracts\\GetCommentResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CommentContracts\\GetCommentResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CommentContracts\\GetCommentResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:30:43.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IPostService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IPostService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IPostService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IPostService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBEAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:50:07.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangeUserLanguageRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\ChangeUserLanguageRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\ChangeUserLanguageRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\ChangeUserLanguageRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\ChangeUserLanguageRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:32:02.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RemoveUserFromChatRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\ChatContracts\\RemoveUserFromChatRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\ChatContracts\\RemoveUserFromChatRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\ChatContracts\\RemoveUserFromChatRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\ChatContracts\\RemoveUserFromChatRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:31:38.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddUserToChatRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\ChatContracts\\AddUserToChatRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\ChatContracts\\AddUserToChatRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\ChatContracts\\AddUserToChatRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\ChatContracts\\AddUserToChatRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:31:25.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateChatRoomRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\ChatContracts\\CreateChatRoomRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\ChatContracts\\CreateChatRoomRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\ChatContracts\\CreateChatRoomRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\ChatContracts\\CreateChatRoomRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:31:12.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetPostMediaResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\GetPostMediaResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\PostContracts\\GetPostMediaResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\GetPostMediaResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\PostContracts\\GetPostMediaResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:29:48.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddMediaToPostRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\AddMediaToPostRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\PostContracts\\AddMediaToPostRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\AddMediaToPostRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\PostContracts\\AddMediaToPostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:29:38.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetCourseMediaResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\GetCourseMediaResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\GetCourseMediaResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\GetCourseMediaResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\GetCourseMediaResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:28:53.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddMediaToCourseRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\AddMediaToCourseRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\AddMediaToCourseRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\AddMediaToCourseRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\AddMediaToCourseRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:28:35.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetCourseResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\GetCourseResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\GetCourseResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\GetCourseResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\GetCourseResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:18:05.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddCommentToCourseRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\AddCommentToCourseRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\AddCommentToCourseRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\AddCommentToCourseRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\AddCommentToCourseRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:27:51.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:25:18.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IRepositoryWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IRepositoryWrapper.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRepositoryWrapper.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IRepositoryWrapper.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IRepositoryWrapper.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T21:18:28.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IRepositoryBase.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:25:00.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IMessageService.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IMessageService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IMessageService.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IMessageService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:15:47.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IFileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IFileRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:24:21.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserProfileResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\UserProfileResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\UserProfileResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\UserProfileResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\UserProfileResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:23:25.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\UpdateUserRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\UpdateUserRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\UpdateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:23:20.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ICourseRepository .cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\ICourseRepository .cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\ICourseRepository .cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\ICourseRepository .cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\ICourseRepository .cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:49:02.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IFileAccessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileAccessRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IFileAccessRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Interfaces\\IFileAccessRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IFileAccessRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T21:19:51.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\LoginUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\LoginUserRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\LoginUserRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\LoginUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:23:15.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GetUserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\GetUserResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\GetUserResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\GetUserResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\GetUserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:23:09.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DeleteUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\DeleteUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\DeleteUserRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\DeleteUserRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\DeleteUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:23:03.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CreateUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\CreateUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\CreateUserRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\CreateUserRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\CreateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:57.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ChangeUserPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\ChangeUserPasswordRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\UserContracts\\ChangeUserPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\UserContracts\\ChangeUserPasswordRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\UserContracts\\ChangeUserPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:52.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UpdatePostRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\UpdatePostRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\PostContracts\\UpdatePostRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\UpdatePostRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\PostContracts\\UpdatePostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:45.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "GetPostResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\GetPostResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\PostContracts\\GetPostResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\GetPostResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\PostContracts\\GetPostResponse.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:37.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DeletePostRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\DeletePostRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\PostContracts\\DeletePostRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\DeletePostRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\PostContracts\\DeletePostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:31.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreatePostRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\CreatePostRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\PostContracts\\CreatePostRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\PostContracts\\CreatePostRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\PostContracts\\CreatePostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:26.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SendMessageRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\MessageContracts\\SendMessageRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\MessageContracts\\SendMessageRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\MessageContracts\\SendMessageRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\MessageContracts\\SendMessageRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:20.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "GetMessageResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\MessageContracts\\GetMessageResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\MessageContracts\\GetMessageResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\MessageContracts\\GetMessageResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\MessageContracts\\GetMessageResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:22:14.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "GetFileResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\GetFileResponse.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\FileContracts\\GetFileResponse.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\GetFileResponse.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\FileContracts\\GetFileResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:19:51.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UpdateFileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\UpdateFileRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\FileContracts\\UpdateFileRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\UpdateFileRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\FileContracts\\UpdateFileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:19:41.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "UploadFileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\UploadFileRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\FileContracts\\UploadFileRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\UploadFileRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\FileContracts\\UploadFileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:19:16.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "LikeRequest.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\LikeContracts\\LikeRequest.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Contracts\\LikeContracts\\LikeRequest.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\LikeContracts\\LikeRequest.cs",
               "RelativeToolTip": "..\\Domain\\Contracts\\LikeContracts\\LikeRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T19:25:12.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CommentRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\CommentRequest.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\CommentRequest.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\CommentRequest.cs",
-              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\CommentRequest.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 52,
+              "Title": "DeleteFileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\DeleteFileRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\FileContracts\\DeleteFileRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\DeleteFileRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\FileContracts\\DeleteFileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T19:42:28.675Z",
+              "WhenOpened": "2024-10-19T12:21:41.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 54,
+              "Title": "EnrollUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\EnrollUserRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\EnrollUserRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\EnrollUserRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\EnrollUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:18:21.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CreateCourseRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\CreateCourseRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\CourseContracts\\CreateCourseRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\CourseContracts\\CreateCourseRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\CourseContracts\\CreateCourseRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:17:59.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AccessRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
+              "RelativeToolTip": "..\\Domain\\Contracts\\FileContracts\\AccessRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:28:53.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "MessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\MessageRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\MessageRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\MessageRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\MessageRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:12:36.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\FileRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\FileRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\FileRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\FileRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:12:29.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:11:54.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
               "Title": "PostService.cs",
               "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\PostService.cs",
               "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\PostService.cs",
               "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\PostService.cs",
               "RelativeToolTip": "..\\BusinessLogic\\Services\\PostService.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAFcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T18:49:44.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\PostRepository.cs",
-              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\PostRepository.cs",
-              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\PostRepository.cs",
-              "RelativeToolTip": "..\\DataAccess\\Repositories\\PostRepository.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAgwEEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 63,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\MessageService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\MessageService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\MessageService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T18:50:33.927Z",
+              "WhenOpened": "2024-10-19T12:11:33.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "FileAccessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\FileAccessRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\FileAccessRepository.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Repositories\\FileAccessRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\FileAccessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T21:21:38.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "MediaController .cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\MediaController .cs",
+              "RelativeDocumentMoniker": "Controllers\\MediaController .cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\MediaController .cs",
+              "RelativeToolTip": "Controllers\\MediaController .cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:06:21.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "CommentController .cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\CommentController .cs",
+              "RelativeDocumentMoniker": "Controllers\\CommentController .cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\CommentController .cs",
+              "RelativeToolTip": "Controllers\\CommentController .cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:06:00.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "..\\BusinessLogic\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\BusinessLogic\\Services\\FileService.cs",
+              "RelativeToolTip": "..\\BusinessLogic\\Services\\FileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T21:05:02.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:04:00.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Controllers\\MessageController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAkwDoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T12:01:17.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20241019113607_MigratonName.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Migrations\\20241019113607_MigratonName.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Migrations\\20241019113607_MigratonName.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\DataAccess\\Migrations\\20241019113607_MigratonName.cs",
+              "RelativeToolTip": "..\\DataAccess\\Migrations\\20241019113607_MigratonName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T11:36:07.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\project\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:55:18.926Z",
+              "EditorCaption": ""
             }
           ]
         }

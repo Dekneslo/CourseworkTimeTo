@@ -14,5 +14,6 @@ namespace Domain.Interfaces
     {
         Task<ServiceResult> GetMessagesByUserAsync(int userId);  // Получить сообщения по пользователю
         Task<ServiceResult> SendMessageAsync(SendMessageRequest messageRequest); // Отправить сообщение
+        Task<ServiceResult> GetMessagesBetweenUsersAsync(int senderId, int recipientId);
     }
 }

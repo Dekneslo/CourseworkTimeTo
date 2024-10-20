@@ -56,5 +56,18 @@ namespace project.Controllers
             await _messageService.SendMessageAsync(messageRequest);
             return Ok();
         }
+        //Подумать надо ли??
+        /// <summary>
+        /// Получить все сообщения между двумя пользователями
+        /// </summary>
+        /// <param name="senderId">ID отправителя</param>
+        /// <param name="recipientId">ID получателя</param>
+        /// <returns>Список сообщений</returns>
+        [HttpGet("{senderId}/to/{recipientId}")]
+        public async Task<IActionResult> GetMessagesBetweenUsers(int senderId, int recipientId)
+        {
+            var messages = await _messageService.GetMessagesBetweenUsersAsync(senderId, recipientId);
+            return Ok(messages);
+        }
     }
 }

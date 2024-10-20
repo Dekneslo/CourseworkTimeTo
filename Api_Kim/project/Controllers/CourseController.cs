@@ -141,5 +141,58 @@ namespace project.Controllers
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }
+
+        /// <summary>
+        /// Записать пользователя на курс
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Course/1/enroll
+        ///     {
+        ///         "userId": 1
+        ///     }
+        /// </remarks>
+        [HttpPost("{courseId}/enroll")]
+        public async Task<IActionResult> EnrollUserInCourse(int courseId, [FromBody] EnrollUserRequest request)
+        {
+            var result = await _courseService.EnrollUserInCourseAsync(courseId, request.UserId);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
+        /// <summary>
+        /// Удалить пользователя с курса
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     DELETE /api/Course/1/unenroll/1
+        /// </remarks>
+        [HttpDelete("{courseId}/unenroll/{userId}")]
+        public async Task<IActionResult> UnenrollUserFromCourse(int courseId, int userId)
+        {
+            var result = await _courseService.UnenrollUserFromCourseAsync(courseId, userId);
+            if (!result.Success) return BadRequest(result.Errors);
+            return NoContent();
+        }
+
+        [HttpPost("{courseId}/media")]
+        public async Task<IActionResult> AddMediaToCourse(int courseId, [FromBody] AddMediaToCourseRequest request)
+        {
+            if (request.CourseId != courseId) return BadRequest("Некорректный ID курса.");
+            var result = await _courseService.AddMediaToCourseAsync(request);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
+        [HttpPost("{courseId}/comment")]
+        public async Task<IActionResult> AddCommentToCourse(int courseId, [FromBody] AddCommentToCourseRequest request)
+        {
+            var result = await _courseService.AddCommentAsync(courseId, request);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
     }
 }

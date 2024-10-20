@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Contracts.CourseContracts
 {
-    public class EnrollCourseRequest
+    public class EnrollUserRequest
     {
-        public int IdCourse { get; set; }
-        public int IdUser { get; set; }
+        public int UserId { get; set; }
     }
 }

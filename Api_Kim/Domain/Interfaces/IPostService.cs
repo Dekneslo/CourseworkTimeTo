@@ -15,5 +15,6 @@ namespace Domain.Interfaces
         Task<ServiceResult> UpdatePostAsync(UpdatePostRequest request);
         Task<ServiceResult> DeletePostAsync(int id);
         Task<ServiceResult> LikePostAsync(int postId, int userId);
+        Task<ServiceResult> AddMediaToPostAsync(AddMediaToPostRequest request);  // Добавление медиафайла в пост
     }
 }

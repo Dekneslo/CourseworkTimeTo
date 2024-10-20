@@ -11,7 +11,5 @@ namespace Domain.Contracts.FileContracts
         public int IdFile { get; set; }
         public string FileName { get; set; }
         public string FileType { get; set; }
-        // Если требуется обновлять содержимое файла:
-        public string FilePath { get; set; }
     }
 }
