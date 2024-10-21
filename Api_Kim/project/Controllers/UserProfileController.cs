@@ -26,4 +26,13 @@ public class UserProfileController : ControllerBase
         if (!result.Success) return BadRequest(result.Errors);
         return Ok(result.Data);
     }
+
+    [HttpPut("{userId}/language")]
+    public async Task<IActionResult> ChangeUserLanguage(int userId, [FromBody] ChangeLanguageRequest request)
+    {
+        var result = await _profileService.ChangeUserLanguageAsync(userId, request.LanguageCode);
+        if (!result.Success) return BadRequest(result.Errors);
+        return Ok(result.Data);
+    }
+
 }

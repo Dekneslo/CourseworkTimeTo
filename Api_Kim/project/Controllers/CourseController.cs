@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Contracts.CourseContracts;
 using Domain.Contracts.LikeContracts;
+using Domain.Contracts.CommentContracts;
 
 namespace project.Controllers
 {
@@ -135,9 +136,9 @@ namespace project.Controllers
         }
 
         [HttpPost("{courseId}/comment")]
-        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] CommentRequest comment)
+        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] CommentRequest request)
         {
-            var result = await _courseService.AddCommentAsync(courseId, comment);
+            var result = await _courseService.AddCommentAsync(courseId, request);
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }
@@ -190,6 +191,14 @@ namespace project.Controllers
         public async Task<IActionResult> AddCommentToCourse(int courseId, [FromBody] AddCommentToCourseRequest request)
         {
             var result = await _courseService.AddCommentAsync(courseId, request);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
+        [HttpDelete("{courseId}/unenroll")]
+        public async Task<IActionResult> UnenrollUserFromCourse(int courseId, [FromBody] UnenrollUserFromCourseRequest request)
+        {
+            var result = await _courseService.UnenrollUserFromCourseAsync(courseId, request.UserId);
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }

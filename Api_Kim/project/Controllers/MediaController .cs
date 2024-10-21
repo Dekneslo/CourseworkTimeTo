@@ -26,4 +26,21 @@ public class MediaController : ControllerBase
         if (!result.Success) return BadRequest(result.Errors);
         return Ok(result.Data);
     }
+
+    [HttpPut("{mediaId}/update")]
+    public async Task<IActionResult> UpdateMedia(int mediaId, [FromForm] IFormFile newFile)
+    {
+        var result = await _mediaService.UpdateMediaAsync(mediaId, newFile);
+        if (!result.Success) return BadRequest(result.Errors);
+        return Ok(result.Data);
+    }
+
+    [HttpDelete("{mediaId}")]
+    public async Task<IActionResult> DeleteMedia(int mediaId)
+    {
+        var result = await _mediaService.DeleteMediaAsync(mediaId);
+        if (!result.Success) return BadRequest(result.Errors);
+        return NoContent();
+    }
+
 }

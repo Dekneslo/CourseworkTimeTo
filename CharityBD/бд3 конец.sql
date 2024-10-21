@@ -229,26 +229,26 @@ VALUES
 -- 6. Таблица для связи пользователей и курсов
 INSERT INTO UsersCourses (idUser, idCourse) 
 VALUES 
-(7, 1), 
-(8, 2), 
-(9, 3), 
-(10, 4), 
-(11, 5), 
-(12, 6), 
-(13, 7), 
-(14, 8), 
-(15, 9), 
-(16, 10);
+(1, 1), 
+(2, 2), 
+(3, 3), 
+(4, 4), 
+(5, 5), 
+(6, 6), 
+(7, 7), 
+(8, 8), 
+(9, 9), 
+(10, 10);
 
 -- 7. Таблица для файлов
 INSERT INTO Files (nameFile, fileType, fileSize, filePath, idUser) 
 VALUES 
-('course_intro.pdf', 'pdf', 102400, 'path/to/course_intro.pdf', 11),
-('business_course.mp4', 'mp4', 2048000, 'path/to/business_course.mp4', 12),
-('tech_innovations.jpg', 'jpg', 512000, 'path/to/tech_innovations.jpg', 13),
-('health_tips.pdf', 'pdf', 102400, 'path/to/health_tips.pdf', 14),
-('art_gallery.mp4', 'mp4', 2048000, 'path/to/art_gallery.mp4', 15),
-('music_notes.jpg', 'jpg', 512000, 'path/to/music_notes.jpg', 16),
+('course_intro.pdf', 'pdf', 102400, 'path/to/course_intro.pdf', 1),
+('business_course.mp4', 'mp4', 2048000, 'path/to/business_course.mp4', 2),
+('tech_innovations.jpg', 'jpg', 512000, 'path/to/tech_innovations.jpg', 3),
+('health_tips.pdf', 'pdf', 102400, 'path/to/health_tips.pdf', 4),
+('art_gallery.mp4', 'mp4', 2048000, 'path/to/art_gallery.mp4', 5),
+('music_notes.jpg', 'jpg', 512000, 'path/to/music_notes.jpg', 6),
 ('cooking_tutorial.pdf', 'pdf', 102400, 'path/to/cooking_tutorial.pdf', 7),
 ('photography_tips.mp4', 'mp4', 2048000, 'path/to/photography_tips.mp4', 8),
 ('literature_essay.pdf', 'pdf', 102400, 'path/to/literature_essay.pdf', 9),
@@ -257,12 +257,12 @@ VALUES
 -- 8. Таблица для назначения прав доступа к файлам
 INSERT INTO FileAccess (idFile, idUser, accessType) 
 VALUES 
-(1, 11, 'read'),
-(2, 12, 'write'),
-(3, 13, 'read'),
-(4, 14, 'read'),
-(5, 15, 'read'),
-(6, 16, 'write'),
+(1, 1, 'read'),
+(2, 2, 'write'),
+(3, 3, 'read'),
+(4, 4, 'read'),
+(5, 5, 'read'),
+(6, 6, 'write'),
 (7, 7, 'admin'),
 (8, 8, 'read'),
 (9, 9, 'write'),
@@ -271,12 +271,12 @@ VALUES
 -- 9. Таблица сообщений
 INSERT INTO Messages (idSender, idRecipient, sendingDatetime, messageText) 
 VALUES 
-(11, 12, GETDATE(), 'Hello, how are you?'),
-(12, 11, GETDATE(), 'I am good, thank you!'),
-(13, 14, GETDATE(), 'Can we meet tomorrow?'),
-(14, 13, GETDATE(), 'Sure, what time?'),
-(15, 16, GETDATE(), 'Check this new document.'),
-(16, 15, GETDATE(), 'Got it, thanks.'),
+(1, 2, GETDATE(), 'Hello, how are you?'),
+(2, 1, GETDATE(), 'I am good, thank you!'),
+(3, 4, GETDATE(), 'Can we meet tomorrow?'),
+(4, 3, GETDATE(), 'Sure, what time?'),
+(5, 6, GETDATE(), 'Check this new document.'),
+(6, 5, GETDATE(), 'Got it, thanks.'),
 (7, 8, GETDATE(), 'Are you available for a call?'),
 (8, 7, GETDATE(), 'Yes, let me know when.'),
 (9, 10, GETDATE(), 'See you at the meeting.'),
@@ -299,12 +299,12 @@ VALUES
 -- 11. Таблица связи пользователей и чат-комнат
 INSERT INTO ChatRoomUsers (idChatRoom, idUser) 
 VALUES 
-(1, 11), 
-(2, 12), 
-(3, 13), 
-(4, 14), 
-(5, 15), 
-(6, 16), 
+(1, 1), 
+(2, 2), 
+(3, 3), 
+(4, 4), 
+(5, 5), 
+(6, 6), 
 (7, 7), 
 (8, 8), 
 (9, 9), 
@@ -313,12 +313,12 @@ VALUES
 -- 12. Таблица для постов
 INSERT INTO Posts (idUser, postTitle, postContent, datePosted) 
 VALUES 
-(11, 'Welcome to the Platform', 'Hello everyone, welcome to our new platform!', GETDATE()),
-(12, 'Business Management 101', 'Our new course on business management is live now.', GETDATE()),
-(13, 'Tech Trends', 'Check out the latest trends in technology.', GETDATE()),
-(14, 'Health Tips', 'Stay healthy with our daily tips.', GETDATE()),
-(15, 'Art Gallery', 'Explore the history of art.', GETDATE()),
-(16, 'Music Theory Basics', 'Learn the basics of music theory.', GETDATE()),
+(1, 'Welcome to the Platform', 'Hello everyone, welcome to our new platform!', GETDATE()),
+(2, 'Business Management 101', 'Our new course on business management is live now.', GETDATE()),
+(3, 'Tech Trends', 'Check out the latest trends in technology.', GETDATE()),
+(4, 'Health Tips', 'Stay healthy with our daily tips.', GETDATE()),
+(5, 'Art Gallery', 'Explore the history of art.', GETDATE()),
+(6, 'Music Theory Basics', 'Learn the basics of music theory.', GETDATE()),
 (7, 'Cooking for Beginners', 'Join our cooking course today!', GETDATE()),
 (8, 'Photography Tips', 'How to take better photos.', GETDATE()),
 (9, 'Literature Analysis', 'Deep dive into modern literature.', GETDATE()),
@@ -341,12 +341,12 @@ VALUES
 -- 14. Таблица для лайков постов
 INSERT INTO LikesToPosts (idUser, idPost) 
 VALUES 
-(11, 1),
-(12, 2),
-(13, 3),
-(14, 4),
-(15, 5),
-(16, 6),
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
 (7, 7),
 (8, 8),
 (9, 9),
@@ -355,11 +355,11 @@ VALUES
 -- 15. Таблица для комментариев к курсам и постам
 INSERT INTO Comments (idUser, idCourse, commentDescription, dateCommented) 
 VALUES 
-(8, 1, 'Great course!', GETDATE()),
-(13, 2, 'Very informative.', GETDATE()),
-(9, 3, 'I learned a lot.', GETDATE()),
-(14, 4, 'Highly recommend this course.', GETDATE()),
-(15, 5, 'Fantastic content.', GETDATE());
+(2, 1, 'Great course!', GETDATE()),
+(7, 2, 'Very informative.', GETDATE()),
+(3, 3, 'I learned a lot.', GETDATE()),
+(8, 4, 'Highly recommend this course.', GETDATE()),
+(9, 5, 'Fantastic content.', GETDATE());
 
 -- 16. Таблица для медиафайлов в комментариях
 INSERT INTO CommentMedia (idComment, mediaType, mediaPath) 
@@ -371,12 +371,12 @@ VALUES
 -- 17. Таблица для лайков курсов
 INSERT INTO LikesToCourses (idUser, idCourse) 
 VALUES 
-(11, 1),
-(12, 2),
-(13, 3),
-(14, 4),
-(15, 5),
-(16, 6),
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
 (7, 7),
 (8, 8),
 (9, 9),
@@ -385,19 +385,19 @@ VALUES
 -- 18. Таблица для ежедневных обновлений
 INSERT INTO DailyUpdates (description, dateOfPosted, idUser) 
 VALUES 
-('System maintenance completed.', GETDATE(), 9),
-('New course added: Business Management 101.', GETDATE(), 16),
-('Weekly report uploaded.', GETDATE(), 7),
-('Security update applied.', GETDATE(), 12),
-('New chat room created.', GETDATE(), 9);
+('System maintenance completed.', GETDATE(), 3),
+('New course added: Business Management 101.', GETDATE(), 10),
+('Weekly report uploaded.', GETDATE(), 1),
+('Security update applied.', GETDATE(), 6),
+('New chat room created.', GETDATE(), 3);
 
 -- 19. Таблица для хранения языков пользователей
 INSERT INTO UserLanguages (idUser, language) 
 VALUES 
-(7, 'EN'),
-(8, 'DE'),
-(9, 'RU'),
-(10, 'KZ');
+(1, 'EN'),
+(2, 'DE'),
+(3, 'RU'),
+(4, 'KZ');
 
 -- 20. Таблица для медиафайлов курсов
 INSERT INTO CourseMedia (idCourse, idFile)
