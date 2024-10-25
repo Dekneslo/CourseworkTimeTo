@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj": {
+    "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dasha\\OneDrive\\Документы\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Dekneslo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dekneslo\\Documents\\GitHub\\CourseworkTimeTo\\Api_Kim\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dekneslo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,12 +39,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.33, )"
@@ -71,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

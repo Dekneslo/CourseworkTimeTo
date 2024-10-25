@@ -1,6 +1,9 @@
 ﻿using Domain.Contracts.CourseContracts;
 using Domain.Contracts.CommentContracts;
 using Microsoft.AspNetCore.Mvc;
+using Domain.Interfaces;
+using Domain.Results;
+
 
 [ApiController]
 [Route("api/[controller]")]

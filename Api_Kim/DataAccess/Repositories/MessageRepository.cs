@@ -22,6 +22,16 @@ namespace DataAccess.Repositories
                          .ToListAsync();
         }
 
+        public async Task<List<Message>> GetMessagesBetweenUsersAsync(int senderId, int recipientId)
+        {
+            return await RepositoryContext.Messages
+                         .Where(m => (m.IdSender == senderId && m.IdRecipient == recipientId) ||
+                                     (m.IdSender == recipientId && m.IdRecipient == senderId))
+                         .Include(m => m.IdSenderNavigation)
+                         .Include(m => m.IdRecipientNavigation)
+                         .ToListAsync();
+        }
+
         public async Task SendMessageAsync(Message message)
         {
             await CreateAsync(message);

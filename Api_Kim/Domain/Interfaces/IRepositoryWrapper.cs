@@ -12,10 +12,14 @@ namespace Domain.Wrapper
     {
         IUserRepository User { get; }
         ICourseRepository Course { get; }
+        ICourseMediaRepository CourseMedia { get; }
         IPostRepository Post { get; }
         IMessageRepository Message { get; }
         IFileRepository File { get; }
         IFileAccessRepository FileAccess { get; }
+        IUserLanguageRepository UserLanguage { get; }
+        IUserCourseRepository UserCourse { get; }
+        IRoleRepository Role { get; }
         Task SaveAsync();
     }
 }

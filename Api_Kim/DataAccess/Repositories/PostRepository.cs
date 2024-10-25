@@ -36,19 +36,16 @@ namespace DataAccess.Repositories
         public async Task CreateAsync(Post post)
         {
             await CreateAsync(post);
-            await SaveAsync();
         }
 
         public async Task UpdateAsync(Post post)
         {
             await UpdateAsync(post);
-            await SaveAsync();
         }
 
         public async Task DeleteAsync(Post post)
         {
             await DeleteAsync(post);
-            await SaveAsync();
         }
 
         // Лайк поста

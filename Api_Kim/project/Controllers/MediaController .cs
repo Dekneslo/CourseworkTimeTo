@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Http;
+using Domain.Interfaces;
 [ApiController]
 [Route("api/[controller]")]
 public class MediaController : ControllerBase

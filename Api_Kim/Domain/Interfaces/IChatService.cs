@@ -13,6 +13,8 @@ namespace Domain.Interfaces
         Task<ServiceResult> CreateChatRoomAsync(CreateChatRoomRequest request);
         Task<ServiceResult> AddUserToChatAsync(AddUserToChatRequest request);
         Task<ServiceResult> RemoveUserFromChatAsync(RemoveUserFromChatRequest request);
+        Task<ServiceResult> CreatePrivateChatAsync(CreateChatRoomRequest request);
+        Task<ServiceResult> DeleteChatRoomAsync(int chatRoomId);
     }
 
 }

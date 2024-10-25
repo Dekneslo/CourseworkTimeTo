@@ -136,7 +136,7 @@ namespace project.Controllers
         }
 
         [HttpPost("{courseId}/comment")]
-        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] CommentRequest request)
+        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] AddCommentRequest request)
         {
             var result = await _courseService.AddCommentAsync(courseId, request);
             if (!result.Success) return BadRequest(result.Errors);
@@ -188,7 +188,7 @@ namespace project.Controllers
         }
 
         [HttpPost("{courseId}/comment")]
-        public async Task<IActionResult> AddCommentToCourse(int courseId, [FromBody] AddCommentToCourseRequest request)
+        public async Task<IActionResult> AddCommentToCourse(int courseId, [FromBody] AddCommentRequest request)
         {
             var result = await _courseService.AddCommentAsync(courseId, request);
             if (!result.Success) return BadRequest(result.Errors);

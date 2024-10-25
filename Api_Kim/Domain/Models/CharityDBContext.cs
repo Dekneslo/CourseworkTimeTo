@@ -33,6 +33,7 @@ namespace Domain.Models
         public virtual DbSet<Profile> Profiles { get; set; } = null!;
         public virtual DbSet<Role> Roles { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
+        public virtual DbSet<UsersCourse> UsersCourses { get; set; }
         public virtual DbSet<UserLanguage> UserLanguages { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -493,6 +494,21 @@ namespace Domain.Models
                             j.IndexerProperty<int>("IdCourse").HasColumnName("idCourse");
                         });
             });
+
+            modelBuilder.Entity<UsersCourse>()
+        .HasKey(uc => new { uc.IdUser, uc.IdCourse });  // Составной ключ
+
+            modelBuilder.Entity<UsersCourse>()
+                .HasOne(uc => uc.User)
+                .WithMany(u => u.UsersCourses)
+                .HasForeignKey(uc => uc.IdUser);
+
+            modelBuilder.Entity<UsersCourse>()
+                .HasOne(uc => uc.Course)
+                .WithMany(c => c.UsersCourses)
+                .HasForeignKey(uc => uc.IdCourse);
+
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<UserLanguage>(entity =>
             {

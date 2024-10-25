@@ -1,4 +1,5 @@
-﻿using Domain.Contracts.CourseContracts;
+﻿using Domain.Contracts.CommentContracts;
+using Domain.Contracts.CourseContracts;
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Results;
@@ -90,19 +91,60 @@ namespace BusinessLogic.Services
         }
 
         // Добавляем метод для добавления комментария к курсу
-        public async Task<ServiceResult> AddCommentAsync(int courseId, CommentRequest comment)
+        public async Task<ServiceResult> AddCommentAsync(int courseId, AddCommentRequest commentRequest)
         {
             var courseComment = new Comment
             {
-                IdUser = comment.UserId,
+                IdUser = commentRequest.UserId,
                 IdCourse = courseId,
-                CommentDescription = comment.CommentText,
+                CommentDescription = commentRequest.CommentText,
                 DateCommented = DateTime.Now
             };
 
             await _repositoryWrapper.Course.AddCommentAsync(courseId, courseComment);
             await _repositoryWrapper.SaveAsync();
             return ServiceResult.SuccessResult("Комментарий успешно добавлен", courseComment);
+        }
+
+        public async Task<ServiceResult> AddMediaToCourseAsync(AddMediaToCourseRequest request)
+        {
+            // Реализация логики добавления медиафайла
+            var courseMedia = new CourseMedium
+            {
+                IdCourse = request.CourseId,
+                IdFile = request.FileId
+            };
+
+            await _repositoryWrapper.CourseMedia.CreateAsync(courseMedia);
+            await _repositoryWrapper.SaveAsync();
+            return ServiceResult.SuccessResult("Медиафайл успешно добавлен", courseMedia);
+        }
+
+        public async Task<ServiceResult> EnrollUserInCourseAsync(int courseId, int userId)
+        {
+            var userCourse = new UsersCourse
+            {
+                IdCourse = courseId,
+                IdUser = userId
+            };
+
+            await _repositoryWrapper.UserCourse.CreateAsync(userCourse);
+            await _repositoryWrapper.SaveAsync();
+            return ServiceResult.SuccessResult("Пользователь успешно записан на курс", userCourse);
+        }
+
+        public async Task<ServiceResult> UnenrollUserFromCourseAsync(int courseId, int userId)
+        {
+            var userCourse = await _repositoryWrapper.UserCourse.GetByCourseAndUserAsync(courseId, userId);
+            if (userCourse == null)
+            {
+                return ServiceResult.ErrorResult("Пользователь не записан на этот курс.");
+            }
+
+            await _repositoryWrapper.UserCourse.DeleteAsync(userCourse);
+            await _repositoryWrapper.SaveAsync();
+
+            return ServiceResult.SuccessResult("Пользователь успешно отписан от курса.");
         }
     }
 }

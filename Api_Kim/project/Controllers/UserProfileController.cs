@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Domain.Contracts.UserContracts;
+using Domain.Interfaces;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -28,7 +30,7 @@ public class UserProfileController : ControllerBase
     }
 
     [HttpPut("{userId}/language")]
-    public async Task<IActionResult> ChangeUserLanguage(int userId, [FromBody] ChangeLanguageRequest request)
+    public async Task<IActionResult> ChangeUserLanguage(int userId, [FromBody] ChangeUserLanguageRequest request)
     {
         var result = await _profileService.ChangeUserLanguageAsync(userId, request.LanguageCode);
         if (!result.Success) return BadRequest(result.Errors);

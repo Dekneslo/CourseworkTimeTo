@@ -7,6 +7,7 @@ namespace Domain.Models
     {
         public User()
         {
+            UsersCourses = new HashSet<UsersCourse>();
             Comments = new HashSet<Comment>();
             DailyUpdates = new HashSet<DailyUpdate>();
             FileAccesses = new HashSet<FileAccess>();
@@ -22,6 +23,7 @@ namespace Domain.Models
             IdCourses = new HashSet<Course>();
         }
 
+        public virtual ICollection<UsersCourse> UsersCourses { get; set; }
         public int IdUser { get; set; }
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;

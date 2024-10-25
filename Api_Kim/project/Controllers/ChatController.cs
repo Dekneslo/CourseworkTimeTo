@@ -1,5 +1,4 @@
-﻿
-using Domain.Contracts.ChatContracts;
+﻿using Domain.Contracts.ChatContracts;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;

@@ -7,6 +7,7 @@ namespace Domain.Models
     {
         public Course()
         {
+            UsersCourses = new HashSet<UsersCourse>();
             Comments = new HashSet<Comment>();
             CourseMedia = new HashSet<CourseMedium>();
             LikesToCourses = new HashSet<LikesToCourse>();
@@ -19,6 +20,7 @@ namespace Domain.Models
         public int IdCategory { get; set; }
         public DateTime DateCreated { get; set; }
 
+        public virtual ICollection<UsersCourse> UsersCourses { get; set; }  
         public virtual Category IdCategoryNavigation { get; set; } = null!;
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<CourseMedium> CourseMedia { get; set; }

@@ -19,5 +19,6 @@ namespace Domain.Interfaces
         Task<ServiceResult> UpdateUserAsync(int id, UpdateUserRequest request);
         Task<ServiceResult> DeleteUserAsync(int id);
         Task<ServiceResult> ChangeUserLanguageAsync(int userId, string languageCode);  // Смена языка пользователя
+        Task<ServiceResult> ChangeUserPasswordAsync(ChangeUserPasswordRequest request);
     }
 }

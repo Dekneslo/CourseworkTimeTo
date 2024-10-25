@@ -34,7 +34,6 @@ namespace BusinessLogic.Services
             return ServiceResult.SuccessResult("Сообщения успешно получены", messageResponses);
         }
 
-
         public async Task<ServiceResult> SendMessageAsync(SendMessageRequest messageRequest)
         {
             var message = messageRequest.Adapt<Message>();
@@ -43,6 +42,18 @@ namespace BusinessLogic.Services
             await _repository.Message.SendMessageAsync(message);
 
             return ServiceResult.SuccessResult("Сообщение успешно отправлено", message);
+        }
+
+        public async Task<ServiceResult> GetMessagesBetweenUsersAsync(int senderId, int recipientId)
+        {
+            var messages = await _repository.Message.GetMessagesBetweenUsersAsync(senderId, recipientId);
+            if (messages == null || !messages.Any())
+            {
+                return ServiceResult.ErrorResult("Сообщений между пользователями не найдено");
+            }
+
+            var messageResponses = messages.Adapt<List<GetMessageResponse>>();
+            return ServiceResult.SuccessResult("Сообщения между пользователями успешно получены", messageResponses);
         }
     }
 }

@@ -2,7 +2,11 @@
 using Domain.Interfaces;
 using Domain.Models;
 using Domain.Results;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Threading.Tasks;
+using Domain.Wrapper;
 
 namespace BusinessLogic.Services
 {
@@ -23,15 +27,46 @@ namespace BusinessLogic.Services
 
         public async Task<ServiceResult> AddUserToChatAsync(AddUserToChatRequest request)
         {
-            await _chatRepository.AddUserToChatAsync(request);
-            return ServiceResult.SuccessResult("Пользователь успешно добавлен в чат");
+            var chatRoom = await _chatRepository.GetChatRoomByIdAsync(request.ChatRoomId);
+
+            if (chatRoom == null)
+            {
+                return new ServiceResult { Success = false, Errors = new List<string> { "Чат-комната не найдена" } };
+            }
+
+            var user = await _chatRepository.GetUserByIdAsync(request.UserId);
+            if (user == null)
+            {
+                return new ServiceResult { Success = false, Errors = new List<string> { "Пользователь не найден" } };
+            }
+
+            chatRoom.IdUsers.Add(user); // Добавляем пользователя в чат-комнату
+            await _chatRepository.SaveChangesAsync(); // Сохраняем изменения
+
+            return new ServiceResult { Success = true, Data = "Пользователь добавлен" };
         }
 
         public async Task<ServiceResult> RemoveUserFromChatAsync(RemoveUserFromChatRequest request)
         {
-            await _chatRepository.RemoveUserFromChatAsync(request);
-            return ServiceResult.SuccessResult("Пользователь успешно удален из чата");
+            var chatRoom = await _chatRepository.GetChatRoomByIdAsync(request.ChatRoomId);
+
+            if (chatRoom == null)
+            {
+                return new ServiceResult { Success = false, Errors = new List<string> { "Чат-комната не найдена" } };
+            }
+
+            var user = chatRoom.IdUsers.FirstOrDefault(u => u.IdUser == request.UserId);
+            if (user == null)
+            {
+                return new ServiceResult { Success = false, Errors = new List<string> { "Пользователь не найден в этой чат-комнате" } };
+            }
+
+            chatRoom.IdUsers.Remove(user); // Удаляем пользователя из чат-комнаты
+            await _chatRepository.SaveChangesAsync(); // Сохраняем изменения
+
+            return new ServiceResult { Success = true, Data = "Пользователь удален" };
         }
+
 
         public async Task<ServiceResult> DeleteChatRoomAsync(int chatRoomId)
         {

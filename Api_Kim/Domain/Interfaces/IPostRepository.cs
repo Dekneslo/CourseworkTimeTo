@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using Domain.Contracts.PostContracts;
+using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,6 @@ namespace Domain.Interfaces
         Task UpdateAsync(Post post);
         Task DeleteAsync(Post post);
         Task LikePostAsync(int postId, int userId);
+        Task AddMediaToPostAsync(AddMediaToPostRequest request);
     }
 }

@@ -86,5 +86,20 @@ namespace BusinessLogic.Services
 
             return ServiceResult.SuccessResult("Пост успешно лайкнут");
         }
+
+        // Добавление медиафайла к посту
+        public async Task<ServiceResult> AddMediaToPostAsync(AddMediaToPostRequest request)
+        {
+            var post = await _repository.Post.GetByIdAsync(request.PostId);
+            if (post == null)
+            {
+                return ServiceResult.ErrorResult("Пост не найден");
+            }
+
+            await _repository.Post.AddMediaToPostAsync(request);
+            await _repository.SaveAsync();
+
+            return ServiceResult.SuccessResult("Медиафайл успешно добавлен к посту");
+        }
     }
 }

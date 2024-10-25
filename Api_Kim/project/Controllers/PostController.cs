@@ -118,6 +118,5 @@ namespace project.Controllers
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }
-
     }
 }

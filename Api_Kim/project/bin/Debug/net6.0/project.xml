@@ -78,6 +78,29 @@
             <param name="id">ID курса</param>
             <returns>Результат операции</returns>
         </member>
+        <member name="M:project.Controllers.CourseController.EnrollUserInCourse(System.Int32,Domain.Contracts.CourseContracts.EnrollUserRequest)">
+             <summary>
+             Записать пользователя на курс
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Course/1/enroll
+                 {
+                     "userId": 1
+                 }
+             </remarks>
+        </member>
+        <member name="M:project.Controllers.CourseController.UnenrollUserFromCourse(System.Int32,System.Int32)">
+             <summary>
+             Удалить пользователя с курса
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /api/Course/1/unenroll/1
+             </remarks>
+        </member>
         <member name="M:project.Controllers.FileController.GetFilesByUser(System.Int32)">
             <summary>
             Получение файлов пользователя
@@ -171,6 +194,14 @@
              </remarks>
              <param name="messageDto">Модель сообщения</param>
              <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.MessageController.GetMessagesBetweenUsers(System.Int32,System.Int32)">
+            <summary>
+            Получить все сообщения между двумя пользователями
+            </summary>
+            <param name="senderId">ID отправителя</param>
+            <param name="recipientId">ID получателя</param>
+            <returns>Список сообщений</returns>
         </member>
         <member name="M:project.Controllers.PostController.GetAllPosts">
              <summary>

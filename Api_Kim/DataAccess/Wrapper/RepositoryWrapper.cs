@@ -16,10 +16,15 @@ namespace DataAccess.Wrapper
         private CharityDBContext _repoContext;
         private IUserRepository _user;
         private ICourseRepository _course;
+        private ICourseMediaRepository _courseMedia;
         private IPostRepository _post;
         private IMessageRepository _message;
         private IFileRepository _file;
         private IFileAccessRepository _fileAccess;
+        private IUserLanguageRepository _userLanguage;
+        private IRoleRepository _role;
+        private IUserCourseRepository _userCourse;
+        private IChatRepository _chat;
 
         public IUserRepository User
         {
@@ -42,6 +47,30 @@ namespace DataAccess.Wrapper
                     _course = new CourseRepository(_repoContext);
                 }
                 return _course;
+            }
+        }
+
+        public ICourseMediaRepository CourseMedia // Реализация CourseMedia
+        {
+            get
+            {
+                if (_courseMedia == null)
+                {
+                    _courseMedia = new CourseMediaRepository(_repoContext);
+                }
+                return _courseMedia;
+            }
+        }
+
+        public IUserCourseRepository UserCourse
+        {
+            get
+            {
+                if (_userCourse == null)
+                {
+                    _userCourse = new UserCourseRepository(_repoContext);
+                }
+                return _userCourse;
             }
         }
 
@@ -90,6 +119,42 @@ namespace DataAccess.Wrapper
                     _fileAccess = new FileAccessRepository(_repoContext);
                 }
                 return _fileAccess;
+            }
+        }
+
+        public IRoleRepository Role
+        {
+            get
+            {
+                if (_role == null)
+                {
+                    _role = new RoleRepository(_repoContext);
+                }
+                return _role;
+            }
+        }
+
+        public IUserLanguageRepository UserLanguage
+        {
+            get
+            {
+                if (_userLanguage == null)
+                {
+                    _userLanguage = new UserLanguageRepository(_repoContext);
+                }
+                return _userLanguage;
+            }
+        }
+
+        public IChatRepository Chat
+        {
+            get
+            {
+                if (_chat == null)
+                {
+                    _chat = new ChatRepository(_repoContext);
+                }
+                return _chat;
             }
         }
 

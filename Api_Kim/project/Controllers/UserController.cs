@@ -165,5 +165,14 @@ namespace project.Controllers
             var users = await _userService.GetUsersByRoleAsync(role);
             return Ok(users);
         }
+
+        [HttpPut("{id}/password")]
+        public async Task<IActionResult> ChangeUserPassword(int id, [FromBody] ChangeUserPasswordRequest request)
+        {
+            var result = await _userService.ChangeUserPasswordAsync(request);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
     }
 }

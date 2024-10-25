@@ -22,5 +22,6 @@ namespace Domain.Interfaces
         Task<ServiceResult> AddCommentAsync(int courseId, AddCommentRequest commentRequest);  
         Task<ServiceResult> AddMediaToCourseAsync(AddMediaToCourseRequest request);  
         Task<ServiceResult> EnrollUserInCourseAsync(int courseId, int userId);
+        Task<ServiceResult> UnenrollUserFromCourseAsync(int courseId, int userId);
     }
 }

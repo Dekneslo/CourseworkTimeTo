@@ -7,9 +7,18 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
-    public class ChatRepository : RepositoryBase<ChatRoom>, IChatRepository
+    public class ChatRepository : RepositoryBase<ChatRoom>, IChatRepository /*ChatRepository : IChatRepository*/
     {
-        public ChatRepository(CharityDBContext repositoryContext) : base(repositoryContext) { }
+        private readonly CharityDBContext _context;
+
+        public ChatRepository(CharityDBContext context) : base(context)
+        {
+            _context = context;
+        }
+        //public ChatRepository(CharityDBContext context)
+        //{
+        //    _context = context;
+        //}
 
         public async Task CreateChatRoomAsync(CreateChatRoomRequest request)
         {
@@ -17,54 +26,68 @@ namespace DataAccess.Repositories
             {
                 NameRoom = request.ChatRoomName
             };
-            await RepositoryContext.ChatRooms.AddAsync(chatRoom);
-            await RepositoryContext.SaveChangesAsync();
+            await _context.ChatRooms.AddAsync(chatRoom);
+            await _context.SaveChangesAsync();
         }
 
-        public async Task AddUserToChatAsync(AddUserToChatRequest request)
+        public async Task<ChatRoom> GetChatRoomByIdAsync(int chatRoomId)
         {
-            var chatRoomUser = new ChatRoomUser
-            {
-                IdChatRoom = request.ChatRoomId,
-                IdUser = request.UserId
-            };
-            await RepositoryContext.ChatRoomUsers.AddAsync(chatRoomUser);
-            await RepositoryContext.SaveChangesAsync();
+            return await _context.ChatRooms
+                .Include(c => c.IdUsers)
+                .FirstOrDefaultAsync(c => c.IdChatRoom == chatRoomId);
         }
 
-        public async Task RemoveUserFromChatAsync(RemoveUserFromChatRequest request)
+        public async Task<User> GetUserByIdAsync(int userId)
         {
-            var chatRoomUser = await RepositoryContext.ChatRoomUsers
-                .FirstOrDefaultAsync(c => c.IdChatRoom == request.ChatRoomId && c.IdUser == request.UserId);
+            return await _context.Users.FindAsync(userId);
+        }
 
-            if (chatRoomUser != null)
-            {
-                RepositoryContext.ChatRoomUsers.Remove(chatRoomUser);
-                await RepositoryContext.SaveChangesAsync();
-            }
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteChatRoomAsync(int chatRoomId)
         {
-            var chatRoom = await RepositoryContext.ChatRooms
-                .FirstOrDefaultAsync(c => c.IdChatRoom == chatRoomId);
-
+            var chatRoom = await GetChatRoomByIdAsync(chatRoomId);
             if (chatRoom != null)
             {
-                RepositoryContext.ChatRooms.Remove(chatRoom);
-                await RepositoryContext.SaveChangesAsync();
+                _context.ChatRooms.Remove(chatRoom);
+                await SaveChangesAsync();
             }
         }
 
-        // Создание приватного чата (один-на-один)
         public async Task CreatePrivateChatAsync(CreateChatRoomRequest request)
         {
             var privateChat = new ChatRoom
             {
                 NameRoom = request.ChatRoomName
             };
-            await RepositoryContext.ChatRooms.AddAsync(privateChat);
-            await RepositoryContext.SaveChangesAsync();
+            await _context.ChatRooms.AddAsync(privateChat);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task AddUserToChatAsync(AddUserToChatRequest request)
+        {
+            var chatRoom = await GetChatRoomByIdAsync(request.ChatRoomId);
+            var user = await GetUserByIdAsync(request.UserId);
+            if (chatRoom != null && user != null)
+            {
+                chatRoom.IdUsers.Add(user);
+                await SaveChangesAsync();
+            }
+        }
+
+        public async Task RemoveUserFromChatAsync(RemoveUserFromChatRequest request)
+        {
+            var chatRoom = await GetChatRoomByIdAsync(request.ChatRoomId);
+            var user = chatRoom?.IdUsers.FirstOrDefault(u => u.IdUser == request.UserId);
+
+            if (chatRoom != null && user != null)
+            {
+                chatRoom.IdUsers.Remove(user);
+                await SaveChangesAsync();
+            }
         }
     }
 }
