@@ -122,6 +122,18 @@ namespace project.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Лайк курса
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Course/1/like
+        ///
+        /// </remarks>
+        /// <param name="courseId">ID курса</param>
+        /// <param name="request">Запрос с ID пользователя</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{courseId}/like")]
         public async Task<IActionResult> LikeCourse(int courseId, [FromBody] LikeRequest request)
         {
@@ -135,6 +147,18 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
+        /// <summary>
+        /// Добавление комментария к курсу
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Course/1/comment
+        ///
+        /// </remarks>
+        /// <param name="courseId">ID курса</param>
+        /// <param name="request">Запрос для добавления комментария</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{courseId}/comment")]
         public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] AddCommentRequest request)
         {
@@ -178,6 +202,18 @@ namespace project.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Добавление медиа к курсу
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Course/1/media
+        ///
+        /// </remarks>
+        /// <param name="courseId">ID курса</param>
+        /// <param name="request">Запрос с данными медиафайлов</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{courseId}/media")]
         public async Task<IActionResult> AddMediaToCourse(int courseId, [FromBody] AddMediaToCourseRequest request)
         {
@@ -187,6 +223,22 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
+        /// <summary>
+        /// Добавление комментария к курсу
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Course/1/comment
+        ///     {
+        ///        "CommentText": "Отличный курс!",
+        ///        "UserId": 1
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="courseId">ID курса</param>
+        /// <param name="request">Запрос с данными комментария</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{courseId}/comment")]
         public async Task<IActionResult> AddCommentToCourse(int courseId, [FromBody] AddCommentRequest request)
         {
@@ -195,6 +247,18 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
+        /// <summary>
+        /// Удаление пользователя с курса (второй метод)
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     DELETE /api/Course/1/unenroll
+        ///
+        /// </remarks>
+        /// <param name="courseId">ID курса</param>
+        /// <param name="request">Запрос с ID пользователя</param>
+        /// <returns>Результат операции</returns>
         [HttpDelete("{courseId}/unenroll")]
         public async Task<IActionResult> UnenrollUserFromCourse(int courseId, [FromBody] UnenrollUserFromCourseRequest request)
         {

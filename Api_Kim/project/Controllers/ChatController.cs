@@ -14,7 +14,17 @@ public class ChatController : ControllerBase
         _chatService = chatService;
     }
 
-    // Создание группового чата
+    /// <summary>
+    /// Создание группового чата
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     POST /api/Chat/create-chat-room
+    ///
+    /// </remarks>
+    /// <param name="request">Запрос с данными чата</param>
+    /// <returns>Созданная комната чата</returns>
     [HttpPost("create-chat-room")]
     public async Task<IActionResult> CreateChatRoom([FromBody] CreateChatRoomRequest request)
     {
@@ -23,7 +33,18 @@ public class ChatController : ControllerBase
         return Ok(result.Data);
     }
 
-    // Добавление пользователя в чат
+    /// <summary>
+    /// Добавление пользователя в чат
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     POST /api/Chat/1/add-user
+    ///
+    /// </remarks>
+    /// <param name="chatRoomId">ID чата</param>
+    /// <param name="request">Запрос на добавление пользователя</param>
+    /// <returns>Результат операции</returns>
     [HttpPost("{chatRoomId}/add-user")]
     public async Task<IActionResult> AddUserToChat(int chatRoomId, [FromBody] AddUserToChatRequest request)
     {
@@ -33,7 +54,18 @@ public class ChatController : ControllerBase
         return Ok(result.Data);
     }
 
-    // Удаление пользователя из чата
+    /// <summary>
+    /// Удаление пользователя из чата
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     POST /api/Chat/1/remove-user
+    ///
+    /// </remarks>
+    /// <param name="chatRoomId">ID чата</param>
+    /// <param name="request">Запрос на удаление пользователя</param>
+    /// <returns>Результат операции</returns>
     [HttpPost("{chatRoomId}/remove-user")]
     public async Task<IActionResult> RemoveUserFromChat(int chatRoomId, [FromBody] RemoveUserFromChatRequest request)
     {
@@ -43,7 +75,17 @@ public class ChatController : ControllerBase
         return Ok(result.Data);
     }
 
-    // Удаление чат-комнаты
+    /// <summary>
+    /// Удаление чат-комнаты
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     DELETE /api/Chat/1
+    ///
+    /// </remarks>
+    /// <param name="chatRoomId">ID чата</param>
+    /// <returns>Результат операции</returns>
     [HttpDelete("{chatRoomId}")]
     public async Task<IActionResult> DeleteChatRoom(int chatRoomId)
     {
@@ -52,7 +94,17 @@ public class ChatController : ControllerBase
         return NoContent();
     }
 
-    // Создание приватного чата (один-на-один)
+    /// <summary>
+    /// Создание приватного чата (один-на-один)
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     POST /api/Chat/create-private-chat
+    ///
+    /// </remarks>
+    /// <param name="request">Запрос на создание приватного чата</param>
+    /// <returns>Результат операции</returns>
     [HttpPost("create-private-chat")]
     public async Task<IActionResult> CreatePrivateChat([FromBody] CreateChatRoomRequest request)
     {

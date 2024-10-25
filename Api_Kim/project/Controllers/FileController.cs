@@ -104,6 +104,22 @@ namespace project.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Управление доступом к файлам
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/File/1/access
+        ///     {
+        ///        "UserId": 1,
+        ///        "AccessType": "read"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="fileId">ID файла</param>
+        /// <param name="request">Запрос на управление доступом</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{fileId}/access")]
         public async Task<IActionResult> ManageFileAccess(int fileId, [FromBody] AccessRequest request)
         {

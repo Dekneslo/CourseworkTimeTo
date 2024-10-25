@@ -16,6 +16,16 @@ namespace project.Controllers
             _roleService = roleService;
         }
 
+        /// <summary>
+        /// Получение всех ролей
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     GET /api/Role
+        ///
+        /// </remarks>
+        /// <returns>Список всех ролей</returns>
         [HttpGet]
         public async Task<IActionResult> GetAllRoles()
         {
@@ -23,6 +33,20 @@ namespace project.Controllers
             return Ok(roles);
         }
 
+        /// <summary>
+        /// Создание новой роли
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Role
+        ///     {
+        ///        "Name": "Admin"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="request">Запрос на создание новой роли</param>
+        /// <returns>Созданная роль</returns>
         [HttpPost]
         public async Task<IActionResult> CreateRole([FromBody] CreateRoleRequest request)
         {
@@ -31,6 +55,21 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
+        /// <summary>
+        /// Обновление роли
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     PUT /api/Role/1
+        ///     {
+        ///        "Name": "Moderator"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="id">ID роли</param>
+        /// <param name="request">Данные для обновления роли</param>
+        /// <returns>Обновленная роль</returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateRole(int id, [FromBody] UpdateRoleRequest request)
         {
@@ -39,6 +78,17 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
+        /// <summary>
+        /// Удаление роли
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     DELETE /api/Role/1
+        ///
+        /// </remarks>
+        /// <param name="id">ID роли</param>
+        /// <returns>Результат операции</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRole(int id)
         {
