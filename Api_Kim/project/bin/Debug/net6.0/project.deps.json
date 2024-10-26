@@ -569,10 +569,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.33"
         },
         "runtime": {
-          "BusinessLogic.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BusinessLogic.dll": {}
         }
       },
       "DataAccess/1.0.0": {
@@ -583,10 +580,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33"
         },
         "runtime": {
-          "DataAccess.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DataAccess.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -596,10 +590,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33"
         },
         "runtime": {
-          "Domain.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Domain.dll": {}
         }
       }
     }

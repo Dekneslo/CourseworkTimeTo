@@ -228,3 +228,4 @@ C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\ne
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.pdb
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\project.genruntimeconfig.cache
 C:\Users\Dekneslo\Documents\GitHub\CourseworkTimeTo\Api_Kim\project\obj\Debug\net6.0\ref\project.dll
+C:\Users\Dasha\OneDrive\Документы\GitHub\CourseworkTimeTo\Api_Kim\project\bin\Debug\net6.0\BCrypt.Net-Next.dll
