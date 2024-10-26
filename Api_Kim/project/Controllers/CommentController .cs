@@ -16,6 +16,18 @@ public class CommentController : ControllerBase
         _commentService = commentService;
     }
 
+    /// <summary>
+    /// Добавление комментария к посту
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     POST /api/Comment/post/1
+    ///
+    /// </remarks>
+    /// <param name="postId">ID поста</param>
+    /// <param name="request">Запрос с данными комментария</param>
+    /// <returns>Результат операции</returns>
     [HttpPost("post/{postId}")]
     public async Task<IActionResult> AddCommentToPost(int postId, [FromBody] CommentRequest request)
     {
@@ -24,6 +36,18 @@ public class CommentController : ControllerBase
         return Ok(result.Data);
     }
 
+    /// <summary>
+    /// Добавление комментария к курсу
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     POST /api/Comment/course/1
+    ///
+    /// </remarks>
+    /// <param name="courseId">ID курса</param>
+    /// <param name="request">Запрос с данными комментария</param>
+    /// <returns>Результат операции</returns>
     [HttpPost("course/{courseId}")]
     public async Task<IActionResult> AddCommentToCourse(int courseId, [FromBody] CommentRequest request)
     {
@@ -32,6 +56,17 @@ public class CommentController : ControllerBase
         return Ok(result.Data);
     }
 
+    /// <summary>
+    /// Получение комментариев к посту
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     GET /api/Comment/post/1
+    ///
+    /// </remarks>
+    /// <param name="postId">ID поста</param>
+    /// <returns>Комментарии к посту</returns>
     [HttpGet("post/{postId}")]
     public async Task<IActionResult> GetCommentsForPost(int postId, [FromBody] GetCommentResponse request)
     {
@@ -39,6 +74,17 @@ public class CommentController : ControllerBase
         return Ok(comments);
     }
 
+    /// <summary>
+    /// Получение комментариев к курсу
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     GET /api/Comment/course/1
+    ///
+    /// </remarks>
+    /// <param name="courseId">ID курса</param>
+    /// <returns>Комментарии к курсу</returns>
     [HttpGet("course/{courseId}")]
     public async Task<IActionResult> GetCommentsForCourse(int courseId, [FromBody] GetCommentResponse request)
     {
@@ -46,6 +92,18 @@ public class CommentController : ControllerBase
         return Ok(comments);
     }
 
+    /// <summary>
+    /// Обновление комментария
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     PUT /api/Comment/1
+    ///
+    /// </remarks>
+    /// <param name="commentId">ID комментария</param>
+    /// <param name="request">Запрос с обновленными данными комментария</param>
+    /// <returns>Результат операции</returns>
     [HttpPut("{commentId}")]
     public async Task<IActionResult> UpdateComment(int commentId, [FromBody] UpdateCommentRequest request)
     {
@@ -54,6 +112,17 @@ public class CommentController : ControllerBase
         return Ok(result.Data);
     }
 
+    /// <summary>
+    /// Удаление комментария
+    /// </summary>
+    /// <remarks>
+    /// Пример запроса:
+    ///
+    ///     DELETE /api/Comment/1
+    ///
+    /// </remarks>
+    /// <param name="commentId">ID комментария</param>
+    /// <returns>Результат операции</returns>
     [HttpDelete("{commentId}")]
     public async Task<IActionResult> DeleteComment(int commentId)
     {

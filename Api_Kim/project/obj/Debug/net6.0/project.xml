@@ -4,6 +4,154 @@
         <name>project</name>
     </assembly>
     <members>
+        <member name="M:ChatController.CreateChatRoom(Domain.Contracts.ChatContracts.CreateChatRoomRequest)">
+             <summary>
+             Создание группового чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Chat/create-chat-room
+            
+             </remarks>
+             <param name="request">Запрос с данными чата</param>
+             <returns>Созданная комната чата</returns>
+        </member>
+        <member name="M:ChatController.AddUserToChat(System.Int32,Domain.Contracts.ChatContracts.AddUserToChatRequest)">
+             <summary>
+             Добавление пользователя в чат
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Chat/1/add-user
+            
+             </remarks>
+             <param name="chatRoomId">ID чата</param>
+             <param name="request">Запрос на добавление пользователя</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:ChatController.RemoveUserFromChat(System.Int32,Domain.Contracts.ChatContracts.RemoveUserFromChatRequest)">
+             <summary>
+             Удаление пользователя из чата
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Chat/1/remove-user
+            
+             </remarks>
+             <param name="chatRoomId">ID чата</param>
+             <param name="request">Запрос на удаление пользователя</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:ChatController.DeleteChatRoom(System.Int32)">
+             <summary>
+             Удаление чат-комнаты
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /api/Chat/1
+            
+             </remarks>
+             <param name="chatRoomId">ID чата</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:ChatController.CreatePrivateChat(Domain.Contracts.ChatContracts.CreateChatRoomRequest)">
+             <summary>
+             Создание приватного чата (один-на-один)
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Chat/create-private-chat
+            
+             </remarks>
+             <param name="request">Запрос на создание приватного чата</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:CommentController.AddCommentToPost(System.Int32,Domain.Contracts.CommentContracts.CommentRequest)">
+             <summary>
+             Добавление комментария к посту
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Comment/post/1
+            
+             </remarks>
+             <param name="postId">ID поста</param>
+             <param name="request">Запрос с данными комментария</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:CommentController.AddCommentToCourse(System.Int32,Domain.Contracts.CommentContracts.CommentRequest)">
+             <summary>
+             Добавление комментария к курсу
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Comment/course/1
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="request">Запрос с данными комментария</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:CommentController.GetCommentsForPost(System.Int32,Domain.Contracts.CommentContracts.GetCommentResponse)">
+             <summary>
+             Получение комментариев к посту
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 GET /api/Comment/post/1
+            
+             </remarks>
+             <param name="postId">ID поста</param>
+             <returns>Комментарии к посту</returns>
+        </member>
+        <member name="M:CommentController.GetCommentsForCourse(System.Int32,Domain.Contracts.CommentContracts.GetCommentResponse)">
+             <summary>
+             Получение комментариев к курсу
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 GET /api/Comment/course/1
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <returns>Комментарии к курсу</returns>
+        </member>
+        <member name="M:CommentController.UpdateComment(System.Int32,Domain.Contracts.CommentContracts.UpdateCommentRequest)">
+             <summary>
+             Обновление комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /api/Comment/1
+            
+             </remarks>
+             <param name="commentId">ID комментария</param>
+             <param name="request">Запрос с обновленными данными комментария</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:CommentController.DeleteComment(System.Int32)">
+             <summary>
+             Удаление комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /api/Comment/1
+            
+             </remarks>
+             <param name="commentId">ID комментария</param>
+             <returns>Результат операции</returns>
+        </member>
         <member name="M:project.Controllers.CourseController.GetAllCourses">
              <summary>
              Получение всех курсов
@@ -78,6 +226,34 @@
             <param name="id">ID курса</param>
             <returns>Результат операции</returns>
         </member>
+        <member name="M:project.Controllers.CourseController.LikeCourse(System.Int32,Domain.Contracts.LikeContracts.LikeRequest)">
+             <summary>
+             Лайк курса
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Course/1/like
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="request">Запрос с ID пользователя</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.CourseController.CommentOnCourse(System.Int32,Domain.Contracts.CommentContracts.AddCommentRequest)">
+             <summary>
+             Добавление комментария к курсу
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Course/1/comment
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="request">Запрос для добавления комментария</param>
+             <returns>Результат операции</returns>
+        </member>
         <member name="M:project.Controllers.CourseController.EnrollUserInCourse(System.Int32,Domain.Contracts.CourseContracts.EnrollUserRequest)">
              <summary>
              Записать пользователя на курс
@@ -100,6 +276,52 @@
             
                  DELETE /api/Course/1/unenroll/1
              </remarks>
+        </member>
+        <member name="M:project.Controllers.CourseController.AddMediaToCourse(System.Int32,Domain.Contracts.CourseContracts.AddMediaToCourseRequest)">
+             <summary>
+             Добавление медиа к курсу
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Course/1/media
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="request">Запрос с данными медиафайлов</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.CourseController.AddCommentToCourse(System.Int32,Domain.Contracts.CommentContracts.AddCommentRequest)">
+             <summary>
+             Добавление комментария к курсу
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Course/1/comment
+                 {
+                    "CommentText": "Отличный курс!",
+                    "UserId": 1
+                 }
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="request">Запрос с данными комментария</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.CourseController.UnenrollUserFromCourse(System.Int32,Domain.Contracts.CourseContracts.UnenrollUserFromCourseRequest)">
+             <summary>
+             Удаление пользователя с курса (второй метод)
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /api/Course/1/unenroll
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="request">Запрос с ID пользователя</param>
+             <returns>Результат операции</returns>
         </member>
         <member name="M:project.Controllers.FileController.GetFilesByUser(System.Int32)">
             <summary>
@@ -163,6 +385,24 @@
             </remarks>
             <param name="id">ID файла</param>
             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.FileController.ManageFileAccess(System.Int32,Domain.Contracts.FileContracts.AccessRequest)">
+             <summary>
+             Управление доступом к файлам
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/File/1/access
+                 {
+                    "UserId": 1,
+                    "AccessType": "read"
+                 }
+            
+             </remarks>
+             <param name="fileId">ID файла</param>
+             <param name="request">Запрос на управление доступом</param>
+             <returns>Результат операции</returns>
         </member>
         <member name="M:project.Controllers.MessageController.GetMessagesByUser(System.Int32)">
              <summary>
@@ -263,6 +503,92 @@
             </remarks>
             <param name="id">ID поста</param>
             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.PostController.LikePost(System.Int32,Domain.Contracts.LikeContracts.LikeRequest)">
+             <summary>
+             Лайк поста
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Post/1/like
+            
+             </remarks>
+             <param name="postId">ID поста</param>
+             <param name="request">Запрос с ID пользователя</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.PostController.AddMediaToPost(System.Int32,Domain.Contracts.PostContracts.AddMediaToPostRequest)">
+             <summary>
+             Добавление медиафайла к посту
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Post/1/media
+            
+             </remarks>
+             <param name="postId">ID поста</param>
+             <param name="request">Запрос с данными для добавления медиа</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:project.Controllers.RoleController.GetAllRoles">
+             <summary>
+             Получение всех ролей
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 GET /api/Role
+            
+             </remarks>
+             <returns>Список всех ролей</returns>
+        </member>
+        <member name="M:project.Controllers.RoleController.CreateRole(Domain.Contracts.RoleContracts.CreateRoleRequest)">
+             <summary>
+             Создание новой роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Role
+                 {
+                    "Name": "Admin"
+                 }
+            
+             </remarks>
+             <param name="request">Запрос на создание новой роли</param>
+             <returns>Созданная роль</returns>
+        </member>
+        <member name="M:project.Controllers.RoleController.UpdateRole(System.Int32,Domain.Contracts.RoleContracts.UpdateRoleRequest)">
+             <summary>
+             Обновление роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /api/Role/1
+                 {
+                    "Name": "Moderator"
+                 }
+            
+             </remarks>
+             <param name="id">ID роли</param>
+             <param name="request">Данные для обновления роли</param>
+             <returns>Обновленная роль</returns>
+        </member>
+        <member name="M:project.Controllers.RoleController.DeleteRole(System.Int32)">
+             <summary>
+             Удаление роли
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /api/Role/1
+            
+             </remarks>
+             <param name="id">ID роли</param>
+             <returns>Результат операции</returns>
         </member>
         <member name="M:project.Controllers.UserController.GetAllUsers">
             <summary>
@@ -370,6 +696,124 @@
              </remarks>
              <param name="role">Роль пользователя</param>
              <returns>Список пользователей с указанной ролью</returns>
+        </member>
+        <member name="M:project.Controllers.UserController.ChangeUserPassword(System.Int32,Domain.Contracts.UserContracts.ChangeUserPasswordRequest)">
+             <summary>
+             Изменение пароля пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /api/User/1/password
+            
+             </remarks>
+             <param name="id">ID пользователя</param>
+             <param name="request">Запрос на изменение пароля</param>
+             <returns>Ответ с результатом операции</returns>
+        </member>
+        <member name="M:MediaController.UploadPostMedia(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+             <summary>
+             Загрузка медиафайла для поста
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Media/post/1/upload
+            
+             </remarks>
+             <param name="postId">ID поста</param>
+             <param name="file">Медиафайл</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:MediaController.UploadCourseMedia(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+             <summary>
+             Загрузка медиафайла для курса
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /api/Media/course/1/upload
+            
+             </remarks>
+             <param name="courseId">ID курса</param>
+             <param name="file">Медиафайл</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:MediaController.UpdateMedia(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+             <summary>
+             Обновление медиафайла
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 PUT /api/Media/1/update
+            
+             </remarks>
+             <param name="mediaId">ID медиафайла</param>
+             <param name="newFile">Новый файл для обновления</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:MediaController.DeleteMedia(System.Int32)">
+             <summary>
+             Удаление медиафайла
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 DELETE /api/Media/1
+            
+             </remarks>
+             <param name="mediaId">ID медиафайла</param>
+             <returns>Результат операции</returns>
+        </member>
+        <member name="M:UserProfileController.GetProfileByUserId(System.Int32)">
+            <summary>
+            Получение профиля пользователя по ID
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                GET /api/UserProfile/1
+            
+            </remarks>
+            <param name="userId">ID пользователя</param>
+            <returns>Профиль пользователя</returns>
+        </member>
+        <member name="M:UserProfileController.CreateOrUpdateProfile(System.Int32,Domain.Contracts.UserContracts.UpdateProfileRequest)">
+            <summary>
+            Создание или обновление профиля пользователя
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                POST /api/UserProfile/1
+                {
+                   "City": "Алматы",
+                   "Country": "Казахстан",
+                   "PhoneNumber": "+77012345678"
+                }
+            
+            </remarks>
+            <param name="userId">ID пользователя</param>
+            <param name="request">Запрос на обновление профиля</param>
+            <returns>Результат операции</returns>
+        </member>
+        <member name="M:UserProfileController.ChangeUserLanguage(System.Int32,Domain.Contracts.UserContracts.ChangeUserLanguageRequest)">
+            <summary>
+            Изменение языка интерфейса пользователя
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                PUT /api/UserProfile/1/language
+                {
+                   "LanguageCode": "EN"
+                }
+            
+            </remarks>
+            <param name="userId">ID пользователя</param>
+            <param name="request">Запрос на изменение языка</param>
+            <returns>Результат операции</returns>
         </member>
     </members>
 </doc>

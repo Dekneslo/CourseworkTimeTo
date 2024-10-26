@@ -166,6 +166,18 @@ namespace project.Controllers
             return Ok(users);
         }
 
+        /// <summary>
+        /// Изменение пароля пользователя
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     PUT /api/User/1/password
+        ///
+        /// </remarks>
+        /// <param name="id">ID пользователя</param>
+        /// <param name="request">Запрос на изменение пароля</param>
+        /// <returns>Ответ с результатом операции</returns>
         [HttpPut("{id}/password")]
         public async Task<IActionResult> ChangeUserPassword(int id, [FromBody] ChangeUserPasswordRequest request)
         {

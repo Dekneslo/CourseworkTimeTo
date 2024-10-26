@@ -102,6 +102,18 @@ namespace project.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Лайк поста
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Post/1/like
+        ///
+        /// </remarks>
+        /// <param name="postId">ID поста</param>
+        /// <param name="request">Запрос с ID пользователя</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{postId}/like")]
         public async Task<IActionResult> LikePost(int postId, [FromBody] LikeRequest request)
         {
@@ -110,6 +122,18 @@ namespace project.Controllers
             return Ok(result.Data);
         }
 
+        /// <summary>
+        /// Добавление медиафайла к посту
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///     POST /api/Post/1/media
+        ///
+        /// </remarks>
+        /// <param name="postId">ID поста</param>
+        /// <param name="request">Запрос с данными для добавления медиа</param>
+        /// <returns>Результат операции</returns>
         [HttpPost("{postId}/media")]
         public async Task<IActionResult> AddMediaToPost(int postId, [FromBody] AddMediaToPostRequest request)
         {
