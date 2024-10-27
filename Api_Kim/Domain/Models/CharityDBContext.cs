@@ -18,6 +18,7 @@ namespace Domain.Models
 
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<ChatRoom> ChatRooms { get; set; } = null!;
+        public virtual DbSet<ChatRoomUser> ChatRoomUsers { get; set; }
         public virtual DbSet<Comment> Comments { get; set; } = null!;
         public virtual DbSet<CommentMedium> CommentMedia { get; set; } = null!;
         public virtual DbSet<Course> Courses { get; set; } = null!;
@@ -61,23 +62,26 @@ namespace Domain.Models
                     .HasMaxLength(100)
                     .HasColumnName("nameRoom");
 
-                entity.HasMany(d => d.IdUsers)
-                    .WithMany(p => p.IdChatRooms)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "ChatRoomUser",
-                        l => l.HasOne<User>().WithMany().HasForeignKey("IdUser").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__ChatRoomU__idUse__5DCAEF64"),
-                        r => r.HasOne<ChatRoom>().WithMany().HasForeignKey("IdChatRoom").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__ChatRoomU__idCha__5CD6CB2B"),
-                        j =>
-                        {
-                            j.HasKey("IdChatRoom", "IdUser").HasName("PK__ChatRoom__44BB3FA4CE323C0C");
-
-                            j.ToTable("ChatRoomUsers");
-
-                            j.IndexerProperty<int>("IdChatRoom").HasColumnName("idChatRoom");
-
-                            j.IndexerProperty<int>("IdUser").HasColumnName("idUser");
-                        });
+                // Связь через таблицу ChatRoomUser
+                entity.HasMany(e => e.ChatRoomUsers)
+                    .WithOne(cru => cru.ChatRoom)
+                    .HasForeignKey(cru => cru.IdChatRoom);
             });
+
+            modelBuilder.Entity<ChatRoomUser>()
+            .HasKey(cru => new { cru.IdChatRoom, cru.IdUser });  // Определяем составной ключ
+
+            modelBuilder.Entity<ChatRoomUser>()
+                .HasOne(cru => cru.ChatRoom)
+                .WithMany(cr => cr.ChatRoomUsers)
+                .HasForeignKey(cru => cru.IdChatRoom);
+
+            modelBuilder.Entity<ChatRoomUser>()
+                .HasOne(cru => cru.User)
+                .WithMany(u => u.ChatRoomUsers)
+                .HasForeignKey(cru => cru.IdUser);
+
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Comment>(entity =>
             {
@@ -476,6 +480,7 @@ namespace Domain.Models
                     .HasForeignKey(d => d.Role)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Users__role__3A81B327");
+                entity.HasMany(e => e.ChatRoomUsers).WithOne(cru => cru.User).HasForeignKey(cru => cru.IdUser);
 
                 entity.HasMany(d => d.IdCourses)
                     .WithMany(p => p.IdUsers)

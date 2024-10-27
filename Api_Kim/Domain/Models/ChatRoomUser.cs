@@ -9,7 +9,7 @@ namespace Domain.Models
     public partial class ChatRoomUser
     {
         public int IdChatRoom { get; set; }
-        public int idUser { get; set; }
+        public int IdUser { get; set; }
 
         public virtual ChatRoom ChatRoom { get; set; }
         public virtual User User { get; set; }

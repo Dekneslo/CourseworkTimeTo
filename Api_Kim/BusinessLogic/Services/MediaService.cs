@@ -9,6 +9,7 @@ using Domain.Results;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Domain.Contracts.MediaContracts;
 
 namespace BusinessLogic.Services
 {
@@ -21,23 +22,23 @@ namespace BusinessLogic.Services
             _mediaRepository = mediaRepository;
         }
 
-        public async Task<ServiceResult> UploadPostMediaAsync(int postId, IFormFile file)
+        public async Task<ServiceResult> UploadPostMediaAsync(int postId, UploadMediaRequest request)
         {
-            var media = await SaveFileAsync(file);
+            var media = await SaveFileAsync(request);
             await _mediaRepository.UploadPostMediaAsync(postId, media);
             return ServiceResult.SuccessResult("Медиафайл загружен", media);
         }
 
-        public async Task<ServiceResult> UploadCourseMediaAsync(int courseId, IFormFile file)
+        public async Task<ServiceResult> UploadCourseMediaAsync(int courseId, UploadMediaRequest request)
         {
-            var media = await SaveFileAsync(file);
+            var media = await SaveFileAsync(request);
             await _mediaRepository.UploadCourseMediaAsync(courseId, media);
             return ServiceResult.SuccessResult("Медиафайл загружен", media);
         }
 
-        public async Task<ServiceResult> UpdateMediaAsync(int mediaId, IFormFile newFile)
+        public async Task<ServiceResult> UpdateMediaAsync(int mediaId, UploadMediaRequest request)
         {
-            var media = await SaveFileAsync(newFile);
+            var media = await SaveFileAsync(request);
             await _mediaRepository.UpdateMediaAsync(mediaId, media);
             return ServiceResult.SuccessResult("Медиафайл обновлен", media);
         }
@@ -48,20 +49,17 @@ namespace BusinessLogic.Services
             return ServiceResult.SuccessResult("Медиафайл удален");
         }
 
-        private async Task<Domain.Models.File> SaveFileAsync(IFormFile file)
+        private async Task<Domain.Models.File> SaveFileAsync(UploadMediaRequest request)
         {
-            var filePath = Path.Combine("uploads", file.FileName); // Путь для сохранения
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-            }
+            var filePath = Path.Combine("uploads", request.FileName); // Путь для сохранения
+            await System.IO.File.WriteAllBytesAsync(filePath, request.FileData);
 
             return new Domain.Models.File
             {
                 FilePath = filePath,
-                FileSize = file.Length,
-                FileType = file.ContentType,
-                NameFile = file.FileName
+                FileSize = request.FileData.Length,
+                FileType = request.FileType,
+                NameFile = request.FileName
             };
         }
     }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Domain.Interfaces;
+using Domain.Contracts.MediaContracts;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -23,12 +24,12 @@ public class MediaController : ControllerBase
     ///
     /// </remarks>
     /// <param name="postId">ID поста</param>
-    /// <param name="file">Медиафайл</param>
+    /// <param name="request">Медиафайл</param>
     /// <returns>Результат операции</returns>
     [HttpPost("post/{postId}/upload")]
-    public async Task<IActionResult> UploadPostMedia(int postId, [FromForm] IFormFile file)
+    public async Task<IActionResult> UploadPostMedia(int postId, [FromBody] UploadMediaRequest request)
     {
-        var result = await _mediaService.UploadPostMediaAsync(postId, file);
+        var result = await _mediaService.UploadPostMediaAsync(postId, request);
         if (!result.Success) return BadRequest(result.Errors);
         return Ok(result.Data);
     }
@@ -43,12 +44,12 @@ public class MediaController : ControllerBase
     ///
     /// </remarks>
     /// <param name="courseId">ID курса</param>
-    /// <param name="file">Медиафайл</param>
+    /// <param name="request">Медиафайл</param>
     /// <returns>Результат операции</returns>
     [HttpPost("course/{courseId}/upload")]
-    public async Task<IActionResult> UploadCourseMedia(int courseId, [FromForm] IFormFile file)
+    public async Task<IActionResult> UploadCourseMedia(int courseId, [FromBody] UploadMediaRequest request)
     {
-        var result = await _mediaService.UploadCourseMediaAsync(courseId, file);
+        var result = await _mediaService.UploadCourseMediaAsync(courseId, request);
         if (!result.Success) return BadRequest(result.Errors);
         return Ok(result.Data);
     }
@@ -63,12 +64,12 @@ public class MediaController : ControllerBase
     ///
     /// </remarks>
     /// <param name="mediaId">ID медиафайла</param>
-    /// <param name="newFile">Новый файл для обновления</param>
+    /// <param name="request">Новый медиафайл</param>
     /// <returns>Результат операции</returns>
     [HttpPut("{mediaId}/update")]
-    public async Task<IActionResult> UpdateMedia(int mediaId, [FromForm] IFormFile newFile)
+    public async Task<IActionResult> UpdateMedia(int mediaId, [FromBody] UploadMediaRequest request)
     {
-        var result = await _mediaService.UpdateMediaAsync(mediaId, newFile);
+        var result = await _mediaService.UpdateMediaAsync(mediaId, request);
         if (!result.Success) return BadRequest(result.Errors);
         return Ok(result.Data);
     }
@@ -91,5 +92,5 @@ public class MediaController : ControllerBase
         if (!result.Success) return BadRequest(result.Errors);
         return NoContent();
     }
-
 }
+

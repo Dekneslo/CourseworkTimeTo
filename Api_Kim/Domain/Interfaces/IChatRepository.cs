@@ -13,6 +13,9 @@ namespace Domain.Interfaces
         Task CreatePrivateChatAsync(CreateChatRoomRequest request);
         Task<ChatRoom> GetChatRoomByIdAsync(int chatRoomId);
         Task<User> GetUserByIdAsync(int userId);
+        Task AddUserToChatRoomAsync(ChatRoomUser chatRoomUser);
+        Task<ChatRoomUser> GetChatRoomUserAsync(int chatRoomId, int userId);
+        void RemoveUserFromChatRoom(ChatRoomUser chatRoomUser);
         Task SaveChangesAsync();
     }
 }

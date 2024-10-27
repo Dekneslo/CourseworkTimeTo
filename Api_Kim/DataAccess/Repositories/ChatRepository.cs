@@ -33,7 +33,7 @@ namespace DataAccess.Repositories
         public async Task<ChatRoom> GetChatRoomByIdAsync(int chatRoomId)
         {
             return await _context.ChatRooms
-                .Include(c => c.IdUsers)
+                .Include(c => c.ChatRoomUsers)
                 .FirstOrDefaultAsync(c => c.IdChatRoom == chatRoomId);
         }
 
@@ -69,26 +69,44 @@ namespace DataAccess.Repositories
 
         public async Task AddUserToChatAsync(AddUserToChatRequest request)
         {
-            var chatRoom = await GetChatRoomByIdAsync(request.ChatRoomId);
-            var user = await GetUserByIdAsync(request.UserId);
-            if (chatRoom != null && user != null)
+            var chatRoomUser = new ChatRoomUser
             {
-                chatRoom.IdUsers.Add(user);
-                await SaveChangesAsync();
-            }
+                IdChatRoom = request.ChatRoomId,
+                IdUser = request.UserId
+            };
+
+            await _context.ChatRoomUsers.AddAsync(chatRoomUser);
+            await SaveChangesAsync();
         }
 
         public async Task RemoveUserFromChatAsync(RemoveUserFromChatRequest request)
         {
-            var chatRoom = await GetChatRoomByIdAsync(request.ChatRoomId);
-            var user = chatRoom?.IdUsers.FirstOrDefault(u => u.IdUser == request.UserId);
+            var chatRoomUser = await _context.ChatRoomUsers
+                .FirstOrDefaultAsync(cru => cru.IdChatRoom == request.ChatRoomId && cru.IdUser == request.UserId); // Исправлено
 
-            if (chatRoom != null && user != null)
+            if (chatRoomUser != null)
             {
-                chatRoom.IdUsers.Remove(user);
+                _context.ChatRoomUsers.Remove(chatRoomUser);
                 await SaveChangesAsync();
             }
         }
+
+        public async Task AddUserToChatRoomAsync(ChatRoomUser chatRoomUser)
+        {
+            await _context.ChatRoomUsers.AddAsync(chatRoomUser);
+        }
+
+        public async Task<ChatRoomUser> GetChatRoomUserAsync(int chatRoomId, int userId)
+        {
+            return await _context.ChatRoomUsers
+                .FirstOrDefaultAsync(cru => cru.IdChatRoom == chatRoomId && cru.IdUser == userId); // Исправлено
+        }
+
+        public void RemoveUserFromChatRoom(ChatRoomUser chatRoomUser)
+        {
+            _context.ChatRoomUsers.Remove(chatRoomUser);
+        }
+
     }
 }
 

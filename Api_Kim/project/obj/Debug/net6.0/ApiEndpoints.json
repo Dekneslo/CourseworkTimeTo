@@ -239,7 +239,7 @@
   {
     "ContainingType": "project.Controllers.CourseController",
     "Method": "CommentOnCourse",
-    "RelativePath": "api/Course/{courseId}/comment",
+    "RelativePath": "api/Course/{courseId}/add-comment",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -336,27 +336,6 @@
       {
         "Name": "request",
         "Type": "Domain.Contracts.CourseContracts.AddMediaToCourseRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "project.Controllers.CourseController",
-    "Method": "UnenrollUserFromCourse",
-    "RelativePath": "api/Course/{courseId}/unenroll",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "courseId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "Domain.Contracts.CourseContracts.UnenrollUserFromCourseRequest",
         "IsRequired": true
       }
     ],
@@ -551,34 +530,9 @@
         "IsRequired": true
       },
       {
-        "Name": "ContentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ContentDisposition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Headers",
-        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
-        "IsRequired": false
-      },
-      {
-        "Name": "Length",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Domain.Contracts.MediaContracts.UploadMediaRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -597,34 +551,9 @@
         "IsRequired": true
       },
       {
-        "Name": "ContentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ContentDisposition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Headers",
-        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
-        "IsRequired": false
-      },
-      {
-        "Name": "Length",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Domain.Contracts.MediaContracts.UploadMediaRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -643,34 +572,9 @@
         "IsRequired": true
       },
       {
-        "Name": "ContentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ContentDisposition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Headers",
-        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
-        "IsRequired": false
-      },
-      {
-        "Name": "Length",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Domain.Contracts.MediaContracts.UploadMediaRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

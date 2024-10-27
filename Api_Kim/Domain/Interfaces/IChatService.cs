@@ -1,4 +1,5 @@
 ﻿using Domain.Contracts.ChatContracts;
+using Domain.Models;
 using Domain.Results;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace Domain.Interfaces
         Task<ServiceResult> RemoveUserFromChatAsync(RemoveUserFromChatRequest request);
         Task<ServiceResult> CreatePrivateChatAsync(CreateChatRoomRequest request);
         Task<ServiceResult> DeleteChatRoomAsync(int chatRoomId);
+        Task AddUserToChatRoomAsync(ChatRoomUser chatRoomUser); 
+        Task<ChatRoomUser> GetChatRoomUserAsync(int chatRoomId, int userId); 
+        void RemoveUserFromChatRoom(ChatRoomUser chatRoomUser); 
     }
-
 }

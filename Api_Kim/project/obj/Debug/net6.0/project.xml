@@ -240,20 +240,6 @@
              <param name="request">Запрос с ID пользователя</param>
              <returns>Результат операции</returns>
         </member>
-        <member name="M:project.Controllers.CourseController.CommentOnCourse(System.Int32,Domain.Contracts.CommentContracts.AddCommentRequest)">
-             <summary>
-             Добавление комментария к курсу
-             </summary>
-             <remarks>
-             Пример запроса:
-            
-                 POST /api/Course/1/comment
-            
-             </remarks>
-             <param name="courseId">ID курса</param>
-             <param name="request">Запрос для добавления комментария</param>
-             <returns>Результат операции</returns>
-        </member>
         <member name="M:project.Controllers.CourseController.EnrollUserInCourse(System.Int32,Domain.Contracts.CourseContracts.EnrollUserRequest)">
              <summary>
              Записать пользователя на курс
@@ -309,18 +295,18 @@
              <param name="request">Запрос с данными комментария</param>
              <returns>Результат операции</returns>
         </member>
-        <member name="M:project.Controllers.CourseController.UnenrollUserFromCourse(System.Int32,Domain.Contracts.CourseContracts.UnenrollUserFromCourseRequest)">
+        <member name="M:project.Controllers.CourseController.CommentOnCourse(System.Int32,Domain.Contracts.CommentContracts.AddCommentRequest)">
              <summary>
-             Удаление пользователя с курса (второй метод)
+             Добавление комментария к курсу
              </summary>
              <remarks>
              Пример запроса:
             
-                 DELETE /api/Course/1/unenroll
+                 POST /api/Course/1/comment
             
              </remarks>
              <param name="courseId">ID курса</param>
-             <param name="request">Запрос с ID пользователя</param>
+             <param name="request">Запрос для добавления комментария</param>
              <returns>Результат операции</returns>
         </member>
         <member name="M:project.Controllers.FileController.GetFilesByUser(System.Int32)">
@@ -711,7 +697,7 @@
              <param name="request">Запрос на изменение пароля</param>
              <returns>Ответ с результатом операции</returns>
         </member>
-        <member name="M:MediaController.UploadPostMedia(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+        <member name="M:MediaController.UploadPostMedia(System.Int32,Domain.Contracts.MediaContracts.UploadMediaRequest)">
              <summary>
              Загрузка медиафайла для поста
              </summary>
@@ -722,10 +708,10 @@
             
              </remarks>
              <param name="postId">ID поста</param>
-             <param name="file">Медиафайл</param>
+             <param name="request">Медиафайл</param>
              <returns>Результат операции</returns>
         </member>
-        <member name="M:MediaController.UploadCourseMedia(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+        <member name="M:MediaController.UploadCourseMedia(System.Int32,Domain.Contracts.MediaContracts.UploadMediaRequest)">
              <summary>
              Загрузка медиафайла для курса
              </summary>
@@ -736,10 +722,10 @@
             
              </remarks>
              <param name="courseId">ID курса</param>
-             <param name="file">Медиафайл</param>
+             <param name="request">Медиафайл</param>
              <returns>Результат операции</returns>
         </member>
-        <member name="M:MediaController.UpdateMedia(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+        <member name="M:MediaController.UpdateMedia(System.Int32,Domain.Contracts.MediaContracts.UploadMediaRequest)">
              <summary>
              Обновление медиафайла
              </summary>
@@ -750,7 +736,7 @@
             
              </remarks>
              <param name="mediaId">ID медиафайла</param>
-             <param name="newFile">Новый файл для обновления</param>
+             <param name="request">Новый медиафайл</param>
              <returns>Результат операции</returns>
         </member>
         <member name="M:MediaController.DeleteMedia(System.Int32)">

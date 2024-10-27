@@ -7,12 +7,12 @@ namespace Domain.Models
     {
         public ChatRoom()
         {
-            IdUsers = new HashSet<User>();
+            ChatRoomUsers = new HashSet<ChatRoomUser>();
         }
 
         public int IdChatRoom { get; set; }
-        public string NameRoom { get; set; } = null!;
+        public string NameRoom { get; set; }
 
-        public virtual ICollection<User> IdUsers { get; set; }
+        public virtual ICollection<ChatRoomUser> ChatRoomUsers { get; set; }
     }
 }

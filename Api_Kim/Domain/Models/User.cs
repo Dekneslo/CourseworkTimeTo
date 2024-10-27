@@ -9,6 +9,7 @@ namespace Domain.Models
         {
             UsersCourses = new HashSet<UsersCourse>();
             Comments = new HashSet<Comment>();
+            ChatRoomUsers = new HashSet<ChatRoomUser>();
             DailyUpdates = new HashSet<DailyUpdate>();
             FileAccesses = new HashSet<FileAccess>();
             Files = new HashSet<File>();
@@ -46,5 +47,6 @@ namespace Domain.Models
 
         public virtual ICollection<ChatRoom> IdChatRooms { get; set; }
         public virtual ICollection<Course> IdCourses { get; set; }
+        public virtual ICollection<ChatRoomUser> ChatRoomUsers { get; set; }
     }
 }

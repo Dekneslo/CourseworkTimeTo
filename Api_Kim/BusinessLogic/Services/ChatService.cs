@@ -40,7 +40,13 @@ namespace BusinessLogic.Services
                 return new ServiceResult { Success = false, Errors = new List<string> { "Пользователь не найден" } };
             }
 
-            chatRoom.IdUsers.Add(user); // Добавляем пользователя в чат-комнату
+            var chatRoomUser = new ChatRoomUser
+            {
+                IdChatRoom = request.ChatRoomId,
+                IdUser = request.UserId
+            };
+
+            await _chatRepository.AddUserToChatRoomAsync(chatRoomUser); // Используем новую логику с таблицей связи
             await _chatRepository.SaveChangesAsync(); // Сохраняем изменения
 
             return new ServiceResult { Success = true, Data = "Пользователь добавлен" };
@@ -48,25 +54,17 @@ namespace BusinessLogic.Services
 
         public async Task<ServiceResult> RemoveUserFromChatAsync(RemoveUserFromChatRequest request)
         {
-            var chatRoom = await _chatRepository.GetChatRoomByIdAsync(request.ChatRoomId);
-
-            if (chatRoom == null)
-            {
-                return new ServiceResult { Success = false, Errors = new List<string> { "Чат-комната не найдена" } };
-            }
-
-            var user = chatRoom.IdUsers.FirstOrDefault(u => u.IdUser == request.UserId);
-            if (user == null)
+            var chatRoomUser = await _chatRepository.GetChatRoomUserAsync(request.ChatRoomId, request.UserId);
+            if (chatRoomUser == null)
             {
                 return new ServiceResult { Success = false, Errors = new List<string> { "Пользователь не найден в этой чат-комнате" } };
             }
 
-            chatRoom.IdUsers.Remove(user); // Удаляем пользователя из чат-комнаты
+            _chatRepository.RemoveUserFromChatRoom(chatRoomUser); // Удаляем запись из таблицы связи
             await _chatRepository.SaveChangesAsync(); // Сохраняем изменения
 
             return new ServiceResult { Success = true, Data = "Пользователь удален" };
         }
-
 
         public async Task<ServiceResult> DeleteChatRoomAsync(int chatRoomId)
         {
@@ -79,6 +77,21 @@ namespace BusinessLogic.Services
         {
             await _chatRepository.CreatePrivateChatAsync(request);
             return ServiceResult.SuccessResult("Приватный чат успешно создан");
+        }
+
+        public async Task AddUserToChatRoomAsync(ChatRoomUser chatRoomUser)
+        {
+            await _chatRepository.AddUserToChatRoomAsync(chatRoomUser);
+        }
+
+        public async Task<ChatRoomUser> GetChatRoomUserAsync(int chatRoomId, int userId)
+        {
+            return await _chatRepository.GetChatRoomUserAsync(chatRoomId, userId);
+        }
+
+        public void RemoveUserFromChatRoom(ChatRoomUser chatRoomUser)
+        {
+            _chatRepository.RemoveUserFromChatRoom(chatRoomUser);
         }
     }
 }

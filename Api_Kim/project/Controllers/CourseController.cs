@@ -148,26 +148,6 @@ namespace project.Controllers
         }
 
         /// <summary>
-        /// Добавление комментария к курсу
-        /// </summary>
-        /// <remarks>
-        /// Пример запроса:
-        ///
-        ///     POST /api/Course/1/comment
-        ///
-        /// </remarks>
-        /// <param name="courseId">ID курса</param>
-        /// <param name="request">Запрос для добавления комментария</param>
-        /// <returns>Результат операции</returns>
-        [HttpPost("{courseId}/comment")]
-        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] AddCommentRequest request)
-        {
-            var result = await _courseService.AddCommentAsync(courseId, request);
-            if (!result.Success) return BadRequest(result.Errors);
-            return Ok(result.Data);
-        }
-
-        /// <summary>
         /// Записать пользователя на курс
         /// </summary>
         /// <remarks>
@@ -248,24 +228,43 @@ namespace project.Controllers
         }
 
         /// <summary>
-        /// Удаление пользователя с курса (второй метод)
+        /// Добавление комментария к курсу
         /// </summary>
         /// <remarks>
         /// Пример запроса:
         ///
-        ///     DELETE /api/Course/1/unenroll
+        ///     POST /api/Course/1/comment
         ///
         /// </remarks>
         /// <param name="courseId">ID курса</param>
-        /// <param name="request">Запрос с ID пользователя</param>
+        /// <param name="request">Запрос для добавления комментария</param>
         /// <returns>Результат операции</returns>
-        [HttpDelete("{courseId}/unenroll")]
-        public async Task<IActionResult> UnenrollUserFromCourse(int courseId, [FromBody] UnenrollUserFromCourseRequest request)
+        [HttpPost("{courseId}/add-comment")]
+        public async Task<IActionResult> CommentOnCourse(int courseId, [FromBody] AddCommentRequest request)
         {
-            var result = await _courseService.UnenrollUserFromCourseAsync(courseId, request.UserId);
+            var result = await _courseService.AddCommentAsync(courseId, request);
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }
 
+        ///// <summary>
+        ///// Удаление пользователя с курса (второй метод)
+        ///// </summary>
+        ///// <remarks>
+        ///// Пример запроса:
+        /////
+        /////     DELETE /api/Course/1/unenroll
+        /////
+        ///// </remarks>
+        ///// <param name="courseId">ID курса</param>
+        ///// <param name="request">Запрос с ID пользователя</param>
+        ///// <returns>Результат операции</returns>
+        //[HttpDelete("{courseId}/unenroll")]
+        //public async Task<IActionResult> UnenrollUserFromCourse(int courseId, [FromBody] UnenrollUserFromCourseRequest request)
+        //{
+        //    var result = await _courseService.UnenrollUserFromCourseAsync(courseId, request.UserId);
+        //    if (!result.Success) return BadRequest(result.Errors);
+        //    return Ok(result.Data);
+        //}
     }
 }
