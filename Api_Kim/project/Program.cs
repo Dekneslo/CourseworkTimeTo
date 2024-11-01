@@ -17,7 +17,7 @@ namespace project
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer("Server=DEKNESLO;Database=CharityDB;Trusted_Connection=True;", b => b.MigrationsAssembly("DataAccess")));
+            builder.Services.AddDbContext<CharityDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
@@ -53,6 +53,13 @@ namespace project
 
 
             var app = builder.Build();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<CharityDBContext>();
+                context.Database.Migrate();
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

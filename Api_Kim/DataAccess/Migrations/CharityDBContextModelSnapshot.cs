@@ -22,24 +22,6 @@ namespace DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ChatRoomUser", b =>
-                {
-                    b.Property<int>("IdChatRoom")
-                        .HasColumnType("int")
-                        .HasColumnName("idChatRoom");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("int")
-                        .HasColumnName("idUser");
-
-                    b.HasKey("IdChatRoom", "IdUser")
-                        .HasName("PK__ChatRoom__44BB3FA4CE323C0C");
-
-                    b.HasIndex("IdUser");
-
-                    b.ToTable("ChatRoomUsers", (string)null);
-                });
-
             modelBuilder.Entity("Domain.Models.Category", b =>
                 {
                     b.Property<int>("IdCategory")
@@ -80,6 +62,21 @@ namespace DataAccess.Migrations
                         .HasName("PK__ChatRoom__77CA433C661BA18F");
 
                     b.ToTable("ChatRooms");
+                });
+
+            modelBuilder.Entity("Domain.Models.ChatRoomUser", b =>
+                {
+                    b.Property<int>("IdChatRoom")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdUser")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdChatRoom", "IdUser");
+
+                    b.HasIndex("IdUser");
+
+                    b.ToTable("ChatRoomUsers");
                 });
 
             modelBuilder.Entity("Domain.Models.Comment", b =>
@@ -606,37 +603,38 @@ namespace DataAccess.Migrations
                     b.ToTable("UserLanguages");
                 });
 
-            modelBuilder.Entity("UsersCourse", b =>
+            modelBuilder.Entity("Domain.Models.UsersCourse", b =>
                 {
                     b.Property<int>("IdUser")
-                        .HasColumnType("int")
-                        .HasColumnName("idUser");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdCourse")
-                        .HasColumnType("int")
-                        .HasColumnName("idCourse");
+                        .HasColumnType("int");
 
-                    b.HasKey("IdUser", "IdCourse")
-                        .HasName("PK__UsersCou__BF8FE7B2193D808A");
+                    b.HasKey("IdUser", "IdCourse");
 
                     b.HasIndex("IdCourse");
 
                     b.ToTable("UsersCourses", (string)null);
                 });
 
-            modelBuilder.Entity("ChatRoomUser", b =>
+            modelBuilder.Entity("Domain.Models.ChatRoomUser", b =>
                 {
-                    b.HasOne("Domain.Models.ChatRoom", null)
-                        .WithMany()
+                    b.HasOne("Domain.Models.ChatRoom", "ChatRoom")
+                        .WithMany("ChatRoomUsers")
                         .HasForeignKey("IdChatRoom")
-                        .IsRequired()
-                        .HasConstraintName("FK__ChatRoomU__idCha__5CD6CB2B");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Domain.Models.User", null)
-                        .WithMany()
+                    b.HasOne("Domain.Models.User", "User")
+                        .WithMany("ChatRoomUsers")
                         .HasForeignKey("IdUser")
-                        .IsRequired()
-                        .HasConstraintName("FK__ChatRoomU__idUse__5DCAEF64");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ChatRoom");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Domain.Models.Comment", b =>
@@ -865,24 +863,33 @@ namespace DataAccess.Migrations
                     b.Navigation("IdUserNavigation");
                 });
 
-            modelBuilder.Entity("UsersCourse", b =>
+            modelBuilder.Entity("Domain.Models.UsersCourse", b =>
                 {
-                    b.HasOne("Domain.Models.Course", null)
-                        .WithMany()
+                    b.HasOne("Domain.Models.Course", "Course")
+                        .WithMany("UsersCourses")
                         .HasForeignKey("IdCourse")
-                        .IsRequired()
-                        .HasConstraintName("FK__UsersCour__idCou__4E88ABD4");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Domain.Models.User", null)
-                        .WithMany()
+                    b.HasOne("Domain.Models.User", "User")
+                        .WithMany("UsersCourses")
                         .HasForeignKey("IdUser")
-                        .IsRequired()
-                        .HasConstraintName("FK__UsersCour__idUse__4D94879B");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Domain.Models.Category", b =>
                 {
                     b.Navigation("Courses");
+                });
+
+            modelBuilder.Entity("Domain.Models.ChatRoom", b =>
+                {
+                    b.Navigation("ChatRoomUsers");
                 });
 
             modelBuilder.Entity("Domain.Models.Comment", b =>
@@ -897,6 +904,8 @@ namespace DataAccess.Migrations
                     b.Navigation("CourseMedia");
 
                     b.Navigation("LikesToCourses");
+
+                    b.Navigation("UsersCourses");
                 });
 
             modelBuilder.Entity("Domain.Models.File", b =>
@@ -924,6 +933,8 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Domain.Models.User", b =>
                 {
+                    b.Navigation("ChatRoomUsers");
+
                     b.Navigation("Comments");
 
                     b.Navigation("DailyUpdates");
@@ -945,6 +956,8 @@ namespace DataAccess.Migrations
                     b.Navigation("Profiles");
 
                     b.Navigation("UserLanguages");
+
+                    b.Navigation("UsersCourses");
                 });
 #pragma warning restore 612, 618
         }

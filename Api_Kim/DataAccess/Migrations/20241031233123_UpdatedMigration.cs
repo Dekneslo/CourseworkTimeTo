@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataAccess.Migrations
 {
-    public partial class MigratonName : Migration
+    public partial class UpdatedMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -95,22 +95,24 @@ namespace DataAccess.Migrations
                 name: "ChatRoomUsers",
                 columns: table => new
                 {
-                    idChatRoom = table.Column<int>(type: "int", nullable: false),
-                    idUser = table.Column<int>(type: "int", nullable: false)
+                    IdChatRoom = table.Column<int>(type: "int", nullable: false),
+                    IdUser = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__ChatRoom__44BB3FA4CE323C0C", x => new { x.idChatRoom, x.idUser });
+                    table.PrimaryKey("PK_ChatRoomUsers", x => new { x.IdChatRoom, x.IdUser });
                     table.ForeignKey(
-                        name: "FK__ChatRoomU__idCha__5CD6CB2B",
-                        column: x => x.idChatRoom,
+                        name: "FK_ChatRoomUsers_ChatRooms_IdChatRoom",
+                        column: x => x.IdChatRoom,
                         principalTable: "ChatRooms",
-                        principalColumn: "idChatRoom");
+                        principalColumn: "idChatRoom",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK__ChatRoomU__idUse__5DCAEF64",
-                        column: x => x.idUser,
+                        name: "FK_ChatRoomUsers_Users_IdUser",
+                        column: x => x.IdUser,
                         principalTable: "Users",
-                        principalColumn: "idUser");
+                        principalColumn: "idUser",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -269,22 +271,24 @@ namespace DataAccess.Migrations
                 name: "UsersCourses",
                 columns: table => new
                 {
-                    idUser = table.Column<int>(type: "int", nullable: false),
-                    idCourse = table.Column<int>(type: "int", nullable: false)
+                    IdUser = table.Column<int>(type: "int", nullable: false),
+                    IdCourse = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK__UsersCou__BF8FE7B2193D808A", x => new { x.idUser, x.idCourse });
+                    table.PrimaryKey("PK_UsersCourses", x => new { x.IdUser, x.IdCourse });
                     table.ForeignKey(
-                        name: "FK__UsersCour__idCou__4E88ABD4",
-                        column: x => x.idCourse,
+                        name: "FK_UsersCourses_Courses_IdCourse",
+                        column: x => x.IdCourse,
                         principalTable: "Courses",
-                        principalColumn: "idCourse");
+                        principalColumn: "idCourse",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK__UsersCour__idUse__4D94879B",
-                        column: x => x.idUser,
+                        name: "FK_UsersCourses_Users_IdUser",
+                        column: x => x.IdUser,
                         principalTable: "Users",
-                        principalColumn: "idUser");
+                        principalColumn: "idUser",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -435,9 +439,9 @@ namespace DataAccess.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ChatRoomUsers_idUser",
+                name: "IX_ChatRoomUsers_IdUser",
                 table: "ChatRoomUsers",
-                column: "idUser");
+                column: "IdUser");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CommentMedia_idComment",
@@ -551,9 +555,9 @@ namespace DataAccess.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_UsersCourses_idCourse",
+                name: "IX_UsersCourses_IdCourse",
                 table: "UsersCourses",
-                column: "idCourse");
+                column: "IdCourse");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -34,7 +34,7 @@ namespace Domain.Models
         public virtual DbSet<Profile> Profiles { get; set; } = null!;
         public virtual DbSet<Role> Roles { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
-        public virtual DbSet<UsersCourse> UsersCourses { get; set; }
+        public virtual DbSet<UsersCourse> UsersCourses { get; set; } = null!;
         public virtual DbSet<UserLanguage> UserLanguages { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -480,40 +480,68 @@ namespace Domain.Models
                     .HasForeignKey(d => d.Role)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Users__role__3A81B327");
-                entity.HasMany(e => e.ChatRoomUsers).WithOne(cru => cru.User).HasForeignKey(cru => cru.IdUser);
 
-                entity.HasMany(d => d.IdCourses)
-                    .WithMany(p => p.IdUsers)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "UsersCourse",
-                        l => l.HasOne<Course>().WithMany().HasForeignKey("IdCourse").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__UsersCour__idCou__4E88ABD4"),
-                        r => r.HasOne<User>().WithMany().HasForeignKey("IdUser").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__UsersCour__idUse__4D94879B"),
-                        j =>
-                        {
-                            j.HasKey("IdUser", "IdCourse").HasName("PK__UsersCou__BF8FE7B2193D808A");
+                entity.HasMany(e => e.ChatRoomUsers)
+        .WithOne(cru => cru.User)
+        .HasForeignKey(cru => cru.IdUser);
 
-                            j.ToTable("UsersCourses");
+                entity.HasMany(e => e.UsersCourses)
+                    .WithOne(uc => uc.User)
+                    .HasForeignKey(uc => uc.IdUser);
 
-                            j.IndexerProperty<int>("IdUser").HasColumnName("idUser");
+                //entity.HasMany(e => e.ChatRoomUsers).WithOne(cru => cru.User).HasForeignKey(cru => cru.IdUser);
 
-                            j.IndexerProperty<int>("IdCourse").HasColumnName("idCourse");
-                        });
+                //entity.HasMany(d => d.IdCourses)
+                //    .WithMany(p => p.IdUsers)
+                //    .UsingEntity<Dictionary<string, object>>(
+                //        "UsersCourse",
+                //        l => l.HasOne<Course>().WithMany().HasForeignKey("IdCourse").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__UsersCour__idCou__4E88ABD4"),
+                //        r => r.HasOne<User>().WithMany().HasForeignKey("IdUser").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__UsersCour__idUse__4D94879B"),
+                //        j =>
+                //        {
+                //            j.HasKey("IdUser", "IdCourse").HasName("PK__UsersCou__BF8FE7B2193D808A");
+
+                //            j.ToTable("UsersCourses");
+
+                //            j.IndexerProperty<int>("IdUser").HasColumnName("idUser");
+
+                //            j.IndexerProperty<int>("IdCourse").HasColumnName("idCourse");
+                //        });
+            });
+            modelBuilder.Entity<UsersCourse>(entity =>
+            {
+                entity.HasKey(uc => new { uc.IdUser, uc.IdCourse });
+
+                entity.HasOne(uc => uc.User)
+                    .WithMany(u => u.UsersCourses)
+                    .HasForeignKey(uc => uc.IdUser);
+
+                entity.HasOne(uc => uc.Course)
+                    .WithMany(c => c.UsersCourses)
+                    .HasForeignKey(uc => uc.IdCourse);
+
+                entity.ToTable("UsersCourses");
             });
 
-            modelBuilder.Entity<UsersCourse>()
-        .HasKey(uc => new { uc.IdUser, uc.IdCourse });  // Составной ключ
+            //modelBuilder.Entity<UsersCourse>(entity =>
+            //{
+            //    entity.HasKey(uc => new { uc.IdUser, uc.IdCourse })
+            //        .HasName("PK__UsersCourses");
 
-            modelBuilder.Entity<UsersCourse>()
-                .HasOne(uc => uc.User)
-                .WithMany(u => u.UsersCourses)
-                .HasForeignKey(uc => uc.IdUser);
+            //    entity.HasOne(uc => uc.User)
+            //        .WithMany(u => u.UsersCourses)
+            //        .HasForeignKey(uc => uc.IdUser)
+            //        .OnDelete(DeleteBehavior.ClientSetNull)
+            //        .HasConstraintName("FK__UsersCourses__idUser");
 
-            modelBuilder.Entity<UsersCourse>()
-                .HasOne(uc => uc.Course)
-                .WithMany(c => c.UsersCourses)
-                .HasForeignKey(uc => uc.IdCourse);
+            //    entity.HasOne(uc => uc.Course)
+            //        .WithMany(c => c.UsersCourses)
+            //        .HasForeignKey(uc => uc.IdCourse)
+            //        .OnDelete(DeleteBehavior.ClientSetNull)
+            //        .HasConstraintName("FK__UsersCourses__idCourse");
 
-            base.OnModelCreating(modelBuilder);
+            //    entity.ToTable("UsersCourses");
+            //});
 
             modelBuilder.Entity<UserLanguage>(entity =>
             {
@@ -533,6 +561,7 @@ namespace Domain.Models
                     .HasConstraintName("FK__UserLangu__idUse__787EE5A0");
             });
 
+            base.OnModelCreating(modelBuilder);
             OnModelCreatingPartial(modelBuilder);
         }
 
