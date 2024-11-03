@@ -184,19 +184,33 @@ VALUES
 ('Frank', 'Blue', 'frank@example.com', 'hashed_password9', 2),
 ('Grace', 'Red', 'grace@example.com', 'hashed_password10', 3);
 
+---- 3. Таблица профилей пользователей
+--INSERT INTO Profiles (idUser, city, country, phoneNumber, biography) 
+--VALUES 
+--(7, 'New York', 'USA', '555-1001', 'Administrator of the system.'),
+--(8, 'Berlin', 'Germany', '555-1002', 'A regular user with an interest in psychology.'),
+--(9, 'Almaty', 'Kazakhstan', '555-1003', 'Experienced manager working in the tech industry.'),
+--(10, 'London', 'UK', '555-1004', 'Moderator for the community.'),
+--(11, 'Paris', 'France', '555-1005', 'Editor with 5 years of experience in content writing.'),
+--(12, 'Rome', 'Italy', '555-1006', 'Contributor to many community projects.'),
+--(13, 'Tokyo', 'Japan', '555-1007', 'Avid reader and subscriber to the platform.'),
+--(14, 'Moscow', 'Russia', '555-1008', 'Guest user exploring the platform.'),
+--(15, 'Astana', 'Kazakhstan', '555-1009', 'VIP member with exclusive access to content.'),
+--(16, 'Dubai', 'UAE', '555-1010', 'Support staff helping users with issues.');
+
 -- 3. Таблица профилей пользователей
 INSERT INTO Profiles (idUser, city, country, phoneNumber, biography) 
 VALUES 
-(7, 'New York', 'USA', '555-1001', 'Administrator of the system.'),
-(8, 'Berlin', 'Germany', '555-1002', 'A regular user with an interest in psychology.'),
-(9, 'Almaty', 'Kazakhstan', '555-1003', 'Experienced manager working in the tech industry.'),
-(10, 'London', 'UK', '555-1004', 'Moderator for the community.'),
-(11, 'Paris', 'France', '555-1005', 'Editor with 5 years of experience in content writing.'),
-(12, 'Rome', 'Italy', '555-1006', 'Contributor to many community projects.'),
-(13, 'Tokyo', 'Japan', '555-1007', 'Avid reader and subscriber to the platform.'),
-(14, 'Moscow', 'Russia', '555-1008', 'Guest user exploring the platform.'),
-(15, 'Astana', 'Kazakhstan', '555-1009', 'VIP member with exclusive access to content.'),
-(16, 'Dubai', 'UAE', '555-1010', 'Support staff helping users with issues.');
+(1, 'New York', 'USA', '555-1001', 'Administrator of the system.'),
+(2, 'Berlin', 'Germany', '555-1002', 'A regular user with an interest in psychology.'),
+(3, 'Almaty', 'Kazakhstan', '555-1003', 'Experienced manager working in the tech industry.'),
+(4, 'London', 'UK', '555-1004', 'Moderator for the community.'),
+(5, 'Paris', 'France', '555-1005', 'Editor with 5 years of experience in content writing.'),
+(6, 'Rome', 'Italy', '555-1006', 'Contributor to many community projects.'),
+(7, 'Tokyo', 'Japan', '555-1007', 'Avid reader and subscriber to the platform.'),
+(8, 'Moscow', 'Russia', '555-1008', 'Guest user exploring the platform.'),
+(9, 'Astana', 'Kazakhstan', '555-1009', 'VIP member with exclusive access to content.'),
+(10, 'Dubai', 'UAE', '555-1010', 'Support staff helping users with issues.');
 
 -- 4. Таблица категорий курсов
 INSERT INTO Categories (nameCategory) 
