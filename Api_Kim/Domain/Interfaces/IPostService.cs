@@ -11,10 +11,12 @@ namespace Domain.Interfaces
     public interface IPostService
     {
         Task<IEnumerable<GetPostResponse>> GetAllPostsAsync();
+        Task<IEnumerable<GetDailyUpdateResponse>> GetAllDailyUpdatesAsync(); // Новый метод для получения обновлений
         Task<ServiceResult> CreatePostAsync(CreatePostRequest postRequest);
+        Task<ServiceResult> CreateDailyUpdateAsync(CreateDailyUpdateRequest updateRequest); // Новый метод для создания обновлений
         Task<ServiceResult> UpdatePostAsync(UpdatePostRequest request);
         Task<ServiceResult> DeletePostAsync(int id);
         Task<ServiceResult> LikePostAsync(int postId, int userId);
-        Task<ServiceResult> AddMediaToPostAsync(AddMediaToPostRequest request);  // Добавление медиафайла в пост
+        Task<ServiceResult> AddMediaToPostAsync(AddMediaToPostRequest request);
     }
 }

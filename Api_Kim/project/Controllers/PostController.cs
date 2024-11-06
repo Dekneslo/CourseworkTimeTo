@@ -36,6 +36,23 @@ namespace project.Controllers
         }
 
         /// <summary>
+        /// Получение всех ежедневных обновлений
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     GET /api/Post/daily-updates
+        /// 
+        /// </remarks>
+        /// <returns>Список ежедневных обновлений</returns>
+        [HttpGet("daily-updates")]
+        public async Task<IActionResult> GetAllDailyUpdates()
+        {
+            var updates = await _postService.GetAllDailyUpdatesAsync();
+            return Ok(updates);
+        }
+
+        /// <summary>
         /// Создание нового поста
         /// </summary>
         /// <remarks>
@@ -55,6 +72,29 @@ namespace project.Controllers
         public async Task<IActionResult> CreatePost([FromBody] CreatePostRequest request)
         {
             var result = await _postService.CreatePostAsync(request);
+            if (!result.Success) return BadRequest(result.Errors);
+            return Ok(result.Data);
+        }
+
+        /// <summary>
+        /// Создание нового ежедневного обновления
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     POST /api/Post/daily-update
+        ///     {
+        ///        "Description" : "Описание обновления",
+        ///        "IdUser" : 1
+        ///     }
+        /// 
+        /// </remarks>
+        /// <param name="request">Модель для создания обновления</param>
+        /// <returns>Созданное обновление</returns>
+        [HttpPost("daily-update")]
+        public async Task<IActionResult> CreateDailyUpdate([FromBody] CreateDailyUpdateRequest request)
+        {
+            var result = await _postService.CreateDailyUpdateAsync(request);
             if (!result.Success) return BadRequest(result.Errors);
             return Ok(result.Data);
         }

@@ -9,6 +9,7 @@ using Domain.Results;
 using Domain.Wrapper;
 using Domain.Contracts.PostContracts;
 using Mapster;
+using Domain.Contracts.UserContracts;
 
 namespace BusinessLogic.Services
 {
@@ -28,6 +29,13 @@ namespace BusinessLogic.Services
             return posts.Adapt<List<GetPostResponse>>();
         }
 
+        // Получение всех ежедневных обновлений
+        public async Task<IEnumerable<GetDailyUpdateResponse>> GetAllDailyUpdatesAsync()
+        {
+            var updates = await _repository.DailyUpdate.GetAllAsync(); // Метод получения всех обновлений
+            return updates.Adapt<List<GetDailyUpdateResponse>>();
+        }
+
         // Создание поста
         public async Task<ServiceResult> CreatePostAsync(CreatePostRequest postRequest)
         {
@@ -40,6 +48,15 @@ namespace BusinessLogic.Services
             return ServiceResult.SuccessResult("Пост успешно создан", post);
         }
 
+        // Создание нового ежедневного обновления
+        public async Task<ServiceResult> CreateDailyUpdateAsync(CreateDailyUpdateRequest updateRequest)
+        {
+            var update = updateRequest.Adapt<DailyUpdate>();
+            update.DateOfPosted = updateRequest.DateOfPosted ?? DateTime.Now;
+            await _repository.DailyUpdate.CreateAsync(update); // Создание обновления
+            await _repository.SaveAsync();
+            return ServiceResult.SuccessResult("Ежедневное обновление успешно создано", update);
+        }
 
         // Обновление поста
         public async Task<ServiceResult> UpdatePostAsync(UpdatePostRequest request)

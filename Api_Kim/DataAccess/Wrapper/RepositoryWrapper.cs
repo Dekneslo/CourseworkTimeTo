@@ -25,6 +25,19 @@ namespace DataAccess.Wrapper
         private IRoleRepository _role;
         private IUserCourseRepository _userCourse;
         private IChatRepository _chat;
+        private IDailyUpdateRepository _dailyUpdate;
+
+        public IDailyUpdateRepository DailyUpdate // Implement DailyUpdate property
+        {
+            get
+            {
+                if (_dailyUpdate == null)
+                {
+                    _dailyUpdate = new DailyUpdateRepository(_repoContext);
+                }
+                return _dailyUpdate;
+            }
+        }
 
         public IUserRepository User
         {

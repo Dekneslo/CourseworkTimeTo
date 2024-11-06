@@ -20,6 +20,7 @@ namespace Domain.Wrapper
         IUserLanguageRepository UserLanguage { get; }
         IUserCourseRepository UserCourse { get; }
         IRoleRepository Role { get; }
+        IDailyUpdateRepository DailyUpdate { get; } 
         Task SaveAsync();
     }
 }
