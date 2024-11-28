@@ -18,7 +18,7 @@ services:
         path: /
     plan: free
 
-  - type: background
+ - type: web
     name: sqlserver
     env: docker
     image: mcr.microsoft.com/mssql/server:2022-latest
