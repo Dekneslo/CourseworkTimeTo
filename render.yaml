@@ -1,3 +1,5 @@
+version: 1
+
 services:
   - type: web
     name: project
@@ -8,13 +10,14 @@ services:
     autoDeploy: true
     envVars:
       - key: ConnectionStrings__DefaultConnection
-        value: Server=sqlserver;Database=CharityDB;User Id=sa;Password=SecureP@ssw0rd123;TrustServerCertificate=true
+        value: "Server=sqlserver;Database=CharityDB;User Id=sa;Password=SecureP@ssw0rd123;TrustServerCertificate=true"
     routes:
       - type: plain
-        url: /
+        name: project
         serviceId: project
+        path: /
     plan: free
-    healthCheckPath: /health  # Пример пути для проверки здоровья, если требуется
+    healthCheckPath: /health  # Убедитесь, что такой путь для проверки здоровья существует
 
   - type: background
     name: sqlserver
@@ -22,15 +25,15 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     envVars:
       - key: SA_PASSWORD
-        value: SecureP@ssw0rd123
+        value: "SecureP@ssw0rd123"
       - key: ACCEPT_EULA
-        value: Y
+        value: "Y"
     ports:
       - port: 5321
         public: true
-    volume:
-      name: sql_data
-      path: /var/opt/mssql
+    volumes:
+      - name: sql_data
+        path: /var/opt/mssql
 
-  volumes:
-    - name: sql_data
+volumes:
+  - name: sql_data
