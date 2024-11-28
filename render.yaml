@@ -1,34 +1,36 @@
-version: '3.8'
-
 services:
-  project:
+  - type: web
+    name: project
+    env: docker
     build:
-      context: ..  
-      dockerfile: project/Dockerfile  
-    ports:
-      - "5266:80"  
-      - "7042:443" 
+      dockerfile: project/Dockerfile
+      dockerContext: ..
+    autoDeploy: true
+    envVars:
+      - key: ConnectionStrings__DefaultConnection
+        value: Server=sqlserver;Database=CharityDB;User Id=sa;Password=SecureP@ssw0rd123;TrustServerCertificate=true
+    routes:
+      - type: plain
+        url: /
+        serviceId: project
+    plan: free
+    healthCheckPath: /health  # Пример пути для проверки здоровья, если требуется
 
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=CharityDB;User Id=sa;Password=SecureP@ssw0rd123;TrustServerCertificate=true
-
-    depends_on:
-      - sqlserver
-    
-
-  sqlserver:
+  - type: background
+    name: sqlserver
+    env: docker
     image: mcr.microsoft.com/mssql/server:2022-latest
-    environment:
-      - SA_PASSWORD=SecureP@ssw0rd123
-      - ACCEPT_EULA=Y
-    expose:
-      - "5321"
+    envVars:
+      - key: SA_PASSWORD
+        value: SecureP@ssw0rd123
+      - key: ACCEPT_EULA
+        value: Y
     ports:
-      - "5321:5321"
-    volumes:
-      - sql_data:/var/opt/mssql
+      - port: 5321
+        public: true
+    volume:
+      name: sql_data
+      path: /var/opt/mssql
 
-
-
-volumes:
-  sql_data:
+  volumes:
+    - name: sql_data
