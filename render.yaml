@@ -17,7 +17,6 @@ services:
         serviceId: project
         path: /
     plan: free
-    healthCheckPath: /health  # Убедитесь, что такой путь для проверки здоровья существует
 
   - type: background
     name: sqlserver
