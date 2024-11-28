@@ -13,12 +13,10 @@ services:
         value: "Server=sqlserver;Database=CharityDB;User Id=sa;Password=SecureP@ssw0rd123;TrustServerCertificate=true"
     routes:
       - type: plain
-        name: project
-        serviceId: project
         path: /
     plan: free
 
- - type: web
+  - type: web
     name: sqlserver
     env: docker
     image: mcr.microsoft.com/mssql/server:2022-latest
