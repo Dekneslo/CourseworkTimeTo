@@ -32,17 +32,17 @@ namespace project
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "API для благотворительной платформы",
-                    Description = "Описание API для управления курсами, пользователями и постами",
+                    Title = "API Г¤Г«Гї ГЎГ«Г ГЈГ®ГІГўГ®Г°ГЁГІГҐГ«ГјГ­Г®Г© ГЇГ«Г ГІГґГ®Г°Г¬Г»",
+                    Description = "ГЋГЇГЁГ±Г Г­ГЁГҐ API Г¤Г«Гї ГіГЇГ°Г ГўГ«ГҐГ­ГЁГї ГЄГіГ°Г±Г Г¬ГЁ, ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГїГ¬ГЁ ГЁ ГЇГ®Г±ГІГ Г¬ГЁ",
                     Contact = new OpenApiContact
                     {
-                        Name = "Контактная информация",
+                        Name = "ГЉГ®Г­ГІГ ГЄГІГ­Г Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї",
                         Url = new Uri("https://example.com/contact")
                     }
                     ,
                     License = new OpenApiLicense
                     {
-                        Name = "Пример лицензии",
+                        Name = "ГЏГ°ГЁГ¬ГҐГ° Г«ГЁГ¶ГҐГ­Г§ГЁГЁ",
                         Url = new Uri("https://example.com/license")
                     }
                 });
@@ -62,11 +62,10 @@ namespace project
             }
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
+
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            
 
             app.UseHttpsRedirection();
 
