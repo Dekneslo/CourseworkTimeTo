@@ -14,7 +14,7 @@ services:
     routes:
       - type: plain
         path: /
-    plan: free
+    plan: starter
 
   - type: web
     name: sqlserver
